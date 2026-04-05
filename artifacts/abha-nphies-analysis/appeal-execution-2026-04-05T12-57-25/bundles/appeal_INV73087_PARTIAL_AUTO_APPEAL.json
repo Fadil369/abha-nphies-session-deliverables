@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73087-20260405125729",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "20977"
+                                                        },
+                                         "display":  "GHALIA MOSFER -"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "96af21da-3cf1-4571-af35-d0f9f3c9c6ec"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73087\nPatient: GHALIA MOSFER - (MRN: 20977)\nVisit Date: 2025-12-20 00:00:00\nDiagnosis: I63-Cerebral infarction\n\nVITALLY STABLE NOTE (8 line(s)):\n  While the patient was vitally stable at time of service, the procedures/services\n  were required for ongoing treatment and cannot be deferred.\n  Request: Approve continued care services.\n  - Seq 22: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 21: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 20: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 19: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 17: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 25: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 24: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 23: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n\nMEDICATION NOT REGISTERED (1 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 18: 99999999999999 - SMOFKABIVEN PERIPHERAL EMULSION for infusion  / 1904ml x 1 (SAR 148.7)\n\nTARIFF ADJUSTMENT (2 line(s), total difference: 0.02 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 12: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n  - Seq 1: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n\nNOT IN MEDICATION VOCABULARY (13 line(s)):\n  These medications are clinically indicated and SFDA-approved though\n  they may not yet appear in the current medication vocabulary.\n  Request: Review and approve based on SFDA registration.\n  - Seq 39: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 38: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 37: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 36: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 35: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 34: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 32: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 31: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 30: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 29: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 28: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 27: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n  - Seq 26: MOHAPD2648 - LTC, VENTILATOR/NON-ICU SETTING (PER DAY), ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2555.3)\n\n---\nTotal Claimed: 131662.95 SAR | Total Approved: 10283.2 SAR | Gap: 121379.75 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73174-20260405125729",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22440"
+                                                        },
+                                         "display":  "NASEER ALI AHMED"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "9dc65555-59b8-4da7-a89f-cff46ee4b1db"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73174\nPatient: NASEER ALI AHMED (MRN: 22440)\nVisit Date: 2026-01-17 00:00:00\nDiagnosis: V89-Motor- or nonmotor-vehicle accident, type of vehicle unspecified,S32.83-Fracture of pelvis, part unspecified\n\nQUANTITY EXCEEDED (1 line(s)):\n  The quantities billed reflect the actual services provided based on clinical need.\n  Extended treatment was required due to patient condition complexity.\n  Request: Review and approve the actual quantities administered.\n  - Seq 22: MOHAPSB001 Qty=1 (SAR 347.78)\n\nTARIFF ADJUSTMENT (5 line(s), total difference: 0.05 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 14: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 5: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 4: MOHS-AD128 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 3: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 1: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\nDISCHARGE REVIEW (1 line(s)):\n  Discharge coding has been reviewed. Services provided align with the\n  documented discharge disposition and clinical course.\n  Request: Re-evaluate discharge compatibility.\n  - Seq 10: MOHS-B0719 - CPR (TEAM) (SAR 548.44)\n\n---\nTotal Claimed: 90194.4 SAR | Total Approved: 8685.32 SAR | Gap: 81509.08 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73192-20260405125636",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22523"
+                                                        },
+                                         "display":  "CAELA ALI ABSE"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "de897eed-1cb3-440c-aa22-115384803a22"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73192\nPatient: CAELA ALI ABSE (MRN: 22523)\nVisit Date: 2026-01-18 00:00:00\nDiagnosis: J18.0-Bronchopneumonia, unspecified\n\nTARIFF ADJUSTMENT (1 line(s), total difference: 0.01 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 7: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nVITALLY STABLE NOTE (2 line(s)):\n  While the patient was vitally stable at time of service, the procedures/services\n  were required for ongoing treatment and cannot be deferred.\n  Request: Approve continued care services.\n  - Seq 6: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 5: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n\n---\nTotal Claimed: 30854.66 SAR | Total Approved: 2373.43 SAR | Gap: 28481.23 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:36Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

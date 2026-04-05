@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73592-20260405125631",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22853"
+                                                        },
+                                         "display":  "ZAHER MOHAMMED ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "9a1af7b7-2452-4a8f-968c-bc0351d3541b"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73592\nPatient: ZAHER MOHAMMED ASEERY (MRN: 22853)\nVisit Date: 2026-01-22 00:00:00\nDiagnosis: S99.8-Other specified injuries of ankle and foot\n\nMISSING DOCUMENTS (2 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 14: MOHS-AB199 - PROTHROMBIN TIME U85610 (SAR 147.92)\n  - Seq 10: MOHS-BB404 - COAGULATION PROFILE COMPLETE (PT, PTT, CT) (SAR 582.71)\n\nTARIFF ADJUSTMENT (9 line(s), total difference: 0.09 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 11: MOHS-AB046 Claimed=98.19 Approved=98.18 Diff=0.01\n  - Seq 9: MOHS-AB193 Claimed=139 Approved=138.99 Diff=0.01\n  - Seq 8: MOHS-AB137 Claimed=214.24 Approved=214.23 Diff=0.01\n  - Seq 7: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 6: MOHS-A0697 Claimed=57.39 Approved=57.38 Diff=0.01\n  - Seq 5: MOHS-B0708 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 4: MOHS-B0764 Claimed=10.29 Approved=10.28 Diff=0.01\n  - Seq 3: MOHS-B0731 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\n---\nTotal Claimed: 2395.83 SAR | Total Approved: 1046.62 SAR | Gap: 1349.21 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:31Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73105-20260405125729",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "21564"
+                                                        },
+                                         "display":  "AHMED MAHDY ALHELALI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "0e1499e6-9bed-4d0d-9ab8-a4dd35db34ba"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73105\nPatient: AHMED MAHDY ALHELALI (MRN: 21564)\nVisit Date: 2025-12-31 00:00:00\nDiagnosis: I24.9-Acute ischaemic heart disease, unspecified\n\nMEDICATION NOT REGISTERED (7 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 61: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 59: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 57: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 55: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 53: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 49: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 46: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 907.5)\n\nMEDICAL NECESSITY (11 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: I24.9-Acute ischaemic heart disease, unspecified.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 47: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 44: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 42: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 40: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 38: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 36: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 34: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 32: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 30: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 28: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 26: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n\nMISSING DOCUMENTS (2 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 21: MOHS-BD400 - MRI (SAR 2056.65)\n  - Seq 18: MOHS-BD400 - MRI (SAR 2056.65)\n\nTARIFF ADJUSTMENT (5 line(s), total difference: 0.05 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 17: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 16: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 12: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 10: MOHS-B0719 Claimed=548.44 Approved=548.43 Diff=0.01\n  - Seq 8: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\nROOM \u0026 BOARD INCLUSION (1 line(s)):\n  The services below are distinct from room and board charges and should\n  be billed separately per the agreed contract terms.\n  Request: Unbundle and approve as separate line items.\n  - Seq 11: 06285147003525 - PROTEC 1 GM INJECTION* (SAR 54.5)\n\nOTHER DENIAL (1 line(s)):\n  The services below require manual review and re-adjudication.\n  - Seq 2: MOHS-B0091 - PTCA (PER.TR.CORONORY ANGIOPLASTY) - DV + STENT (SAR 39761.81)\n\nMULTIPLE PROCEDURE RULES (1 line(s)):\n  The procedures listed are distinct and were performed through separate\n  approaches, warranting individual reimbursement.\n  Request: Approve each procedure independently per clinical documentation.\n  - Seq 1: MOHAPI0028 - CATH L-H 107-37.22 CATHETERIZATION CARDIAC, LEFT HEART (SAR 12752.01)\n\n---\nTotal Claimed: 216366.2 SAR | Total Approved: 14826.57 SAR | Gap: 201539.63 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

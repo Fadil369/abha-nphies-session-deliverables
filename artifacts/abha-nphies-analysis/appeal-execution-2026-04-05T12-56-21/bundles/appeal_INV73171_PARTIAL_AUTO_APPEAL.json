@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73171-20260405125633",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22421"
+                                                        },
+                                         "display":  "DABYA ABDULLAH ALQAHTANI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "f285d57d-532e-491e-8a4d-d2ec24f38dca"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73171\nPatient: DABYA ABDULLAH ALQAHTANI (MRN: 22421)\nVisit Date: 2026-01-16 00:00:00\nDiagnosis: S72.3-Fracture of shaft of femur\n\nTARIFF ADJUSTMENT (2 line(s), total difference: 0.02 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 5: MOHAPI1942 Claimed=29074.61 Approved=29074.6 Diff=0.01\n  - Seq 1: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\nQUANTITY EXCEEDED (1 line(s)):\n  The quantities billed reflect the actual services provided based on clinical need.\n  Extended treatment was required due to patient condition complexity.\n  Request: Review and approve the actual quantities administered.\n  - Seq 4: MOHAPSB001 Qty=1 (SAR 347.78)\n\nPACKAGE INCLUSION (1 line(s)):\n  These services exceed the scope of the package and were provided as additional\n  necessary care beyond the standard package components.\n  Request: Approve as supplementary charges outside package scope.\n  - Seq 2: MOHAPD2650 - ROOM AND BOARD PACKAGE,HOSPITAL FACILITY,ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2373.44)\n\n---\nTotal Claimed: 34762.05 SAR | Total Approved: 30806.82 SAR | Gap: 3955.23 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:33Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

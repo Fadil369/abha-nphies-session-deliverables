@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73607-20260405125731",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "23233"
+                                                        },
+                                         "display":  "AYSHAH ALI ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "fb8dd20a-cf82-469f-a78e-2a38d35fb642"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73607\nPatient: AYSHAH ALI ASEERY (MRN: 23233)\nVisit Date: 2026-01-28 00:00:00\nDiagnosis: T79.8-Other early complications of trauma\n\nADMISSION APPROVAL (14 line(s)):\n  Admission was clinically indicated based on patient acuity and diagnosis.\n  Pre-authorization reference: N/A.\n  Request: Accept admission charges as clinically warranted.\n  - Seq 14: 06288030002735 - RELIPAN (SAR 4.15)\n  - Seq 13: 99999999999999 - AMBAFEN 4 mg/ml solution for infusion / 4 mg/ml / 100ml x 1 (SAR 33)\n  - Seq 12: MOHS-AD007 - SHOULDER - 1 VIEW T70320 (SAR 227)\n  - Seq 11: MOHS-AD004 - PELVIS - 1 VIEW T72170 (SAR 181.08)\n  - Seq 10: MOHS-AD023 - HUMERUS UPPER ARM - 2 VIEW T73060 (SAR 265.24)\n  - Seq 9: MOHS-AD002 - CHEST - 1 VIEW T71010 (SAR 167.05)\n  - Seq 8: MOHS-AB058 - U82803 BLOOD GASES (SAR 171.39)\n  - Seq 7: MOHS-BB407 - GLUCOSE (SERUM) RANDOM (SAR 41.14)\n  - Seq 6: MOHS-AB046 - CREATININE U82565 (SAR 98.19)\n  - Seq 5: MOHS-AB193 - CBC - COMPLETE BLOOD COUNT U85025 (SAR 139)\n  - Seq 4: MOHS-B0707 - PERIPHERAL CANNULA INSERTION (SAR 34.28)\n  - Seq 3: MOHS-B0765 - I.V. INJECTION (SAR 17.14)\n  - Seq 2: MOHS-B0756 - ELECTRONIC MONITORING (SAR 116.53)\n  - Seq 1: MOHS-BN011 - ER  CONSULTANT (SAR 219.08)\n\n---\nTotal Claimed: 1714.27 SAR | Total Approved: 0 SAR | Gap: 1714.27 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:31Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

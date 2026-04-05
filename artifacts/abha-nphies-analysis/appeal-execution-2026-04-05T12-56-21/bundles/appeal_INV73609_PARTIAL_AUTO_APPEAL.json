@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73609-20260405125631",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "23321"
+                                                        },
+                                         "display":  "SAIF HUSSEIN ALQAHTANI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "f514b458-e57a-408c-89e0-a16ea3e7f0fb"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73609\nPatient: SAIF HUSSEIN ALQAHTANI (MRN: 23321)\nVisit Date: 2026-01-30 00:00:00\nDiagnosis: T04.9-Multiple crushing injuries, unspecified\n\nMEDICATION NOT REGISTERED (2 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 27: 99999999999999 - EMEDAN 4 MG / 2 ML / 2 MG/ML / SOLUTION FOR INJECTION X 5 (SAR 11.22)\n  - Seq 26: 99999999999999 - AMBAFEN 4 mg/ml solution for infusion / 4 mg/ml / 100ml x 1 (SAR 33)\n\nMEDICAL NECESSITY (11 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: T04.9-Multiple crushing injuries, unspecified.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 25: MOHS-BD234 - TIBIA/FEBULA/TOES - 2 VIEWS (SAR 116.53)\n  - Seq 24: MOHS-BD234 - TIBIA/FEBULA/TOES - 2 VIEWS (SAR 116.53)\n  - Seq 23: MOHS-BD245 - SHOULDER/SCAPULA - 2 VIEWS (SAR 137.12)\n  - Seq 22: MOHS-BD245 - SHOULDER/SCAPULA - 2 VIEWS (SAR 137.12)\n  - Seq 21: MOHS-AD055 - KNEE - 4 VIEWS T73564 (SAR 394.03)\n  - Seq 20: MOHS-AD028 - HAND - 3 VIEWS T73120 (SAR 281.81)\n  - Seq 19: MOHS-AD028 - HAND - 3 VIEWS T73120 (SAR 281.81)\n  - Seq 18: MOHS-BD265 - FOOT - 3 TO 4 VIEWS (SAR 171.39)\n  - Seq 17: MOHS-BD265 - FOOT - 3 TO 4 VIEWS (SAR 171.39)\n  - Seq 16: MOHS-AD020 - FEMUR/THIGH - 2 VIEWS T73550 (SAR 258.85)\n  - Seq 15: MOHS-AD020 - FEMUR/THIGH - 2 VIEWS T73550 (SAR 258.85)\n\nTARIFF ADJUSTMENT (12 line(s), total difference: 17.69 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 14: MOHS-AD002 Claimed=167.05 Approved=167.04 Diff=0.01\n  - Seq 13: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 12: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 11: MOHS-AD128 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 10: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 9: MOHS-AD127 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 7: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 6: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 5: MOHS-B0765 Claimed=17.14 Approved=17.13 Diff=0.01\n  - Seq 4: MOHS-B0731 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 2: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n  - Seq 1: 90660-00-00 Claimed=45 Approved=27.42 Diff=17.58\n\n---\nTotal Claimed: 15186.63 SAR | Total Approved: 10995.36 SAR | Gap: 4191.27 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:31Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

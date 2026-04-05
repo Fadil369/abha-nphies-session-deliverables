@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73262-20260405125707",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "23223"
+                                                        },
+                                         "display":  "SHAHERA ABDULLAH ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "6977b40e-59f1-411c-be58-5adea442eff5"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73262\nPatient: SHAHERA ABDULLAH ASEERY (MRN: 23223)\nVisit Date: 2026-01-28 00:00:00\nDiagnosis: J20-Acute bronchitis\n\nTARIFF ADJUSTMENT (4 line(s), total difference: 0.04 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 4: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 3: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 2: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 1: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\n---\nTotal Claimed: 9493.76 SAR | Total Approved: 9493.72 SAR | Gap: 0.04 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:07Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

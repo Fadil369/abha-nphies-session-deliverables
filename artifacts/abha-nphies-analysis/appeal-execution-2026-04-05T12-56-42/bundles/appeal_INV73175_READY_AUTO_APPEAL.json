@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73175-20260405125645",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22442"
+                                                        },
+                                         "display":  "MOHAMMED AHMED ALSANBAGE"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "ef4624b7-a5df-4143-98d6-c3a2ece27b72"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73175\nPatient: MOHAMMED AHMED ALSANBAGE (MRN: 22442)\nVisit Date: 2026-01-17 00:00:00\nDiagnosis: V89-Motor- or nonmotor-vehicle accident, type of vehicle unspecified\n\nTARIFF ADJUSTMENT (7 line(s), total difference: 0.07 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 5: MOHS-AD128 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 4: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 3: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 1: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 9: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 7: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 6: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\n---\nTotal Claimed: 18908.52 SAR | Total Approved: 12474.18 SAR | Gap: 6434.34 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:45Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

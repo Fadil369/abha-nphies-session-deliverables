@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73606-20260405125632",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "23185"
+                                                        },
+                                         "display":  "MASOUD FAHAD ALQAHTANI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "a15f2bd9-8b31-4f50-a86e-0c371e6bebdd"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73606\nPatient: MASOUD FAHAD ALQAHTANI (MRN: 23185)\nVisit Date: 2026-01-27 00:00:00\nDiagnosis: T79.9-Unspecified early complication of trauma\n\nMEDICATION NOT REGISTERED (4 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 23: 99999999999999 - EMEDAN 4 MG / 2 ML / 2 MG/ML / SOLUTION FOR INJECTION X 5 (SAR 11.22)\n  - Seq 22: 99999999999999 - AMBAFEN 4 mg/ml solution for infusion / 4 mg/ml / 100ml x 1 (SAR 33)\n  - Seq 21: 99999999999999 - DEXTROSE 5% + 0.9% SODIUM CHLORIDE INFUSION / 5, 0.9 % / Infusion* / 500ml x 1 (SAR 6.85)\n  - Seq 20: MOHS-B2020 - BELOW KNEE POP - GIBSONA (SAR 1200)\n\nTARIFF ADJUSTMENT (10 line(s), total difference: 17.67 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 19: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 18: MOHS-B0731 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 16: 90660-00-00 Claimed=45 Approved=27.42 Diff=17.58\n  - Seq 7: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 6: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 5: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 4: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 3: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 2: MOHS-B0765 Claimed=17.14 Approved=17.13 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\n---\nTotal Claimed: 11999.34 SAR | Total Approved: 9444.74 SAR | Gap: 2554.6 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:32Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

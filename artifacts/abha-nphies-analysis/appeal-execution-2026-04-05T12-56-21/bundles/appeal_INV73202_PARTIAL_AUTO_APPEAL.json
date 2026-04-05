@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73202-20260405125631",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22631"
+                                                        },
+                                         "display":  "FAIZA SULAIMAN METAEB"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "4ce9c2c2-9b34-4ac1-818d-2e3e38980f30"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73202\nPatient: FAIZA SULAIMAN METAEB (MRN: 22631)\nVisit Date: 2026-01-20 00:00:00\nDiagnosis: S01.0-Open wound of scalp\n\nTARIFF ADJUSTMENT (1 line(s), total difference: 0.01 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 5: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nMEDICAL NECESSITY (1 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: S01.0-Open wound of scalp.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 3: MOHS-AD124 - CT C-SPINE T72125 (SAR 1732.23)\n\nQUANTITY EXCEEDED (1 line(s)):\n  The quantities billed reflect the actual services provided based on clinical need.\n  Extended treatment was required due to patient condition complexity.\n  Request: Review and approve the actual quantities administered.\n  - Seq 2: MOHS-B2026 Qty=1 (SAR 5570.07)\n\n---\nTotal Claimed: 12921.2 SAR | Total Approved: 2373.43 SAR | Gap: 10547.77 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:31Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

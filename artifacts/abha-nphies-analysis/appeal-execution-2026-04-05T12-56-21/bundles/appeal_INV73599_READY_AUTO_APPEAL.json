@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73599-20260405125629",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "23024"
+                                                        },
+                                         "display":  "ABDULQADER YAHIA -"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "d4360dca-6d4a-4ebe-95cc-6707cb9b4298"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73599\nPatient: ABDULQADER YAHIA - (MRN: 23024)\nVisit Date: 2026-01-25 00:00:00\nDiagnosis: T79.0-Air embolism (traumatic)\n\nTARIFF ADJUSTMENT (8 line(s), total difference: 18.94 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 11: 06285111000635 Claimed=4.7 Approved=3.4 Diff=1.3\n  - Seq 9: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 8: MOHS-AD006 Claimed=220.62 Approved=220.61 Diff=0.01\n  - Seq 6: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 5: MOHS-B0765 Claimed=17.14 Approved=17.13 Diff=0.01\n  - Seq 4: MOHS-B0764 Claimed=10.29 Approved=10.28 Diff=0.01\n  - Seq 2: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n  - Seq 1: 90660-00-00 Claimed=45 Approved=27.42 Diff=17.58\n\n---\nTotal Claimed: 2988.29 SAR | Total Approved: 2588.82 SAR | Gap: 399.47 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

@@ -1,0 +1,98 @@
+﻿{
+    "executedAt":  "2026-04-05T12:56:46+03:00",
+    "mode":  "DryRun",
+    "filter":  "AutoOnly",
+    "bridgeUrl":  "http://localhost:8003",
+    "facilityId":  1,
+    "provider":  "Hayat National Hospital-ABHA",
+    "payer":  "MINISTRY OF HEALTH",
+    "totalClaims":  139,
+    "processed":  139,
+    "succeeded":  139,
+    "failed":  0,
+    "skipped":  0,
+    "financial":  {
+                      "totalClaimed":  3810675.86,
+                      "totalApproved":  1804007.04,
+                      "appealGap":  2006668.82
+                  },
+    "readinessSummary":  {
+                             "READY_AUTO_APPEAL":  139,
+                             "PARTIAL_AUTO_APPEAL":  0,
+                             "MANUAL_REVIEW":  0
+                         },
+    "denialCategorySummary":  [
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(1)",
+                                      "count":  45
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3)",
+                                      "count":  16
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(13)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6)",
+                                      "count":  6
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7)",
+                                      "count":  8
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(4)",
+                                      "count":  7
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2)",
+                                      "count":  23
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(5)",
+                                      "count":  9
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(12)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(16)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(31)",
+                                      "count":  9
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(8)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(10)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(21)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(33)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(32)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(23)",
+                                      "count":  1
+                                  }
+                              ]
+}

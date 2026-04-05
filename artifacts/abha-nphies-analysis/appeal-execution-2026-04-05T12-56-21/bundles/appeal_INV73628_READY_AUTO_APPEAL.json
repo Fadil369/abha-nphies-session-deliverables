@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73628-20260405125626",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "20578"
+                                                        },
+                                         "display":  "ZOHRA DAFER AL SHIHRI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "61b6a50a-cf5a-4e19-b9b2-61a46debb39c"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73628\nPatient: ZOHRA DAFER AL SHIHRI (MRN: 20578)\nVisit Date: 2025-12-11 00:00:00\nDiagnosis: J15.9-Bacterial pneumonia, unspecified\n\nTARIFF ADJUSTMENT (23 line(s), total difference: 0.23 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 13: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 12: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 9: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 36: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 34: MOHAPD2645 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 33: MOHAPD2645 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 32: MOHAPD2645 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 29: MOHAPD2645 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 28: MOHAPD2645 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 27: MOHAPD2645 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 25: MOHAPD2645 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 24: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 23: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 22: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 21: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 20: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 19: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 18: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 17: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 16: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 15: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 14: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\n---\nTotal Claimed: 104455.86 SAR | Total Approved: 53947.68 SAR | Gap: 50508.18 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:26Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

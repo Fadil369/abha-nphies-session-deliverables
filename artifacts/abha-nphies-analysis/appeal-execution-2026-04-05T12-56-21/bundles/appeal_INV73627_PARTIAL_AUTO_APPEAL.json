@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73627-20260405125633",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "20446"
+                                                        },
+                                         "display":  "ENAS THAYIM ALQAHTANI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "2d753c83-968f-4883-b075-bb6643cec6af"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73627\nPatient: ENAS THAYIM ALQAHTANI (MRN: 20446)\nVisit Date: 2025-12-09 00:00:00\nDiagnosis: A09-Diarrhoea and gastroenteritis of presumed infectious origin\n\nTARIFF ADJUSTMENT (26 line(s), total difference: 141.15 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 53: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 52: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 50: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 49: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 47: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 45: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 42: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 40: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 39: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 38: 06285079001750 Claimed=2808.95 Approved=2668.05 Diff=140.9\n  - Seq 37: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 35: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 34: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 32: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 31: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 30: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 29: MOHS-BD369 Claimed=822.66 Approved=822.65 Diff=0.01\n  - Seq 28: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 27: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 26: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 25: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 20: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 18: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 16: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nMEDICATION NOT REGISTERED (16 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 51: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 813.3)\n  - Seq 48: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 813.3)\n  - Seq 46: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 813.3)\n  - Seq 44: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n  - Seq 43: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 813.3)\n  - Seq 41: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 813.3)\n  - Seq 33: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 1626.6)\n  - Seq 21: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n  - Seq 19: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n  - Seq 17: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n  - Seq 15: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n  - Seq 14: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n  - Seq 12: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n  - Seq 10: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n  - Seq 8: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n  - Seq 6: 99999999999999 - NUMETA G13% (PRETERM NEONATE) 300 ML BAGX10 (SAR 406.65)\n\nQUANTITY EXCEEDED (1 line(s)):\n  The quantities billed reflect the actual services provided based on clinical need.\n  Extended treatment was required due to patient condition complexity.\n  Request: Review and approve the actual quantities administered.\n  - Seq 36: MOHAPSB001 Qty=1 (SAR 347.78)\n\nROOM \u0026 BOARD INCLUSION (1 line(s)):\n  The services below are distinct from room and board charges and should\n  be billed separately per the agreed contract terms.\n  Request: Unbundle and approve as separate line items.\n  - Seq 23: MOHS-BD332 - COLOUR DOPPLER SONOGRAPHY NECK LESIONS (SAR 411.33)\n\n---\nTotal Claimed: 107358.13 SAR | Total Approved: 60453.02 SAR | Gap: 46905.11 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:33Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

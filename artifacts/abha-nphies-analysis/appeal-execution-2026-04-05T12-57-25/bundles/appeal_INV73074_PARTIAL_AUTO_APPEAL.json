@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73074-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "19989"
+                                                        },
+                                         "display":  "MUNAHY AWAD HABAN"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "d540e883-5201-49bd-acda-5dd5bf176d80"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73074\nPatient: MUNAHY AWAD HABAN (MRN: 19989)\nVisit Date: 2025-12-01 00:00:00\nDiagnosis: J15.9-Bacterial pneumonia, unspecified\n\nTARIFF ADJUSTMENT (39 line(s), total difference: 0.39 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 77: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 72: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 67: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 64: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 63: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n  - Seq 61: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 56: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 53: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 49: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 46: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 45: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 44: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n  - Seq 43: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 42: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 41: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 40: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n  - Seq 39: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 38: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 36: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 34: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 33: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n  - Seq 32: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 31: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 28: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 25: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 24: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n  - Seq 23: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 22: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n  - Seq 21: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 19: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 17: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n  - Seq 9: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 8: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 7: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 6: MOHS-B0679 Claimed=5141.61 Approved=5141.6 Diff=0.01\n  - Seq 4: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 1: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nCODE REFERENCE (1 line(s)):\n  The service codes used are valid per the NPHIES coding guidelines and\n  accurately reflect the services provided.\n  Request: Accept the coded services as documented.\n  - Seq 60: MOHS-B2529 - INSERTION OF CENTRAL VASCULAR CATHETER(FEMORAL/SUBCLAVIAN/JUGULAR) (SAR 3770.51)\n\nMEDICATION NOT REGISTERED (3 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 37: 99999999999999 - ARANESP 60MCG-0.3ML PRE-FILLED SYRINGE / 60 ??g / 0.3ml x 4 (SAR 477.34)\n  - Seq 26: 99999999999999 - ARANESP 60MCG-0.3ML PRE-FILLED SYRINGE / 60 ??g / 0.3ml x 4 (SAR 477.34)\n  - Seq 14: 99999999999999 - ARANESP 60MCG-0.3ML PRE-FILLED SYRINGE / 60 ??g / 0.3ml x 4 (SAR 477.34)\n\n---\nTotal Claimed: 155414.52 SAR | Total Approved: 114709.13 SAR | Gap: 40705.39 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

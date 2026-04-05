@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73039-20260405125707",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "5818"
+                                                        },
+                                         "display":  "DOLIM ALI ALHEAF"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "3691d273-fe19-4938-bb2b-96b3fbce4bc8"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73039\nPatient: DOLIM ALI ALHEAF (MRN: 5818)\nVisit Date: 2025-05-27 00:00:00\nDiagnosis: G80.03-Spastic quadriplegic cerebral palsy\n\nTARIFF ADJUSTMENT (31 line(s), total difference: 0.31 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 23: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 22: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 21: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 20: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 19: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 18: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 17: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 16: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 15: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 14: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 12: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 10: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 9: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 8: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 7: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 6: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 5: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 4: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 3: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 2: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 1: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 31: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 30: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 29: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 28: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 27: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 26: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 25: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 24: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\n---\nTotal Claimed: 73576.64 SAR | Total Approved: 73576.33 SAR | Gap: 0.31 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:07Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

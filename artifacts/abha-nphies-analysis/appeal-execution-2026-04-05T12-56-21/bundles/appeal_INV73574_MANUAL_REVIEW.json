@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73574-20260405125638",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22065"
+                                                        },
+                                         "display":  "JOUD AHMED EJEEM"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "bc4df739-b78b-4046-bb77-19f207b620d9"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73574\nPatient: JOUD AHMED EJEEM (MRN: 22065)\nVisit Date: 2026-01-10 00:00:00\nDiagnosis: R40-Somnolence, stupor and coma\n\nADMISSION APPROVAL (20 line(s)):\n  Admission was clinically indicated based on patient acuity and diagnosis.\n  Pre-authorization reference: N/A.\n  Request: Accept admission charges as clinically warranted.\n  - Seq 10: MOHS-AB046 - CREATININE U82565 (SAR 98.19)\n  - Seq 9: MOHS-AB045 - CKMB U82553 (SAR 204.02)\n  - Seq 8: MOHS-AB117 - CDT ( CARDIAC TROPONIN ) U84484 (SAR 274.16)\n  - Seq 7: MOHS-AB193 - CBC - COMPLETE BLOOD COUNT U85025 (SAR 139)\n  - Seq 6: MOHS-AB137 - C-REATIVE PROTEIN U86140 (SAR 214.24)\n  - Seq 5: MOHS-B0707 - PERIPHERAL CANNULA INSERTION (SAR 34.28)\n  - Seq 4: MOHS-A0699 - OXYGEN INHALATION - PER HOUR X1001 (SAR 56.11)\n  - Seq 3: MOHS-B0731 - EMERGENCY ROOM FEES FOR OBSERVATION (SAR 137.12)\n  - Seq 2: MOHS-B0756 - ELECTRONIC MONITORING (SAR 116.53)\n  - Seq 1: MOHS-BN011 - ER  CONSULTANT (SAR 219.08)\n  - Seq 21: MOHS-BD256 - LUMBAR/LUMBO SACRAL SPINE - 2 VIEWS (SAR 171.39)\n  - Seq 20: MOHS-AD045 - DORSAL SPINE - 2 VIEWS T72070 (SAR 343.02)\n  - Seq 19: MOHS-AD002 - CHEST - 1 VIEW T71010 (SAR 167.05)\n  - Seq 18: MOHS-AD012 - CERVICAL SPINE - 2 VIEWS T72040 (SAR 244.83)\n  - Seq 16: MOHS-AB122 - UREA CLEARANCE U84545 (SAR 108.41)\n  - Seq 15: MOHS-AB058 - U82803 BLOOD GASES (SAR 171.39)\n  - Seq 14: MOHS-AB115 - SGPT/ALT U84460 (SAR 96.92)\n  - Seq 13: MOHS-AB114 - SGOT/AST U84450 (SAR 96.92)\n  - Seq 12: MOHS-BB407 - GLUCOSE (SERUM) RANDOM (SAR 41.14)\n  - Seq 11: MOHS-BB426 - ELECTROLYTES (NA, K, C1) SERUM (SAR 154.25)\n\n---\nTotal Claimed: 4775.45 SAR | Total Approved: 137.11 SAR | Gap: 4638.34 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:38Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

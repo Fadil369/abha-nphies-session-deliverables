@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73200-20260405125635",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22582"
+                                                        },
+                                         "display":  "MOHAMMED ALI ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "71eedb4a-b7f4-498d-985a-a53566db4cc7"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73200\nPatient: MOHAMMED ALI ASEERY (MRN: 22582)\nVisit Date: 2026-01-19 00:00:00\nDiagnosis: A41.9-Septicaemia, unspecified\n\nMEDICAL NECESSITY (10 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: A41.9-Septicaemia, unspecified.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 26: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 24: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 19: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 17: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 15: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 13: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 11: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 9: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 7: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 5: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n\nTARIFF ADJUSTMENT (2 line(s), total difference: 0.02 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 20: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 2: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\n---\nTotal Claimed: 73482.07 SAR | Total Approved: 3464.44 SAR | Gap: 70017.63 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:35Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

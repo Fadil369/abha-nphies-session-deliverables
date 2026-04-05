@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73541-20260405125638",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "18407"
+                                                        },
+                                         "display":  "DAIFALLAH - AL SHIHRI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "95fd1afd-5819-4015-b1b1-b904f5bde682"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73541\nPatient: DAIFALLAH - AL SHIHRI (MRN: 18407)\nVisit Date: 2025-11-05 00:00:00\nDiagnosis: H05.9-Disorder of orbit, unspecified,J18.0-Bronchopneumonia, unspecified\n\nCODE REFERENCE (1 line(s)):\n  The service codes used are valid per the NPHIES coding guidelines and\n  accurately reflect the services provided.\n  Request: Accept the coded services as documented.\n  - Seq 28: MOHBPI1024 - GASTROSTOMY, COLOSTOMY OR IT\u0027S CLOSURE P-033 (SAR 7041.84)\n\nQUANTITY EXCEEDED (1 line(s)):\n  The quantities billed reflect the actual services provided based on clinical need.\n  Extended treatment was required due to patient condition complexity.\n  Request: Review and approve the actual quantities administered.\n  - Seq 26: MOHAPSB001 Qty=1 (SAR 347.78)\n\n---\nTotal Claimed: 85742.23 SAR | Total Approved: 0 SAR | Gap: 85742.23 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:38Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

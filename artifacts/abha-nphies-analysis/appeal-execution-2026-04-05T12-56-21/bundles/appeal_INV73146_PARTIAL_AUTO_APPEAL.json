@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73146-20260405125632",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22068"
+                                                        },
+                                         "display":  "SAFIAH ABDULLAH ALABASY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "640bc13e-b899-4edd-8a48-095531ca3f1b"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73146\nPatient: SAFIAH ABDULLAH ALABASY (MRN: 22068)\nVisit Date: 2026-01-10 00:00:00\nDiagnosis: R55-Syncope and collapse\n\nTARIFF ADJUSTMENT (6 line(s), total difference: 0.06 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 15: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 14: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 12: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 4: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\nMISSING DOCUMENTS (3 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 8: MOHS-AD120 - CT HEAD/BRAIN T70450 (SAR 1687.4)\n  - Seq 6: MOHS-BD400 - MRI (SAR 2056.65)\n  - Seq 5: MOHS-AD123 - CT THORAX WITHOUT CONTRAST T71250 (SAR 1732.23)\n\nMEDICAL NECESSITY (1 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: R55-Syncope and collapse.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 3: MOHS-AD120 - CT HEAD/BRAIN T70450 (SAR 1687.4)\n\n---\nTotal Claimed: 34412.23 SAR | Total Approved: 13599.37 SAR | Gap: 20812.86 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:32Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

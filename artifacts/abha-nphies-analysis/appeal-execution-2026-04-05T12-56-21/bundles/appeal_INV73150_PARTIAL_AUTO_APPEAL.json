@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73150-20260405125633",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22217"
+                                                        },
+                                         "display":  "MOHAMMED EID KHALIL"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "6352256d-2deb-4945-a63e-b1570893dbb3"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73150\nPatient: MOHAMMED EID KHALIL (MRN: 22217)\nVisit Date: 2026-01-13 00:00:00\nDiagnosis: V89-Motor- or nonmotor-vehicle accident, type of vehicle unspecified,S82.5-Fracture of medial malleolus,S32.4-Fracture of acetabulum\n\nPACKAGE INCLUSION (1 line(s)):\n  These services exceed the scope of the package and were provided as additional\n  necessary care beyond the standard package components.\n  Request: Approve as supplementary charges outside package scope.\n  - Seq 11: MOHAPD2642 - ICU SERVICES ADULT/PEDIATRIC. EXCLUSION AS AGREED (SAR 4746.87)\n\nTARIFF ADJUSTMENT (7 line(s), total difference: 0.07 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 10: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 8: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 7: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 6: MOHS-AD128 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 5: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 4: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 2: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\nROOM \u0026 BOARD INCLUSION (1 line(s)):\n  The services below are distinct from room and board charges and should\n  be billed separately per the agreed contract terms.\n  Request: Unbundle and approve as separate line items.\n  - Seq 1: MOHS-B2060 - APPLICATION OF SPLINTS, SLABS, POP WITHOUT REDUCTION (SAR 1508.21)\n\n---\nTotal Claimed: 48479.31 SAR | Total Approved: 12474.18 SAR | Gap: 36005.13 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:33Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

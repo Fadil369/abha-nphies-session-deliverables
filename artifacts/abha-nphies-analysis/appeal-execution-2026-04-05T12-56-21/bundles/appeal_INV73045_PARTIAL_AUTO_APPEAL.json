@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73045-20260405125638",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "8507"
+                                                        },
+                                         "display":  "KHAIRYA MOHAMMED ALAHMRIE"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "2f0be8bf-2d47-4d60-9bee-ed4ffa4e422c"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73045\nPatient: KHAIRYA MOHAMMED ALAHMRIE (MRN: 8507)\nVisit Date: 2026-01-29 00:00:00\nDiagnosis: A41-Other septicaemia\n\nMEDICAL NECESSITY (3 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: A41-Other septicaemia.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 9: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 7: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 5: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n\nTARIFF ADJUSTMENT (2 line(s), total difference: 0.02 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 3: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 2: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\n---\nTotal Claimed: 20872.52 SAR | Total Approved: 3464.44 SAR | Gap: 17408.08 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:38Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

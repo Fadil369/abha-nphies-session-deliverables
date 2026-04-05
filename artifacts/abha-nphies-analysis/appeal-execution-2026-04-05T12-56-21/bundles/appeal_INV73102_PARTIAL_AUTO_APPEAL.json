@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73102-20260405125633",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "21518"
+                                                        },
+                                         "display":  "MOSAED HASSAN AL SHIHRI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "f1816e84-3541-4b6d-a1ea-cb8c7c746dd8"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73102\nPatient: MOSAED HASSAN AL SHIHRI (MRN: 21518)\nVisit Date: 2025-12-30 00:00:00\nDiagnosis: A41.9-Septicaemia, unspecified\n\nMEDICATION NOT REGISTERED (14 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 81: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 78: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 2268.75)\n  - Seq 74: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 72: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 70: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 67: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 66: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 64: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 63: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 60: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 56: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 52: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 44: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 43: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 453.75)\n\nPACKAGE INCLUSION (1 line(s)):\n  These services exceed the scope of the package and were provided as additional\n  necessary care beyond the standard package components.\n  Request: Approve as supplementary charges outside package scope.\n  - Seq 79: MOHAPD2646 - LTC, PT WITH NURSING CARE - MD\u0027S SUPERVISION,ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2373.44)\n\nTARIFF ADJUSTMENT (19 line(s), total difference: 0.25 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 76: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 75: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 34: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 33: MOHS-BD403 Claimed=2330.87 Approved=2330.86 Diff=0.01\n  - Seq 31: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 30: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 27: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 25: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 5: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 61: MOHAPD2649 Claimed=16614.08 Approved=16614.01 Diff=0.07\n  - Seq 57: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 53: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 48: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 47: MOHS-BD365 Claimed=822.66 Approved=822.65 Diff=0.01\n  - Seq 46: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 40: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 38: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 36: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nMEDICAL NECESSITY (19 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: A41.9-Septicaemia, unspecified.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 32: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 29: MOHAPSB001 - CROSS MATCH 1 UNIT OF BLOOD V1001 (SAR 347.78)\n  - Seq 28: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 26: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 22: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 20: MOHAPSB001 - CROSS MATCH 1 UNIT OF BLOOD V1001 (SAR 347.78)\n  - Seq 18: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 17: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 822.25)\n  - Seq 12: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 10: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 9: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 7: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 4: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 164.45)\n  - Seq 2: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 50: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 45: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 39: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 37: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 35: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n\nROOM \u0026 BOARD INCLUSION (2 line(s)):\n  The services below are distinct from room and board charges and should\n  be billed separately per the agreed contract terms.\n  Request: Unbundle and approve as separate line items.\n  - Seq 16: 06285147801237 - QUINOX 200 MG SOLUTION FOR INFUSION (SAR 292.5)\n  - Seq 15: 06285147801237 - QUINOX 200 MG SOLUTION FOR INFUSION (SAR 128.5)\n\n---\nTotal Claimed: 148493.39 SAR | Total Approved: 56167.41 SAR | Gap: 92325.98 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:33Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

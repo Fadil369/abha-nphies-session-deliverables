@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73167-20260405125706",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22414"
+                                                        },
+                                         "display":  "GHETHA HASSAN AL MALKY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "ae02005d-db8a-488c-b14f-1e6f5f19a0ca"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73167\nPatient: GHETHA HASSAN AL MALKY (MRN: 22414)\nVisit Date: 2026-01-16 00:00:00\nDiagnosis: C67-Malignant neoplasm of bladder\n\nTARIFF ADJUSTMENT (13 line(s), total difference: 0.13 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 18: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 17: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 16: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 15: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 14: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 12: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 10: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 9: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 8: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 7: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 2: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\n---\nTotal Claimed: 50888.39 SAR | Total Approved: 30213.38 SAR | Gap: 20675.01 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:06Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

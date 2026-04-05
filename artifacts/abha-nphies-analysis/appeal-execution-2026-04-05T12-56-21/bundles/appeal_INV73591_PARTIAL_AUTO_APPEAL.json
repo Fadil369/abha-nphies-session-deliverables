@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73591-20260405125632",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22805"
+                                                        },
+                                         "display":  "HASSAN AHMED ALHARTHI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "c08ef013-0865-4c50-94f8-fa2d2cb5a37c"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73591\nPatient: HASSAN AHMED ALHARTHI (MRN: 22805)\nVisit Date: 2026-01-21 00:00:00\nDiagnosis: M54.4-Lumbago with sciatica\n\nMISSING DOCUMENTS (1 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 7: MOHS-BD400 - MRI (SAR 2056.65)\n\nTARIFF ADJUSTMENT (5 line(s), total difference: 17.62 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 6: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 5: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 4: MOHS-B0765 Claimed=17.14 Approved=17.13 Diff=0.01\n  - Seq 2: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n  - Seq 1: 90660-00-00 Claimed=45 Approved=27.42 Diff=17.58\n\n---\nTotal Claimed: 4250.03 SAR | Total Approved: 2054.33 SAR | Gap: 2195.7 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:32Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73116-20260405130839",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "21671"
+                                                        },
+                                         "display":  "BOY OF  NADIYAH ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "c4004538-9f7f-480a-91c3-153a83ef3547"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73116\nPatient: BOY OF  NADIYAH ASEERY (MRN: 21671)\nVisit Date: 2026-01-02 00:00:00\nDiagnosis: P07.3-Other preterm infants,P07.0-Extremely low birth weight,Z38.1-Singleton, born outside hospital,P22.9-Respiratory distress of newborn, unspecified\n\nTARIFF ADJUSTMENT (16 line(s), total difference: 0.16 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 32: MOHAPS2539 Claimed=3251.77 Approved=3251.76 Diff=0.01\n  - Seq 31: MOHAPS2539 Claimed=3251.77 Approved=3251.76 Diff=0.01\n  - Seq 30: MOHAPS2539 Claimed=3251.77 Approved=3251.76 Diff=0.01\n  - Seq 29: MOHAPS2539 Claimed=3251.77 Approved=3251.76 Diff=0.01\n  - Seq 28: MOHAPS2539 Claimed=3251.77 Approved=3251.76 Diff=0.01\n  - Seq 27: MOHAPS2539 Claimed=3251.77 Approved=3251.76 Diff=0.01\n  - Seq 26: MOHAPS2539 Claimed=3251.77 Approved=3251.76 Diff=0.01\n  - Seq 25: MOHAPS2539 Claimed=3251.77 Approved=3251.76 Diff=0.01\n  - Seq 24: MOHAPS2539 Claimed=3251.77 Approved=3251.76 Diff=0.01\n  - Seq 16: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n  - Seq 15: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n  - Seq 14: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n  - Seq 13: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n  - Seq 12: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n  - Seq 11: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n  - Seq 10: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n\n---\nTotal Claimed: 124999.05 SAR | Total Approved: 60088.73 SAR | Gap: 64910.32 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T10:08:39Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

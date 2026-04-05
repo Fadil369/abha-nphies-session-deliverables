@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73632-20260405125635",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "19203"
+                                                        },
+                                         "display":  "NOURA SAEED SAEED"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "a31db070-0671-4dea-8f75-77079085b0f5"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73632\nPatient: NOURA SAEED SAEED (MRN: 19203)\nVisit Date: 2025-11-17 00:00:00\nDiagnosis: J18.0-Bronchopneumonia, unspecified\n\nTARIFF ADJUSTMENT (29 line(s), total difference: 0.29 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 30: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 29: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 28: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 26: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 25: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 24: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 23: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 22: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 21: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 20: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 19: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 18: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 17: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 16: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 15: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 14: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 12: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 10: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 9: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 8: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 7: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 6: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 5: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 4: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 3: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 2: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 1: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nCODE REFERENCE (1 line(s)):\n  The service codes used are valid per the NPHIES coding guidelines and\n  accurately reflect the services provided.\n  Request: Accept the coded services as documented.\n  - Seq 27: MOHBPI1024 - GASTROSTOMY, COLOSTOMY OR IT\u0027S CLOSURE P-033 (SAR 7041.84)\n\n---\nTotal Claimed: 75871.6 SAR | Total Approved: 68829.47 SAR | Gap: 7042.13 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:35Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

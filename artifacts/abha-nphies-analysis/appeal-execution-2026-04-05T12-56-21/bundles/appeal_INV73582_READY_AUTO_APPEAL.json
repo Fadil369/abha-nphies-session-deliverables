@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73582-20260405125630",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22437"
+                                                        },
+                                         "display":  "MORAYEE ALI KSHAN"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "fafaeb7e-0a70-476c-8ade-fb847ef8ccd0"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73582\nPatient: MORAYEE ALI KSHAN (MRN: 22437)\nVisit Date: 2026-01-17 00:00:00\nDiagnosis: T79.8-Other early complications of trauma\n\nTARIFF ADJUSTMENT (8 line(s), total difference: 0.08 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 12: MOHS-AD007 Claimed=227 Approved=226.99 Diff=0.01\n  - Seq 9: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 8: MOHS-AD128 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 7: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 5: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 3: MOHS-AB193 Claimed=139 Approved=138.99 Diff=0.01\n  - Seq 2: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\n---\nTotal Claimed: 9797.91 SAR | Total Approved: 7572.42 SAR | Gap: 2225.49 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

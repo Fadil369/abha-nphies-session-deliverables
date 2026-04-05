@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73043-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "6341"
+                                                        },
+                                         "display":  "YAHIA MOHAMMED -"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "f7b33f6b-e483-41f7-9936-934dbd10b480"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73043\nPatient: YAHIA MOHAMMED - (MRN: 6341)\nVisit Date: 2025-06-05 00:00:00\nDiagnosis: J13-Pneumonia due to Streptococcus pneumoniae,T89.0-Complications of open wound,E11-Type 2 diabetes mellitus,I15-Secondary hypertension\n\nMEDICATION NOT REGISTERED (11 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 31: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 28: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 25: 99999999999999 - VIBATIV / 750 MG / LYOPHILISATE FOR SOLUTION FOR INFUSION X 1 (SAR 161.2)\n  - Seq 23: 99999999999999 - VIBATIV / 750 MG / LYOPHILISATE FOR SOLUTION FOR INFUSION X 1 (SAR 161.2)\n  - Seq 21: 99999999999999 - VIBATIV / 750 MG / LYOPHILISATE FOR SOLUTION FOR INFUSION X 1 (SAR 161.2)\n  - Seq 19: 99999999999999 - VIBATIV / 750 MG / LYOPHILISATE FOR SOLUTION FOR INFUSION X 1 (SAR 161.2)\n  - Seq 17: 99999999999999 - VIBATIV / 750 MG / LYOPHILISATE FOR SOLUTION FOR INFUSION X 1 (SAR 161.2)\n  - Seq 15: 99999999999999 - VIBATIV / 750 MG / LYOPHILISATE FOR SOLUTION FOR INFUSION X 1 (SAR 161.2)\n  - Seq 13: 99999999999999 - VIBATIV / 750 MG / LYOPHILISATE FOR SOLUTION FOR INFUSION X 1 (SAR 161.2)\n  - Seq 11: 99999999999999 - VIBATIV / 750 MG / LYOPHILISATE FOR SOLUTION FOR INFUSION X 1 (SAR 161.2)\n  - Seq 9: 99999999999999 - VIBATIV / 750 MG / LYOPHILISATE FOR SOLUTION FOR INFUSION X 1 (SAR 161.2)\n\n---\nTotal Claimed: 104634.09 SAR | Total Approved: 0 SAR | Gap: 104634.09 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

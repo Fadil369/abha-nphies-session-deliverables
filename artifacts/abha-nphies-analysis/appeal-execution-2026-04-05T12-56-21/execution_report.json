@@ -1,0 +1,682 @@
+﻿{
+    "executedAt":  "2026-04-05T12:56:39+03:00",
+    "mode":  "DryRun",
+    "filter":  "All",
+    "bridgeUrl":  "http://localhost:8003",
+    "facilityId":  1,
+    "provider":  "Hayat National Hospital-ABHA",
+    "payer":  "MINISTRY OF HEALTH",
+    "totalClaims":  307,
+    "processed":  307,
+    "succeeded":  307,
+    "failed":  0,
+    "skipped":  0,
+    "financial":  {
+                      "totalClaimed":  10720080,
+                      "totalApproved":  3628301.75,
+                      "appealGap":  7091778.25
+                  },
+    "readinessSummary":  {
+                             "READY_AUTO_APPEAL":  139,
+                             "PARTIAL_AUTO_APPEAL":  150,
+                             "MANUAL_REVIEW":  18
+                         },
+    "denialCategorySummary":  [
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3)",
+                                      "count":  16
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2)",
+                                      "count":  23
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(1)",
+                                      "count":  45
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(4)",
+                                      "count":  7
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(5)",
+                                      "count":  9
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(31)",
+                                      "count":  9
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7)",
+                                      "count":  8
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(33)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(32)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(23)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(13)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(16)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6)",
+                                      "count":  6
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(12)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(21)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(8)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(10)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), MISSING_DOCUMENTS(1)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9), MISSING_DOCUMENTS(1), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(12), MISSING_DOCUMENTS(2), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), MISSING_DOCUMENTS(1), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(13), TARIFF_ADJUSTMENT(3), PACKAGE_INCLUSION(1), CODE_REFERENCE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(13), MISSING_DOCUMENTS(2), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(5), MISSING_DOCUMENTS(1), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(15), MEDICATION_NOT_REGISTERED(2), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9), MEDICATION_NOT_REGISTERED(2), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), MISSING_DOCUMENTS(2), QUANTITY_EXCEEDED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(11), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "ADMISSION_APPROVAL(13), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(12), MEDICAL_NECESSITY(2), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(11), MEDICATION_NOT_REGISTERED(7), TARIFF_ADJUSTMENT(5), MISSING_DOCUMENTS(2), MULTIPLE_PROCEDURE_RULES(1), ROOM_BOARD_INCLUSION(1), OTHER(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "DISCHARGE_INCOMPATIBLE(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2), STATUS_NOTE(1)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), QUANTITY_EXCEEDED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(14), TARIFF_ADJUSTMENT(3), STATUS_NOTE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(11), MISSING_DOCUMENTS(1), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2), VITALLY_STABLE_NOTE(1)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), MISSING_DOCUMENTS(2)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(8), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(15), MISSING_DOCUMENTS(1), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9), MISSING_DOCUMENTS(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), QUANTITY_EXCEEDED(2), PRIOR_AUTH_MISSING(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(10), MEDICATION_NOT_REGISTERED(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(8), MEDICATION_NOT_REGISTERED(4)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), QUANTITY_EXCEEDED(1), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(8), MEDICATION_NOT_REGISTERED(2), PRIOR_AUTH_MISSING(1), DISCHARGE_INCOMPATIBLE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9), MEDICATION_NOT_REGISTERED(3), MISSING_DOCUMENTS(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(4), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "QUANTITY_EXCEEDED(1), TARIFF_ADJUSTMENT(1), MEDICAL_NECESSITY(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(12), MEDICAL_NECESSITY(11), MEDICATION_NOT_REGISTERED(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "VITALLY_STABLE_NOTE(2), TARIFF_ADJUSTMENT(1)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), QUANTITY_EXCEEDED(2), MEDICATION_NOT_REGISTERED(2), DISCHARGE_INCOMPATIBLE(1), PRIOR_AUTH_MISSING(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(4), MISSING_DOCUMENTS(1)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), MISSING_DOCUMENTS(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(10), MEDICATION_NOT_REGISTERED(4)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "STATUS_NOTE(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(11), MEDICATION_NOT_REGISTERED(4), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "CODE_REFERENCE(2), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "PACKAGE_INCLUSION(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), MEDICATION_NOT_REGISTERED(2), MISSING_DOCUMENTS(1)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9), MEDICATION_NOT_REGISTERED(2), OTHER(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "VITALLY_STABLE_NOTE(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(4), VITALLY_STABLE_NOTE(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(1), VITALLY_STABLE_NOTE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), MEDICATION_NOT_REGISTERED(3), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(5), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "CODE_REFERENCE(1), STATUS_NOTE(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(7), TARIFF_ADJUSTMENT(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), PROCEDURE_NOT_DONE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), MISSING_DOCUMENTS(3), MEDICAL_NECESSITY(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(4), MEDICATION_NOT_REGISTERED(2), ROOM_BOARD_INCLUSION(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(10), MEDICAL_NECESSITY(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(27), TARIFF_ADJUSTMENT(8), CODE_REFERENCE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), PRIOR_AUTH_MISSING(1), ROOM_BOARD_INCLUSION(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2), PACKAGE_INCLUSION(1), QUANTITY_EXCEEDED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(5), QUANTITY_EXCEEDED(1), DISCHARGE_INCOMPATIBLE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), PACKAGE_INCLUSION(1), ROOM_BOARD_INCLUSION(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), STATUS_NOTE(1), VITALLY_STABLE_NOTE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(19), MEDICAL_NECESSITY(19), MEDICATION_NOT_REGISTERED(14), ROOM_BOARD_INCLUSION(2), PACKAGE_INCLUSION(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "NOT_IN_MV(13), VITALLY_STABLE_NOTE(8), TARIFF_ADJUSTMENT(2), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(39), MEDICATION_NOT_REGISTERED(3), CODE_REFERENCE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), PROCEDURE_NOT_DONE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(5), PACKAGE_INCLUSION(2), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), QUANTITY_EXCEEDED(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(31), MEDICATION_NOT_REGISTERED(7), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(14), ROOM_BOARD_INCLUSION(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(26), MEDICATION_NOT_REGISTERED(16), QUANTITY_EXCEEDED(1), ROOM_BOARD_INCLUSION(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(6), TARIFF_ADJUSTMENT(2), QUANTITY_EXCEEDED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(2), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "VITALLY_STABLE_NOTE(2), MEDICAL_NECESSITY(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2), CODE_REFERENCE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "VITALLY_STABLE_NOTE(2), TARIFF_ADJUSTMENT(2)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), CODE_REFERENCE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "CODE_REFERENCE(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(32), QUANTITY_EXCEEDED(1), ROOM_BOARD_INCLUSION(1), MEDICAL_NECESSITY(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), VITALLY_STABLE_NOTE(1), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "VITALLY_STABLE_NOTE(3), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2), STATUS_NOTE(2), PROCEDURE_NOT_DONE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), ROOM_BOARD_INCLUSION(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), STATUS_NOTE(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2), VITALLY_STABLE_NOTE(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2), MISSING_DOCUMENTS(1)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), VITALLY_STABLE_NOTE(2), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9), PACKAGE_INCLUSION(1), VITALLY_STABLE_NOTE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9), PACKAGE_INCLUSION(1), CODE_REFERENCE(1), QUANTITY_EXCEEDED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(5), TARIFF_ADJUSTMENT(1), STATUS_NOTE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(4), CODE_REFERENCE(1), STATUS_NOTE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(11), PACKAGE_INCLUSION(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(8), TARIFF_ADJUSTMENT(6)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), ROOM_BOARD_INCLUSION(1)",
+                                      "count":  2
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), STATUS_NOTE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(10), TARIFF_ADJUSTMENT(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(31), MEDICATION_NOT_REGISTERED(10)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MISSING_DOCUMENTS(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(2), TARIFF_ADJUSTMENT(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(14), TARIFF_ADJUSTMENT(1), CODE_REFERENCE(1), QUANTITY_EXCEEDED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(5), TARIFF_ADJUSTMENT(2), QUANTITY_EXCEEDED(2), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(30), MEDICATION_NOT_REGISTERED(13), STATUS_NOTE(7), PACKAGE_INCLUSION(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(1), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(14), TARIFF_ADJUSTMENT(13), QUANTITY_EXCEEDED(1), OTHER(1), DISCHARGE_INCOMPATIBLE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(10), MISSING_DOCUMENTS(1), MEDICATION_NOT_REGISTERED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(29), CODE_REFERENCE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(5), ROOM_BOARD_INCLUSION(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), MISSING_DOCUMENTS(3), MEDICATION_NOT_REGISTERED(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(11), QUANTITY_EXCEEDED(1), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(8), MEDICATION_NOT_REGISTERED(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), MEDICATION_NOT_REGISTERED(3), QUANTITY_EXCEEDED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(6), MEDICATION_NOT_REGISTERED(3), MISSING_DOCUMENTS(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(2), TARIFF_ADJUSTMENT(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(11), MISSING_DOCUMENTS(3), MEDICATION_NOT_REGISTERED(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "OTHER(7), TARIFF_ADJUSTMENT(5)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(29), MEDICATION_NOT_REGISTERED(11), STATUS_NOTE(2), MISSING_DOCUMENTS(1), CODE_REFERENCE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(9), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(22), PROCEDURE_NOT_DONE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(2), STATUS_NOTE(1), DISCHARGE_INCOMPATIBLE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), PACKAGE_INCLUSION(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "VITALLY_STABLE_NOTE(3), TARIFF_ADJUSTMENT(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(4), QUANTITY_EXCEEDED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(13), TARIFF_ADJUSTMENT(2), QUANTITY_EXCEEDED(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "PROCEDURE_NOT_DONE(2), TARIFF_ADJUSTMENT(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(7), STATUS_NOTE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(3), MEDICAL_NECESSITY(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(3), TARIFF_ADJUSTMENT(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "TARIFF_ADJUSTMENT(9), ROOM_BOARD_INCLUSION(1), CODE_REFERENCE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "ADMISSION_APPROVAL(13)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MISSING_DOCUMENTS(1)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "CODE_REFERENCE(2)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "ROOM_BOARD_INCLUSION(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(11)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "PROCEDURE_NOT_DONE(1)",
+                                      "count":  3
+                                  },
+                                  {
+                                      "categories":  "OTHER(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "ADMISSION_APPROVAL(20)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "VITALLY_STABLE_NOTE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICAL_NECESSITY(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "CODE_REFERENCE(1), OTHER(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "ADMISSION_APPROVAL(14)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "QUANTITY_EXCEEDED(1), CODE_REFERENCE(1)",
+                                      "count":  1
+                                  },
+                                  {
+                                      "categories":  "MEDICATION_NOT_REGISTERED(45)",
+                                      "count":  1
+                                  }
+                              ]
+}

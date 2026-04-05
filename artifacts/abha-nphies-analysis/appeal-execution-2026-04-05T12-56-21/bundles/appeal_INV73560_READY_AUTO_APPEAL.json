@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73560-20260405125627",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "21659"
+                                                        },
+                                         "display":  "SALEHA MOHAMMED ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "b3b52a7c-2c3a-45d1-bdde-96f8cd07860a"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73560\nPatient: SALEHA MOHAMMED ASEERY (MRN: 21659)\nVisit Date: 2026-01-03 00:00:00\nDiagnosis: T79-Certain early complications of trauma, not elsewhere classified\n\nTARIFF ADJUSTMENT (13 line(s), total difference: 0.13 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 18: MOHS-BD314 Claimed=401.05 Approved=401.04 Diff=0.01\n  - Seq 15: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 14: MOHS-AD002 Claimed=167.05 Approved=167.04 Diff=0.01\n  - Seq 13: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 12: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 11: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 10: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 9: MOHS-AB207 Claimed=100.74 Approved=100.73 Diff=0.01\n  - Seq 6: MOHS-AB193 Claimed=139 Approved=138.99 Diff=0.01\n  - Seq 5: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 4: MOHS-B0765 Claimed=17.14 Approved=17.13 Diff=0.01\n  - Seq 3: MOHS-B0731 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\n---\nTotal Claimed: 11066.31 SAR | Total Approved: 10225.12 SAR | Gap: 841.19 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:27Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

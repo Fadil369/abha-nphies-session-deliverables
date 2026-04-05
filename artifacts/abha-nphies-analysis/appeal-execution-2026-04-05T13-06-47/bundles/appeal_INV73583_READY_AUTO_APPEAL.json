@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73583-20260405130916",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22449"
+                                                        },
+                                         "display":  "HANAN ALI -"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "109869c8-4192-47cd-bd9f-27c7fb7165c3"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73583\nPatient: HANAN ALI - (MRN: 22449)\nVisit Date: 2026-01-17 00:00:00\nDiagnosis: J02.9-Acute pharyngitis, unspecified,J02.8-Acute pharyngitis due to other specified organisms\n\nTARIFF ADJUSTMENT (5 line(s), total difference: 17.62 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 5: MOHS-AB193 Claimed=139 Approved=138.99 Diff=0.01\n  - Seq 4: MOHS-AB137 Claimed=214.24 Approved=214.23 Diff=0.01\n  - Seq 3: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 2: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n  - Seq 1: 90660-00-00 Claimed=45 Approved=27.42 Diff=17.58\n\n---\nTotal Claimed: 667.45 SAR | Total Approved: 633.98 SAR | Gap: 33.47 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T10:09:16Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

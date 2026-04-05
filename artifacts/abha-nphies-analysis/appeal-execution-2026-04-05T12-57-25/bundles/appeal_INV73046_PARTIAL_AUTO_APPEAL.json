@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73046-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "11978"
+                                                        },
+                                         "display":  "ZAHRAH ABDULLAH ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "84b5e1d6-5c87-47a4-a75d-ee6afe5193a4"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73046\nPatient: ZAHRAH ABDULLAH ASEERY (MRN: 11978)\nVisit Date: 2025-12-12 00:00:00\nDiagnosis: M48.56-Collapsed vertebra, not elsewhere classified, lumbar region,R55-Syncope and collapse,M46.46-Unspecified discitis, lumbar region,R73-Elevated blood glucose level,E11.12-Type 2 diabetes mellitus \n\nMEDICATION NOT REGISTERED (11 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 82: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 79: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 76: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 72: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 453.75)\n  - Seq 48: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 453.75)\n  - Seq 45: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 36: 99999999999999 - SMOFKABIVEN CENTRAL LINE EXTRA NITROGEN 1518 ML BAG X 4 (SAR 442.1)\n  - Seq 67: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 61: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 57: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 453.75)\n  - Seq 53: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 453.75)\n\nTARIFF ADJUSTMENT (29 line(s), total difference: 0.29 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 80: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 77: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 74: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 70: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 47: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 44: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 42: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 39: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 37: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 34: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 32: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 28: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 27: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 25: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 23: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 20: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 19: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 9: MOHBPI1288 Claimed=31880.05 Approved=31880.04 Diff=0.01\n  - Seq 6: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 4: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 3: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 2: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 1: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 68: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 65: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 63: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 59: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 56: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 50: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nSTATUS NOTE (2 line(s)):\n  Administrative status has been reviewed and corrected as needed.\n  Request: Re-evaluate with updated status information.\n  - Seq 73: MOHS-B0679 - CONTINOUS ARTERIOVENOUS HAEMOFILTRATION 12 TO 24 HOURS PER SESSION (SAR 5141.61)\n  - Seq 55: MOHS-B0679 - CONTINOUS ARTERIOVENOUS HAEMOFILTRATION 12 TO 24 HOURS PER SESSION (SAR 5141.61)\n\nMISSING DOCUMENTS (1 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 41: MOHS-AD123 - CT THORAX WITHOUT CONTRAST T71250 (SAR 1732.23)\n\nCODE REFERENCE (1 line(s)):\n  The service codes used are valid per the NPHIES coding guidelines and\n  accurately reflect the services provided.\n  Request: Accept the coded services as documented.\n  - Seq 30: MOHS-B0065 - INSERTION, CENTRAL VENOUS LINE (SAR 1645.31)\n\n---\nTotal Claimed: 157329.98 SAR | Total Approved: 96412.45 SAR | Gap: 60917.53 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

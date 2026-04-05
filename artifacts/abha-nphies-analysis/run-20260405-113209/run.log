@@ -1,0 +1,12 @@
+Starting analysis
+[2026-04-05T11:32:10.5147890+03:00] Excel COM session opened
+[2026-04-05T11:32:45.4305700+03:00] Imported raw rows: 4968
+[2026-04-05T11:33:22.8316793+03:00] Imported validation rows: 4968
+[2026-04-05T11:33:24.2668945+03:00] Imported GSS rows: 328
+[2026-04-05T11:33:24.4317744+03:00] Excel COM session closed
+[2026-04-05T11:33:25.3544610+03:00] Loaded JSON artifacts
+[2026-04-05T11:33:46.6377349+03:00] Merged rows: 4968
+[2026-04-05T11:34:29.6353942+03:00] Filtered analysis rows: 4914
+[2026-04-05T11:34:29.6353942+03:00] Actionable payload rows: 4914
+[2026-04-05T11:34:29.6431702+03:00] Portal queue rows: 4613
+[2026-04-05T11:34:30.6394016+03:00] CSV exports written

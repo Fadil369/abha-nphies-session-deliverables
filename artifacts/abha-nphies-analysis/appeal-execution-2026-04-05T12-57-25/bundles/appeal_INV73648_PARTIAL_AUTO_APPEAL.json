@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73648-20260405125729",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22286"
+                                                        },
+                                         "display":  "SAAD MOHAMMED AL FHD"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "c80b0546-ffb7-4389-8fc4-e6acb431eded"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73648\nPatient: SAAD MOHAMMED AL FHD (MRN: 22286)\nVisit Date: 2026-01-14 00:00:00\nDiagnosis: T31.33-Burns involving 30-39% of body surface, with 30-39% full thickness burns,T21.29-Partial thickness [blisters, epidermal loss] burn of other sites of trunk\n\nTARIFF ADJUSTMENT (2 line(s), total difference: 0.02 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 19: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 18: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nMEDICAL NECESSITY (7 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: T31.33-Burns involving 30-39% of body surface, with 30-39% full thickness burns,T21.29-Partial thickness [blisters, epidermal loss] burn of other sites of trunk.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 14: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 328.9)\n  - Seq 12: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 328.9)\n  - Seq 9: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 164.45)\n  - Seq 7: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 328.9)\n  - Seq 5: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 164.45)\n  - Seq 4: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 328.9)\n  - Seq 2: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 328.9)\n\n---\nTotal Claimed: 54188.98 SAR | Total Approved: 4746.86 SAR | Gap: 49442.12 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

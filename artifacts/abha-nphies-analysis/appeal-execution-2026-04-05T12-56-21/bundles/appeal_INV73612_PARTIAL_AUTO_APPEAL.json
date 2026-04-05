@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73612-20260405125630",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "23337"
+                                                        },
+                                         "display":  "FATMA ALI AL MUBARK"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "27be3185-7246-4326-88ab-c91a0b7801b7"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73612\nPatient: FATMA ALI AL MUBARK (MRN: 23337)\nVisit Date: 2026-01-31 00:00:00\nDiagnosis: J20.8-Acute bronchitis due to other specified organisms\n\nMEDICATION NOT REGISTERED (1 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 13: 99999999999999 - ATROVENT 500MCG-2ML UDV (SOLUTION FOR INHALATION) / 0.25 mg/ml / 2ml x 20 (SAR 2.11)\n\nMISSING DOCUMENTS (1 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 10: MOHS-AB114 - SGOT/AST U84450 (SAR 96.92)\n\nTARIFF ADJUSTMENT (7 line(s), total difference: 0.07 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 7: MOHS-AB046 Claimed=98.19 Approved=98.18 Diff=0.01\n  - Seq 6: MOHS-AB193 Claimed=139 Approved=138.99 Diff=0.01\n  - Seq 5: MOHS-AB137 Claimed=214.24 Approved=214.23 Diff=0.01\n  - Seq 4: MOHS-AB120 Claimed=64.41 Approved=64.4 Diff=0.01\n  - Seq 3: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 2: MOHS-B0712 Claimed=58.28 Approved=58.27 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\n---\nTotal Claimed: 1414.34 SAR | Total Approved: 827.41 SAR | Gap: 586.93 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

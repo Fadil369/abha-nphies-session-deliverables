@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73182-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22483"
+                                                        },
+                                         "display":  "SERA SAEED AL SHAYEA"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "5f6df80a-f413-4f7c-9c68-b4fb0ec44a38"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73182\nPatient: SERA SAEED AL SHAYEA (MRN: 22483)\nVisit Date: 2026-01-19 00:00:00\nDiagnosis: I70.2-Atherosclerosis of arteries of extremities\n\nTARIFF ADJUSTMENT (6 line(s), total difference: 0.06 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 13: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 12: MOHS-BN02605 Claimed=9597.68 Approved=9597.67 Diff=0.01\n  - Seq 9: MOHS-B2503 Claimed=26050.84 Approved=26050.83 Diff=0.01\n  - Seq 8: MOHS-B2490 Claimed=9597.68 Approved=9597.67 Diff=0.01\n  - Seq 7: MOHS-B2471 Claimed=10283.23 Approved=10283.22 Diff=0.01\n  - Seq 3: MOHS-AD095 Claimed=1073 Approved=1072.99 Diff=0.01\n\nVITALLY STABLE NOTE (2 line(s)):\n  While the patient was vitally stable at time of service, the procedures/services\n  were required for ongoing treatment and cannot be deferred.\n  Request: Approve continued care services.\n  - Seq 11: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 6: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n\nMISSING DOCUMENTS (1 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 1: MOHS-BD367 - COLOUR DOPPLER CAROTID ARTERY (UNILATERAL) (SAR 822.66)\n\n---\nTotal Claimed: 94416.51 SAR | Total Approved: 58975.81 SAR | Gap: 35440.7 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

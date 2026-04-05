@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73568-20260405125631",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "21936"
+                                                        },
+                                         "display":  "ABDULAZIZ SOHAJ AL DAAJAN"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "e00a75fa-5131-491e-adbe-2be737e3d033"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73568\nPatient: ABDULAZIZ SOHAJ AL DAAJAN (MRN: 21936)\nVisit Date: 2026-01-06 00:00:00\nDiagnosis: V89-Motor- or nonmotor-vehicle accident, type of vehicle unspecified\n\nMEDICATION NOT REGISTERED (1 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 13: 99999999999999 - DIVIDO 75MG DUAL RELEASE CAP / 75 mg / Capsule x 20 (SAR 30.65)\n\nTARIFF ADJUSTMENT (8 line(s), total difference: 0.08 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 12: MOHS-BD314 Claimed=401.05 Approved=401.04 Diff=0.01\n  - Seq 10: MOHS-BD246 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 9: MOHS-AD002 Claimed=167.05 Approved=167.04 Diff=0.01\n  - Seq 8: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 7: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 5: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 3: MOHS-AB193 Claimed=139 Approved=138.99 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\n---\nTotal Claimed: 8424.29 SAR | Total Approved: 6284.13 SAR | Gap: 2140.16 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:56:31Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

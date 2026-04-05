@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73595-20260405125729",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22923"
+                                                        },
+                                         "display":  "AHMED MOHAMMED ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "6add2eb7-0b06-474f-9bf2-bc319554e452"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73595\nPatient: AHMED MOHAMMED ASEERY (MRN: 22923)\nVisit Date: 2026-01-23 00:00:00\nDiagnosis: M54.4-Lumbago with sciatica\n\nMEDICATION NOT REGISTERED (3 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 17: 99999999999999 - PANTROX 40MG I.V POWDER FOR INJECTION / 40 MG / POWDER FOR SOLUTION FOR INJECTIO (SAR 22.9)\n  - Seq 14: 99999999999999 - AMBAFEN 4 mg/ml solution for infusion / 4 mg/ml / 100ml x 1 (SAR 33)\n  - Seq 13: 99999999999999 - AMBAFEN 4 mg/ml solution for infusion / 4 mg/ml / 100ml x 1 (SAR 33)\n\nTARIFF ADJUSTMENT (7 line(s), total difference: 0.07 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 9: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 8: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 6: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 5: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 4: MOHS-B0765 Claimed=17.14 Approved=17.13 Diff=0.01\n  - Seq 3: MOHS-B0731 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\nMISSING DOCUMENTS (1 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 7: MOHS-AD126 - CT PELVIS T72192 (SAR 1732.23)\n\n---\nTotal Claimed: 8413.71 SAR | Total Approved: 6277.3 SAR | Gap: 2136.41 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}
