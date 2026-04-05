@@ -1,0 +1,13 @@
+{
+  "name": "abha-nphies-session-deliverables",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Packaged Abha NPHIES analysis deliverables from the April 5, 2026 session.",
+  "scripts": {
+    "analyze": "node scripts/analyze-abha-nphies.mjs"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
