@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73598-20260405125729",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "23013"
+                                                        },
+                                         "display":  "SAAD AIED AL TOMAN"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "2e57f9a2-d69e-4a6c-ab2a-222fa969beb4"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73598\nPatient: SAAD AIED AL TOMAN (MRN: 23013)\nVisit Date: 2026-01-25 00:00:00\nDiagnosis: T79.8-Other early complications of trauma\n\nTARIFF ADJUSTMENT (15 line(s), total difference: 0.15 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 22: MOHS-AD002 Claimed=167.05 Approved=167.04 Diff=0.01\n  - Seq 21: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 20: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 19: MOHS-AD128 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 18: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 17: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 15: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 11: MOHS-AB046 Claimed=98.19 Approved=98.18 Diff=0.01\n  - Seq 9: MOHS-AB193 Claimed=139 Approved=138.99 Diff=0.01\n  - Seq 7: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 6: MOHS-A0697 Claimed=57.39 Approved=57.38 Diff=0.01\n  - Seq 5: MOHS-B0765 Claimed=17.14 Approved=17.13 Diff=0.01\n  - Seq 4: MOHS-B0764 Claimed=10.29 Approved=10.28 Diff=0.01\n  - Seq 3: MOHS-B0731 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\nMISSING DOCUMENTS (1 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 10: MOHS-BB404 - COAGULATION PROFILE COMPLETE (PT, PTT, CT) (SAR 582.71)\n\nMEDICATION NOT REGISTERED (2 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 30: 99999999999999 - EMEDAN 4 MG / 2 ML / 2 MG/ML / SOLUTION FOR INJECTION X 5 (SAR 11.22)\n  - Seq 29: 99999999999999 - PANTROX 40MG I.V POWDER FOR INJECTION / 40 MG / POWDER FOR SOLUTION FOR INJECTIO (SAR 45.8)\n\n---\nTotal Claimed: 14668.07 SAR | Total Approved: 11296.99 SAR | Gap: 3371.08 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

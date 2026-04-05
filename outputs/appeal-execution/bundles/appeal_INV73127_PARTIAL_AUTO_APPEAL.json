@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73127-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "21747"
+                                                        },
+                                         "display":  "MOHAMMED ALI AL SHIHRI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "c08b02dc-7d98-4ea4-9721-21cc742e48cd"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73127\nPatient: MOHAMMED ALI AL SHIHRI (MRN: 21747)\nVisit Date: 2026-01-04 00:00:00\nDiagnosis: V89.0-Person injured in unspecified motor-vehicle accident, nontraffic\n\nSTATUS NOTE (1 line(s)):\n  Administrative status has been reviewed and corrected as needed.\n  Request: Re-evaluate with updated status information.\n  - Seq 10: MOHS-BD400 - MRI (SAR 2056.65)\n\nTARIFF ADJUSTMENT (7 line(s), total difference: 0.07 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 8: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 7: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 6: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 5: MOHS-AD128 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 4: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 3: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 1: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\n---\nTotal Claimed: 17769.08 SAR | Total Approved: 12790.97 SAR | Gap: 4978.11 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

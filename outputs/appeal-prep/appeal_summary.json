@@ -1,0 +1,190 @@
+﻿{
+    "deniedPartialRows":  4914,
+    "approvedRows":  54,
+    "generatedAt":  "2026-04-05T12:43:35.5072434+03:00",
+    "totalRows":  4968,
+    "denialCategories":  [
+                             {
+                                 "auto":  "YES",
+                                 "claims":  289,
+                                 "totalApproved":  3597917.23,
+                                 "category":  "TARIFF_ADJUSTMENT",
+                                 "appealType":  "Contractual",
+                                 "priority":  "High",
+                                 "lines":  1825,
+                                 "totalClaimed":  3598748.37
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  62,
+                                 "totalApproved":  0,
+                                 "category":  "MEDICATION_NOT_REGISTERED",
+                                 "appealType":  "Clinical + Regulatory",
+                                 "priority":  "Medium",
+                                 "lines":  317,
+                                 "totalClaimed":  255344.6
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  20,
+                                 "totalApproved":  0,
+                                 "category":  "MEDICAL_NECESSITY",
+                                 "appealType":  "Clinical",
+                                 "priority":  "Medium",
+                                 "lines":  101,
+                                 "totalClaimed":  51589.04
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  47,
+                                 "totalApproved":  0,
+                                 "category":  "MISSING_DOCUMENTS",
+                                 "appealType":  "Documentation",
+                                 "priority":  "High",
+                                 "lines":  62,
+                                 "totalClaimed":  54379.8
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  4,
+                                 "totalApproved":  274.22,
+                                 "category":  "ADMISSION_APPROVAL",
+                                 "appealType":  "Administrative",
+                                 "priority":  "Medium",
+                                 "lines":  60,
+                                 "totalClaimed":  8139.43
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  22,
+                                 "totalApproved":  0,
+                                 "category":  "VITALLY_STABLE_NOTE",
+                                 "appealType":  "Clinical Review",
+                                 "priority":  "Low",
+                                 "lines":  42,
+                                 "totalClaimed":  199368.54
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  21,
+                                 "totalApproved":  23734.3,
+                                 "category":  "QUANTITY_EXCEEDED",
+                                 "appealType":  "Clinical",
+                                 "priority":  "Medium",
+                                 "lines":  25,
+                                 "totalClaimed":  42079.27
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  15,
+                                 "totalApproved":  0,
+                                 "category":  "STATUS_NOTE",
+                                 "appealType":  "Administrative",
+                                 "priority":  "Low",
+                                 "lines":  24,
+                                 "totalClaimed":  55639.93
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  17,
+                                 "totalApproved":  0,
+                                 "category":  "CODE_REFERENCE",
+                                 "appealType":  "Review",
+                                 "priority":  "Low",
+                                 "lines":  19,
+                                 "totalClaimed":  163907.51
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  14,
+                                 "totalApproved":  0,
+                                 "category":  "ROOM_BOARD_INCLUSION",
+                                 "appealType":  "Contractual",
+                                 "priority":  "Low",
+                                 "lines":  16,
+                                 "totalClaimed":  30723.31
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  11,
+                                 "totalApproved":  0,
+                                 "category":  "PACKAGE_INCLUSION",
+                                 "appealType":  "Contractual",
+                                 "priority":  "Low",
+                                 "lines":  15,
+                                 "totalClaimed":  60338.42
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  null,
+                                 "totalApproved":  0,
+                                 "category":  "NOT_IN_MV",
+                                 "appealType":  "Administrative",
+                                 "priority":  "Medium",
+                                 "lines":  13,
+                                 "totalClaimed":  33218.9
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  6,
+                                 "totalApproved":  0,
+                                 "category":  "OTHER",
+                                 "appealType":  "Manual Review",
+                                 "priority":  "Medium",
+                                 "lines":  12,
+                                 "totalClaimed":  117275.27
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  8,
+                                 "totalApproved":  0,
+                                 "category":  "PROCEDURE_NOT_DONE",
+                                 "appealType":  "Clinical",
+                                 "priority":  "High",
+                                 "lines":  9,
+                                 "totalClaimed":  32933.1
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  6,
+                                 "totalApproved":  0,
+                                 "category":  "DISCHARGE_INCOMPATIBLE",
+                                 "appealType":  "Clinical",
+                                 "priority":  "Medium",
+                                 "lines":  6,
+                                 "totalClaimed":  17954.5
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  4,
+                                 "totalApproved":  0,
+                                 "category":  "PRIOR_AUTH_MISSING",
+                                 "appealType":  "Administrative",
+                                 "priority":  "High",
+                                 "lines":  4,
+                                 "totalClaimed":  2990.45
+                             },
+                             {
+                                 "auto":  "NO",
+                                 "claims":  null,
+                                 "totalApproved":  6376,
+                                 "category":  "MULTIPLE_PROCEDURE_RULES",
+                                 "appealType":  "Contractual",
+                                 "priority":  "Medium",
+                                 "lines":  1,
+                                 "totalClaimed":  12752.01
+                             }
+                         ],
+    "appealReadiness":  [
+                            {
+                                "READY_AUTO_APPEAL":  139
+                            },
+                            {
+                                "PARTIAL_AUTO_APPEAL":  150
+                            },
+                            {
+                                "MANUAL_REVIEW":  18
+                            }
+                        ],
+    "uniqueClaims":  307
+}

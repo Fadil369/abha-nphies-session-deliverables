@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73567-20260405125728",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "21905"
+                                                        },
+                                         "display":  "ABD AL JAFAR -"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "e6c6bd1b-fd8f-4662-b25e-e290b15b4384"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73567\nPatient: ABD AL JAFAR - (MRN: 21905)\nVisit Date: 2026-01-06 00:00:00\nDiagnosis: T79-Certain early complications of trauma, not elsewhere classified\n\nTARIFF ADJUSTMENT (6 line(s), total difference: 0.06 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 11: MOHS-B0765 Claimed=17.14 Approved=17.13 Diff=0.01\n  - Seq 10: MOHS-B0731 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 7: MOHS-BD314 Claimed=401.05 Approved=401.04 Diff=0.01\n  - Seq 3: MOHS-AD002 Claimed=167.05 Approved=167.04 Diff=0.01\n  - Seq 2: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\n---\nTotal Claimed: 2266.97 SAR | Total Approved: 975.66 SAR | Gap: 1291.31 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:28Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

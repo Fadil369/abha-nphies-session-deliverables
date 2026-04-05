@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73242-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22978"
+                                                        },
+                                         "display":  "NALAH MOHAMMED ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "61e4b719-5052-4b8b-aa57-a59fad7232be"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73242\nPatient: NALAH MOHAMMED ASEERY (MRN: 22978)\nVisit Date: 2026-01-24 00:00:00\nDiagnosis: O30.0-Twin pregnancy,O60-Preterm delivery,O09.4-Duration of pregnancy 26-33 completed weeks\n\nTARIFF ADJUSTMENT (3 line(s), total difference: 0.03 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 5: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 4: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 1: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nCODE REFERENCE (1 line(s)):\n  The service codes used are valid per the NPHIES coding guidelines and\n  accurately reflect the services provided.\n  Request: Accept the coded services as documented.\n  - Seq 2: MOHS-B1530 - CAESARIAN DELIVERY FOR TWINS (UNCOMPLICATED) (SAR 7712.42)\n\n---\nTotal Claimed: 15861.06 SAR | Total Approved: 7120.29 SAR | Gap: 8740.77 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73454-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "19768"
+                                                        },
+                                         "display":  "BADER AHMED SHAGRE"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "a003d79a-3d24-4185-8073-6e2ac64e7834"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73454\nPatient: BADER AHMED SHAGRE (MRN: 19768)\nVisit Date: 2025-11-28 00:00:00\nDiagnosis: S82.2-Fracture of shaft of tibia\n\nTARIFF ADJUSTMENT (14 line(s), total difference: 0.14 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 16: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 15: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 14: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHS-B2049 Claimed=4284.68 Approved=4284.67 Diff=0.01\n  - Seq 9: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 8: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 7: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 6: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 5: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 4: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 3: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 2: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 1: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nROOM \u0026 BOARD INCLUSION (1 line(s)):\n  The services below are distinct from room and board charges and should\n  be billed separately per the agreed contract terms.\n  Request: Unbundle and approve as separate line items.\n  - Seq 12: MOHS-B2026 - WOUND TOILET - DEBRIDMENT (SAR 5570.07)\n\n---\nTotal Claimed: 46279.54 SAR | Total Approved: 35139.26 SAR | Gap: 11140.28 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

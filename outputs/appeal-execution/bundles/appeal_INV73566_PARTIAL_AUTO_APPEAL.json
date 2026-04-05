@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73566-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "21876"
+                                                        },
+                                         "display":  "SEHAM GHAIB AL MATER"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "2c54871c-005a-4fa1-adc0-0ac6472ab4bd"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73566\nPatient: SEHAM GHAIB AL MATER (MRN: 21876)\nVisit Date: 2026-01-06 00:00:00\nDiagnosis: T79-Certain early complications of trauma, not elsewhere classified\n\nMEDICATION NOT REGISTERED (1 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 11: 99999999999999 - COMPOUND SODIUM LACTATE  INF.  / Solution for Injection / 500ml x 1 (SAR 7.7)\n\nTARIFF ADJUSTMENT (7 line(s), total difference: 0.07 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 9: MOHS-AD002 Claimed=167.05 Approved=167.04 Diff=0.01\n  - Seq 8: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 7: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 6: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 3: MOHS-AB193 Claimed=139 Approved=138.99 Diff=0.01\n  - Seq 2: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\n---\nTotal Claimed: 6200.13 SAR | Total Approved: 5780.25 SAR | Gap: 419.88 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

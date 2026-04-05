@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73185-20260405125728",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22501"
+                                                        },
+                                         "display":  "TURKE SULTAN AL SHIHRI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "9acf5c9a-6d04-45c7-ae89-413d8fd06fb5"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73185\nPatient: TURKE SULTAN AL SHIHRI (MRN: 22501)\nVisit Date: 2026-01-17 00:00:00\nDiagnosis: P36.9-Bacterial sepsis of newborn, unspecified,Q43.1-Hirschsprung\u0027s disease,Z38.1-Singleton, born outside hospital\n\nTARIFF ADJUSTMENT (3 line(s), total difference: 0.03 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 11: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n  - Seq 10: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n  - Seq 9: MOHAPS2537 Claimed=4403.28 Approved=4403.27 Diff=0.01\n\n---\nTotal Claimed: 50863.21 SAR | Total Approved: 13209.81 SAR | Gap: 37653.4 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:28Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

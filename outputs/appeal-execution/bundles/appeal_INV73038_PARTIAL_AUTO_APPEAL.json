@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73038-20260405125729",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "5501"
+                                                        },
+                                         "display":  "AHMED ABDULLAH ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "bdf13f4b-c3b6-49f4-9270-7e5b4fdca6fa"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73038\nPatient: AHMED ABDULLAH ASEERY (MRN: 5501)\nVisit Date: 2026-01-11 00:00:00\nDiagnosis: E11.12-Type 2 diabetes mellitus with ketoacidosis, with coma\n\nTARIFF ADJUSTMENT (4 line(s), total difference: 0.04 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 21: MOHS-B0736 Claimed=274.22 Approved=274.21 Diff=0.01\n  - Seq 12: MOHS-AD097 Claimed=1073 Approved=1072.99 Diff=0.01\n  - Seq 5: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n  - Seq 2: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n\nMISSING DOCUMENTS (1 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 7: MOHS-BD400 - MRI (SAR 2056.65)\n\n---\nTotal Claimed: 76894.74 SAR | Total Approved: 5460.48 SAR | Gap: 71434.26 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

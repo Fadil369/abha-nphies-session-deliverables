@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73571-20260405125729",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "21951"
+                                                        },
+                                         "display":  "SALEH MDEES ALZHRANY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "a0af72c6-a3cc-46f9-b635-7f0a50894154"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73571\nPatient: SALEH MDEES ALZHRANY (MRN: 21951)\nVisit Date: 2026-01-07 00:00:00\nDiagnosis: R42-Dizziness and giddiness\n\nMEDICATION NOT REGISTERED (1 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 21: 99999999999999 - PANTROX 40MG I.V POWDER FOR INJECTION / 40 MG / POWDER FOR SOLUTION FOR INJECTIO (SAR 22.9)\n\nTARIFF ADJUSTMENT (11 line(s), total difference: 0.11 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 19: MOHS-AD002 Claimed=167.05 Approved=167.04 Diff=0.01\n  - Seq 18: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 17: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 10: MOHS-AB046 Claimed=98.19 Approved=98.18 Diff=0.01\n  - Seq 9: MOHS-AB045 Claimed=204.02 Approved=204.01 Diff=0.01\n  - Seq 7: MOHS-AB193 Claimed=139 Approved=138.99 Diff=0.01\n  - Seq 6: MOHS-AB137 Claimed=214.24 Approved=214.23 Diff=0.01\n  - Seq 5: MOHS-B0707 Claimed=34.28 Approved=34.27 Diff=0.01\n  - Seq 4: MOHS-B0765 Claimed=17.14 Approved=17.13 Diff=0.01\n  - Seq 3: MOHS-B0731 Claimed=137.12 Approved=137.11 Diff=0.01\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\nMISSING DOCUMENTS (1 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 14: MOHS-AB148 - LFT (C BIL,U BIL,PROT,ALB,SGOT,SGPT,ALKP) U80058 (SAR 679.68)\n\n---\nTotal Claimed: 7934.71 SAR | Total Approved: 4718.69 SAR | Gap: 3216.02 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

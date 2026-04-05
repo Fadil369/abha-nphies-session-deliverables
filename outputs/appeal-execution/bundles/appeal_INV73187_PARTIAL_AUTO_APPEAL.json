@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73187-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22505"
+                                                        },
+                                         "display":  "AEID MUNAHE AL SHRANE"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "a2b5d1fc-f03d-4222-a488-59a7ed914b16"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73187\nPatient: AEID MUNAHE AL SHRANE (MRN: 22505)\nVisit Date: 2026-01-18 00:00:00\nDiagnosis: S32.1-Fracture of sacrum,S22.3-Fracture of rib,S32.04-Fracture of lumbar vertebra, L4 level\n\nTARIFF ADJUSTMENT (9 line(s), total difference: 0.09 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 13: MOHS-B1309 Claimed=15767.61 Approved=15767.6 Diff=0.01\n  - Seq 12: MOHAPI1278 Claimed=46289.82 Approved=46289.81 Diff=0.01\n  - Seq 9: MOHS-BD343 Claimed=548.44 Approved=548.43 Diff=0.01\n  - Seq 8: MOHS-AD126 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 6: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 5: MOHS-AD125 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 4: MOHS-AD128 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 3: MOHS-AD129 Claimed=1756.45 Approved=1756.44 Diff=0.01\n  - Seq 1: MOHS-AD124 Claimed=1732.23 Approved=1732.22 Diff=0.01\n\nPACKAGE INCLUSION (1 line(s)):\n  These services exceed the scope of the package and were provided as additional\n  necessary care beyond the standard package components.\n  Request: Approve as supplementary charges outside package scope.\n  - Seq 11: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n\nVITALLY STABLE NOTE (1 line(s)):\n  While the patient was vitally stable at time of service, the procedures/services\n  were required for ongoing treatment and cannot be deferred.\n  Request: Approve continued care services.\n  - Seq 10: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n\n---\nTotal Claimed: 94521.55 SAR | Total Approved: 73023.38 SAR | Gap: 21498.17 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

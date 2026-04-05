@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73450-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "16535"
+                                                        },
+                                         "display":  "AMNA AIED ALAHMARI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "9204bfd0-603f-48a7-898a-45ae7a4b54b3"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73450\nPatient: AMNA AIED ALAHMARI (MRN: 16535)\nVisit Date: 2025-10-12 00:00:00\nDiagnosis: J15-Bacterial pneumonia, not elsewhere classified\n\nSTATUS NOTE (7 line(s)):\n  Administrative status has been reviewed and corrected as needed.\n  Request: Re-evaluate with updated status information.\n  - Seq 63: 96677000005560 - Megmento (SAR 364)\n  - Seq 61: 96677000005560 - Megmento (SAR 364)\n  - Seq 55: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 52: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 49: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 46: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 43: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n\nPACKAGE INCLUSION (2 line(s)):\n  These services exceed the scope of the package and were provided as additional\n  necessary care beyond the standard package components.\n  Request: Approve as supplementary charges outside package scope.\n  - Seq 62: MOHAPD2646 - LTC, PT WITH NURSING CARE - MD\u0027S SUPERVISION,ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2373.44)\n  - Seq 60: MOHAPD2646 - LTC, PT WITH NURSING CARE - MD\u0027S SUPERVISION,ADULT AND PEDIA EXCLUSION AS AGREED (SAR 2373.44)\n\nTARIFF ADJUSTMENT (30 line(s), total difference: 0.3 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 58: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 56: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 53: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 50: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 47: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 44: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 42: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 39: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 37: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 36: MOHS-AD123 Claimed=1732.23 Approved=1732.22 Diff=0.01\n  - Seq 34: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 30: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 28: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 26: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 24: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 22: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 20: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 16: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 10: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 9: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 8: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 7: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 6: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 5: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 4: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 3: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 2: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 1: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nMEDICATION NOT REGISTERED (13 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 41: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 38: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 35: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 31: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 29: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 27: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 25: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 23: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 21: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 19: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 17: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 14: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1011.25)\n  - Seq 12: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 103.75)\n\n---\nTotal Claimed: 103069.58 SAR | Total Approved: 70561.69 SAR | Gap: 32507.89 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

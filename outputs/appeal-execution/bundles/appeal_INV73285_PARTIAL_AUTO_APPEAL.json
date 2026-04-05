@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73285-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "18367"
+                                                        },
+                                         "display":  "HESSA MOHAMMED -"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "9028c2c6-2250-429c-8179-b5353888521e"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73285\nPatient: HESSA MOHAMMED - (MRN: 18367)\nVisit Date: 2025-11-05 00:00:00\nDiagnosis: R56-Convulsions, not elsewhere classified\n\nMEDICAL NECESSITY (14 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: R56-Convulsions, not elsewhere classified.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 52: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 164.45)\n  - Seq 49: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 45: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 43: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 41: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 38: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 36: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 34: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 32: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 30: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 28: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 26: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 24: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n  - Seq 22: 05999057200363 - HUMAN ALBUMIN 20% SOLUTION FOR INFUSION (SAR 493.35)\n\nQUANTITY EXCEEDED (1 line(s)):\n  The quantities billed reflect the actual services provided based on clinical need.\n  Extended treatment was required due to patient condition complexity.\n  Request: Review and approve the actual quantities administered.\n  - Seq 10: MOHAPSB001 Qty=1 (SAR 347.78)\n\nCODE REFERENCE (1 line(s)):\n  The service codes used are valid per the NPHIES coding guidelines and\n  accurately reflect the services provided.\n  Request: Accept the coded services as documented.\n  - Seq 6: MOHS-B0065 - INSERTION, CENTRAL VENOUS LINE (SAR 1645.31)\n\nTARIFF ADJUSTMENT (1 line(s), total difference: 0.01 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 3: MOHS-BD370 Claimed=822.66 Approved=822.65 Diff=0.01\n\n---\nTotal Claimed: 93069.98 SAR | Total Approved: 822.65 SAR | Gap: 92247.33 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

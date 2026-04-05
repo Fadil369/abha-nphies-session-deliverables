@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73584-20260405125729",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22455"
+                                                        },
+                                         "display":  "ABDULLAH MUSA -"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "db5ffacf-3ebc-40df-8cd5-b32d8a6dd594"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73584\nPatient: ABDULLAH MUSA - (MRN: 22455)\nVisit Date: 2026-01-17 00:00:00\nDiagnosis: I46.9-Cardiac arrest, unspecified\n\nTARIFF ADJUSTMENT (7 line(s), total difference: 107.24 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 17: 06285147802975 Claimed=80 Approved=8 Diff=72\n  - Seq 10: MOHS-B0723 Claimed=377.06 Approved=377.05 Diff=0.01\n  - Seq 9: MOHS-B0765 Claimed=68.56 Approved=68.52 Diff=0.04\n  - Seq 6: MOHS-B0743 Claimed=548.44 Approved=548.43 Diff=0.01\n  - Seq 4: MOHS-B0709 Claimed=308.5 Approved=308.49 Diff=0.01\n  - Seq 3: 90660-00-00 Claimed=90 Approved=54.84 Diff=35.16\n  - Seq 1: MOHS-BN011 Claimed=219.08 Approved=219.07 Diff=0.01\n\nPRIOR AUTHORIZATION (1 line(s)):\n  Services were provided on an emergency/urgent basis where prior authorization\n  could not be obtained in advance. Retroactive authorization is requested.\n  Request: Grant retroactive authorization based on clinical urgency.\n  - Seq 11: MOHS-B0730 - MORTUARY RENT PER DAY (SAR 205.67)\n\nQUANTITY EXCEEDED (2 line(s)):\n  The quantities billed reflect the actual services provided based on clinical need.\n  Extended treatment was required due to patient condition complexity.\n  Request: Review and approve the actual quantities administered.\n  - Seq 7: MOHS-B0719 Qty=1 (SAR 548.44)\n  - Seq 5: MOHS-B0758 Qty=1 (SAR 342.77)\n\n---\nTotal Claimed: 3519.89 SAR | Total Approved: 1584.4 SAR | Gap: 1935.49 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:29Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73448-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "13108"
+                                                        },
+                                         "display":  "SAAD MUBARAK ASEERY"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "f66293cc-0a1c-4226-bbdf-c7eba7afb2e3"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73448\nPatient: SAAD MUBARAK ASEERY (MRN: 13108)\nVisit Date: 2025-08-20 00:00:00\nDiagnosis: G40-Epilepsy,L02.4-Cutaneous abscess, furuncle and carbuncle of limb\n\nTARIFF ADJUSTMENT (31 line(s), total difference: 0.31 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 41: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 40: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 39: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 38: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 37: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 36: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 35: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 34: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 33: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 32: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 31: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 30: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 29: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 28: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 27: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 26: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 25: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 24: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 23: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 22: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 21: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 19: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 17: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 15: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 13: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 11: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 9: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 7: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 5: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 3: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 1: MOHAPD2646 Claimed=2373.44 Approved=2373.43 Diff=0.01\n\nMEDICATION NOT REGISTERED (10 line(s)):\n  The medications listed below were clinically necessary for patient care.\n  These medications are approved by SFDA and were administered under physician\n  supervision based on established clinical protocols.\n  Request: Review and approve based on clinical necessity and SFDA registration status.\n  - Seq 20: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 18: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 16: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 14: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 12: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 10: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 8: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 6: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 4: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n  - Seq 2: 99999999999999 - ZAVICEFTA 2 G/0.5 G VIAL (SAR 1361.25)\n\n---\nTotal Claimed: 87189.14 SAR | Total Approved: 73576.33 SAR | Gap: 13612.81 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

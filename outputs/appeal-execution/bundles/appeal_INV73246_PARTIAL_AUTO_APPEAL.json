@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73246-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "23068"
+                                                        },
+                                         "display":  "HADYAH AHMED AL JAAFARI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "3e492539-a33a-4a4e-a012-607165ecc000"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73246\nPatient: HADYAH AHMED AL JAAFARI (MRN: 23068)\nVisit Date: 2026-01-26 00:00:00\nDiagnosis: G50.1-Atypical facial pain\n\nTARIFF ADJUSTMENT (3 line(s), total difference: 0.03 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 7: MOHAPD2649 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 2: MOHS-BD389 Claimed=1371.1 Approved=1371.09 Diff=0.01\n  - Seq 1: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n\nMISSING DOCUMENTS (1 line(s)):\n  Required documentation has been compiled and is attached/available.\n  Request: Re-evaluate with the provided documentation.\n  - Seq 5: MOHS-BD384 - COLOUR DOPPLER CAROTID ARTERY (BILATERAL) (SAR 1233.99)\n\n---\nTotal Claimed: 17762.91 SAR | Total Approved: 5801.16 SAR | Gap: 11961.75 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73238-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "22948"
+                                                        },
+                                         "display":  "AMIR AL FADIL BABAKER"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "823d107b-6a3e-4987-821f-42b6aee3c1fa"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "re-adjudication"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73238\nPatient: AMIR AL FADIL BABAKER (MRN: 22948)\nVisit Date: 2026-01-24 00:00:00\nDiagnosis: K92.2-Gastrointestinal haemorrhage, unspecified\n\nTARIFF ADJUSTMENT (2 line(s), total difference: 0.02 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 7: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 5: MOHAPO1154 Claimed=2148.72 Approved=2148.71 Diff=0.01\n\nVITALLY STABLE NOTE (2 line(s)):\n  While the patient was vitally stable at time of service, the procedures/services\n  were required for ongoing treatment and cannot be deferred.\n  Request: Approve continued care services.\n  - Seq 6: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n  - Seq 4: MOHAPD2541 - ICU SERVICES ADULT/PEDIATRIC. ACCOMODATION SERVICE (SAR 4746.87)\n\n---\nTotal Claimed: 28256.51 SAR | Total Approved: 4522.14 SAR | Gap: 23734.37 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}

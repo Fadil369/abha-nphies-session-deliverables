@@ -1,0 +1,67 @@
+﻿{
+    "facility_id":  1,
+    "fhir_payload":  {
+                         "resourceType":  "CommunicationRequest",
+                         "id":  "appeal-73021-20260405125730",
+                         "status":  "active",
+                         "category":  [
+                                          {
+                                              "coding":  [
+                                                             {
+                                                                 "system":  "http://nphies.sa/terminology/CodeSystem/communication-category",
+                                                                 "code":  "re-adjudication",
+                                                                 "display":  "Re-Adjudication Request"
+                                                             }
+                                                         ]
+                                          }
+                                      ],
+                         "priority":  "routine",
+                         "subject":  {
+                                         "identifier":  {
+                                                            "system":  "http://nphies.sa/identifier/patient",
+                                                            "value":  "2046"
+                                                        },
+                                         "display":  "LAMYAA ALI AL DOSSARI"
+                                     },
+                         "about":  [
+                                       {
+                                           "type":  "Claim",
+                                           "identifier":  {
+                                                              "system":  "http://nphies.sa/identifier/claim",
+                                                              "value":  "0cac0e85-d4d1-4868-8ecf-160ffcacf75b"
+                                                          }
+                                       }
+                                   ],
+                         "sender":  {
+                                        "type":  "Organization",
+                                        "identifier":  {
+                                                           "system":  "http://nphies.sa/identifier/chi-license",
+                                                           "value":  "HNH-ABHA-001"
+                                                       },
+                                        "display":  "Hayat National Hospital-ABHA"
+                                    },
+                         "recipient":  [
+                                           {
+                                               "type":  "Organization",
+                                               "identifier":  {
+                                                                  "system":  "http://nphies.sa/identifier/payer",
+                                                                  "value":  "MOH-187"
+                                                              },
+                                               "display":  "MINISTRY OF HEALTH"
+                                           }
+                                       ],
+                         "reasonCode":  [
+                                            {
+                                                "text":  "supporting-info"
+                                            }
+                                        ],
+                         "payload":  [
+                                         {
+                                             "contentString":  "Re-adjudication Request for Claim Invoice 73021\nPatient: LAMYAA ALI AL DOSSARI (MRN: 2046)\nVisit Date: 2026-01-29 00:00:00\nDiagnosis: R26-Abnormalities of gait and mobility\n\nTARIFF ADJUSTMENT (3 line(s), total difference: 0.03 SAR):\n  The rejected amounts represent rounding differences of 0.01 SAR per line item.\n  Per the agreed tariff schedule between Hayat National Hospital-ABHA and\n  Ministry of Health, these amounts are within the contractual tolerance.\n  Request: Accept the claimed amounts as per the agreed tariff rates.\n  - Seq 5: MOHAPD2650 Claimed=2373.44 Approved=2373.43 Diff=0.01\n  - Seq 4: MOHS-BD403 Claimed=2330.87 Approved=2330.86 Diff=0.01\n  - Seq 2: MOHS-BD400 Claimed=2056.65 Approved=2056.64 Diff=0.01\n\nMEDICAL NECESSITY (1 line(s)):\n  The services below were medically necessary based on patient condition\n  and diagnosis: R26-Abnormalities of gait and mobility.\n  Supporting clinical documentation is available upon request.\n  Request: Approve based on the documented clinical indication.\n  - Seq 3: MOHS-BD389 - MRI ADDITIONAL ORGAN (SAR 1371.1)\n\n---\nTotal Claimed: 9819.46 SAR | Total Approved: 6760.93 SAR | Gap: 3058.53 SAR\nProvider: Hayat National Hospital-ABHA\nPolicy Holder: MINISTRY OF HEALTH CASES"
+                                         }
+                                     ],
+                         "authoredOn":  "2026-04-05T09:57:30Z"
+                     },
+    "signature":  "",
+    "resource_type":  "CommunicationRequest"
+}
