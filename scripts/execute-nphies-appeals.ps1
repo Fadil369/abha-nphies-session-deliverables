@@ -63,14 +63,14 @@ $script:ProjectRoot = Split-Path -Parent $script:ScriptRoot
 # CONFIGURATION
 # ============================================================
 
-# Provider / Payer identifiers for ABHA MOH claims
+# Provider / Payer identifiers for Al-Rajhi Riyadh claims
 $Config = @{
-    ProviderName       = "Hayat National Hospital-ABHA"
+    ProviderName       = "Al-Hayat National Hospital"
     ProviderSystem     = "http://nphies.sa/identifier/chi-license"
-    ProviderCode       = "HNH-ABHA-001"
-    PayerName          = "MINISTRY OF HEALTH"
+    ProviderCode       = "10000000000988"
+    PayerName          = "Al-Rajhi Company for Cooperative Insurance"
     PayerSystem        = "http://nphies.sa/identifier/payer"
-    PayerCode          = "MOH-187"
+    PayerCode          = "7001593321"
     NphiesBaseUrl      = "https://nphies.sa/api/v1"
     ReasonCodeDefault  = "re-adjudication"
     ResourceType       = "CommunicationRequest"  # Active request for re-adjudication
@@ -192,8 +192,8 @@ function Build-AppealMessage {
 
                 $messageParts += "TARIFF ADJUSTMENT ($lineCount line(s), total difference: $([math]::Round($totalDiff, 2)) SAR):"
                 $messageParts += "  The rejected amounts represent rounding differences of 0.01 SAR per line item."
-                $messageParts += "  Per the agreed tariff schedule between Hayat National Hospital-ABHA and"
-                $messageParts += "  Ministry of Health, these amounts are within the contractual tolerance."
+                $messageParts += "  Per the agreed tariff schedule between $($Config.ProviderName) and"
+                $messageParts += "  $($Config.PayerName), these amounts are within the contractual tolerance."
                 $messageParts += "  Request: Accept the claimed amounts as per the agreed tariff rates."
                 foreach ($l in $catLines) {
                     $messageParts += "  - Seq $($l.SequenceNo): $($l.ServiceCode) Claimed=$($l.NetAmount) Approved=$($l.ApprovedAmount) Diff=$($l.Difference)"
