@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-463bc3d2-9bf3-4380-87a6-f859c0d75e2c-20260406082501",
+    "id": "appeal-6630474-20260406083844",
     "status": "active",
     "category": [
       {
@@ -29,6 +29,13 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "463bc3d2-9bf3-4380-87a6-f859c0d75e2c"
+        }
+      },
+      {
+        "type": "Claim",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/transaction",
+          "value": "6630474"
         }
       }
     ],
@@ -57,16 +64,23 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "MN-1-1"
           }
-        ],
-        "text": "re-adjudication"
+        ]
+      },
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
+            "code": "BE-1-4"
+          }
+        ]
       }
     ],
     "payload": [
       {
-        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 463bc3d2-9bf3-4380-87a6-f859c0d75e2c\nTransaction ID: 6630474.0\nPatient: LAYAN MAHMOUD MOHAMED\nABDELLATIF (NID: 2566302853)\nPolicy: 1050008096.0\n\nREJECTION DETAILS:\n  Code BE-1-4: BE-1-4\n  Services affected: 1\n    • 09/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT)\n\nAPPEAL JUSTIFICATION (BE-1-4):\nPREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol Section: General Requirements. All supporting clinical documentation is attached.\nSupporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\n  Code MN-1-1: MN-1-1\n  Services affected: 1\n    • 09/02/2026 | D00096 – C.T-PARA NASAL SINUSES-PNS\n\nAPPEAL JUSTIFICATION (MN-1-1):\nCLINICAL JUSTIFICATION APPEAL: The service is clinically justified as evidenced by the attached medical records, diagnosis codes, and clinical pathway documentation. The service aligns with accepted Clinical Practice Guidelines (CPG) and was medically necessary for the patient's condition.\nSupporting Documents: Lab results, clinical notes, CPG reference, medical necessity letter\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 1,258.00\n  Lines Rejected: 2\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
+        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          463bc3d2-9bf3-4380-87a6-f859c0d75e2c\n  Transaction ID:     6630474\n  Patient NID:        2566302853\n  Claim Type:         professional / op\n  Encounter Class:    AMB\n  Policy Number:      1050008096\n  Policy Holder:      SEDER GROUP FOR TRADING AND CONTRACTING COMPANY\n  Net Amount:         SAR 629.00\n\nREJECTION DETAILS:\n  [BE-1-4] – 1 service(s) rejected:\n    • 09/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT)\n\n  APPEAL JUSTIFICATION (BE-1-4):\n  PREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol – General Requirements. All supporting clinical documentation is attached.\n  Supporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\n  [MN-1-1] – 1 service(s) rejected:\n    • 09/02/2026 | D00096 – C.T-PARA NASAL SINUSES-PNS\n\n  APPEAL JUSTIFICATION (MN-1-1):\n  CLINICAL JUSTIFICATION APPEAL: The service is clinically justified as evidenced by the attached medical records, diagnosis codes, and clinical pathway documentation. The service aligns with accepted Clinical Practice Guidelines (CPG) and was medically necessary.\n  Supporting Documents: Lab results, clinical notes, CPG reference, medical necessity letter\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
       }
     ],
-    "authoredOn": "2026-04-06T08:25:01Z"
+    "authoredOn": "2026-04-06T08:38:44Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-b8be89eb-0681-4cd6-bd82-f6fd352bc054-20260406082501",
+    "id": "appeal-6630498-20260406083844",
     "status": "active",
     "category": [
       {
@@ -29,6 +29,13 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "b8be89eb-0681-4cd6-bd82-f6fd352bc054"
+        }
+      },
+      {
+        "type": "Claim",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/transaction",
+          "value": "6630498"
         }
       }
     ],
@@ -57,16 +64,15 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "AD-2-4"
           }
-        ],
-        "text": "re-adjudication"
+        ]
       }
     ],
     "payload": [
       {
-        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: b8be89eb-0681-4cd6-bd82-f6fd352bc054\nTransaction ID: 6630498.0\nPatient: RANIA MOHAMED\nABDELMOETI ELSHENNAWI (NID: 2598700421)\nPolicy: 1050008096.0\n\nREJECTION DETAILS:\n  Code AD-2-4: AD-2-4\n  Services affected: 1\n    • 14/02/2026 | 170019 – SUCTION CLEARANCE\n\nAPPEAL JUSTIFICATION (AD-2-4):\nDUPLICATE REVIEW APPEAL: This claim was flagged as a duplicate. We have verified that the original claim has not been settled. The claim represents a unique service encounter and should be adjudicated independently.\nSupporting Documents: Original claim reference, settlement report\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 222.43\n  Lines Rejected: 1\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
+        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          b8be89eb-0681-4cd6-bd82-f6fd352bc054\n  Transaction ID:     6630498\n  Patient NID:        2598700421\n  Claim Type:         professional / op\n  Encounter Class:    AMB\n  Policy Number:      1050008096\n  Policy Holder:      SEDER GROUP FOR TRADING AND CONTRACTING COMPANY\n  Net Amount:         SAR 222.43\n\nREJECTION DETAILS:\n  [AD-2-4] – 1 service(s) rejected:\n    • 14/02/2026 | 170019 – SUCTION CLEARANCE\n\n  APPEAL JUSTIFICATION (AD-2-4):\n  DUPLICATE REVIEW APPEAL: We have verified that the original claim has not been settled. This claim represents a unique service encounter and should be adjudicated independently.\n  Supporting Documents: Original claim reference, settlement reconciliation report\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
       }
     ],
-    "authoredOn": "2026-04-06T08:25:01Z"
+    "authoredOn": "2026-04-06T08:38:44Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

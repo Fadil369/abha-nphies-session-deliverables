@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-572c08a8-74a2-4a60-9973-d4a0726fe6f0-20260406082501",
+    "id": "appeal-6630585-20260406083844",
     "status": "active",
     "category": [
       {
@@ -29,6 +29,13 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "572c08a8-74a2-4a60-9973-d4a0726fe6f0"
+        }
+      },
+      {
+        "type": "Claim",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/transaction",
+          "value": "6630585"
         }
       }
     ],
@@ -57,16 +64,15 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "BE-1-4"
           }
-        ],
-        "text": "re-adjudication"
+        ]
       }
     ],
     "payload": [
       {
-        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 572c08a8-74a2-4a60-9973-d4a0726fe6f0\nTransaction ID: 6630585.0\nPatient: HAYAT DARWISH A (NID: 2022893586)\nPolicy: 1050164554.0\n\nREJECTION DETAILS:\n  Code BE-1-4: BE-1-4\n  Services affected: 2\n    • 08/02/2026 | 0108222392 – ISOBIDE\n    • 08/02/2026 | 0512222980 – TRULICITY 1.5 MG SOLUTION FOR INJECTION IN PREFILLED PEN\n\nAPPEAL JUSTIFICATION (BE-1-4):\nPREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol Section: General Requirements. All supporting clinical documentation is attached.\nSupporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 750.88\n  Lines Rejected: 2\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
+        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          572c08a8-74a2-4a60-9973-d4a0726fe6f0\n  Transaction ID:     6630585\n  Patient NID:        2022893586\n  Claim Type:         pharmacy / op\n  Encounter Class:    \n  Policy Number:      1050164554\n  Policy Holder:      خالدالداقور\n  Net Amount:         SAR 375.44\n\nREJECTION DETAILS:\n  [BE-1-4] – 2 service(s) rejected:\n    • 08/02/2026 | 0108222392 – ISOBIDE\n    • 08/02/2026 | 0512222980 – TRULICITY 1.5 MG SOLUTION FOR INJECTION IN PREFILLED PEN\n\n  APPEAL JUSTIFICATION (BE-1-4):\n  PREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol – General Requirements. All supporting clinical documentation is attached.\n  Supporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
       }
     ],
-    "authoredOn": "2026-04-06T08:25:01Z"
+    "authoredOn": "2026-04-06T08:38:44Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

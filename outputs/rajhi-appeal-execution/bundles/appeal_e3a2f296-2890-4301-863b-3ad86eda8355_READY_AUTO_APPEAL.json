@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-e3a2f296-2890-4301-863b-3ad86eda8355-20260406082501",
+    "id": "appeal-6629613-20260406083844",
     "status": "active",
     "category": [
       {
@@ -29,6 +29,13 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "e3a2f296-2890-4301-863b-3ad86eda8355"
+        }
+      },
+      {
+        "type": "Claim",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/transaction",
+          "value": "6629613"
         }
       }
     ],
@@ -57,16 +64,23 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "BE-1-4"
           }
-        ],
-        "text": "re-adjudication"
+        ]
+      },
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
+            "code": "CV-1-3"
+          }
+        ]
       }
     ],
     "payload": [
       {
-        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: e3a2f296-2890-4301-863b-3ad86eda8355\nTransaction ID: 6629613.0\nPatient: ALYAA ALY SAYED\nMOHAMED (NID: 2539959706)\nPolicy: 1050006963.0\n\nREJECTION DETAILS:\n  Code BE-1-4: BE-1-4\n  Services affected: 3\n    • 16/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT)\n    • 22/02/2026 | B00731 – GLUCOSE TOLERANCE TEST (GTT)\n    • 16/02/2026 | D00016 – ULTRASOUND-ANTENATAL STUDY (FOLLOW-UP)\n\nAPPEAL JUSTIFICATION (BE-1-4):\nPREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol Section: General Requirements. All supporting clinical documentation is attached.\nSupporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\n  Code CV-1-3: CV-1-3\n  Services affected: 1\n    • 22/02/2026 | D00002 – 4-D ULTRASONOGRAPHY\n\nAPPEAL JUSTIFICATION (CV-1-3):\nCOVERAGE VERIFICATION APPEAL: We are appealing the coverage determination and requesting re-adjudication based on the attached policy benefit schedule. If the primary diagnosis is excluded, we request consideration of the secondary covered diagnosis as documented in the clinical notes.\nSupporting Documents: Policy benefit schedule, clinical documentation for alternate diagnosis\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 3,548.72\n  Lines Rejected: 4\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
+        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          e3a2f296-2890-4301-863b-3ad86eda8355\n  Transaction ID:     6629613\n  Patient NID:        2539959706\n  Claim Type:         professional / op\n  Encounter Class:    AMB\n  Policy Number:      1050006963\n  Policy Holder:      United Creativity Chemical Products Factory\n  Net Amount:         SAR 887.18\n\nREJECTION DETAILS:\n  [BE-1-4] – 3 service(s) rejected:\n    • 16/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT)\n    • 22/02/2026 | B00731 – GLUCOSE TOLERANCE TEST (GTT)\n    • 16/02/2026 | D00016 – ULTRASOUND-ANTENATAL STUDY (FOLLOW-UP)\n\n  APPEAL JUSTIFICATION (BE-1-4):\n  PREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol – General Requirements. All supporting clinical documentation is attached.\n  Supporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\n  [CV-1-3] – 1 service(s) rejected:\n    • 22/02/2026 | D00002 – 4-D ULTRASONOGRAPHY\n\n  APPEAL JUSTIFICATION (CV-1-3):\n  COVERAGE VERIFICATION APPEAL: We are appealing the coverage determination and requesting re-adjudication based on the attached policy benefit schedule. If the primary diagnosis is excluded, we request consideration of the secondary covered diagnosis as documented in the clinical notes.\n  Supporting Documents: Policy benefit schedule, clinical documentation for alternate diagnosis\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
       }
     ],
-    "authoredOn": "2026-04-06T08:25:01Z"
+    "authoredOn": "2026-04-06T08:38:44Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

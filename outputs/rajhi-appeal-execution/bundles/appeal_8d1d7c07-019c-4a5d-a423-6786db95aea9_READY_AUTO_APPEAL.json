@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-8d1d7c07-019c-4a5d-a423-6786db95aea9-20260406082501",
+    "id": "appeal-6629856-20260406083844",
     "status": "active",
     "category": [
       {
@@ -29,6 +29,13 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "8d1d7c07-019c-4a5d-a423-6786db95aea9"
+        }
+      },
+      {
+        "type": "Claim",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/transaction",
+          "value": "6629856"
         }
       }
     ],
@@ -57,16 +64,23 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "BE-1-3"
           }
-        ],
-        "text": "re-adjudication"
+        ]
+      },
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
+            "code": "CV-1-3"
+          }
+        ]
       }
     ],
     "payload": [
       {
-        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 8d1d7c07-019c-4a5d-a423-6786db95aea9\nTransaction ID: 6629856.0\nPatient: REEMA - - MASRI (NID: 2119714265)\nPolicy: 1054573020.0\n\nREJECTION DETAILS:\n  Code BE-1-3: BE-1-3\n  Services affected: 1\n    • 17/02/2026 | 96092-ERR – UNKNOWN SERVICE\n\nAPPEAL JUSTIFICATION (BE-1-3):\nCONTRACTUAL COMPLIANCE APPEAL: The service codes have been reviewed against the contractual agreement. Corrected service codes are provided in this resubmission per the agreed tariff schedule. We request re-adjudication under the correct code mapping.\nSupporting Documents: Correct NPHIES service code mapping, contract reference\n\n  Code CV-1-3: CV-1-3\n  Services affected: 1\n    • 17/02/2026 | B00737 – GLYCOSELATED HEMOGLOBIN (HBA IC)\n\nAPPEAL JUSTIFICATION (CV-1-3):\nCOVERAGE VERIFICATION APPEAL: We are appealing the coverage determination and requesting re-adjudication based on the attached policy benefit schedule. If the primary diagnosis is excluded, we request consideration of the secondary covered diagnosis as documented in the clinical notes.\nSupporting Documents: Policy benefit schedule, clinical documentation for alternate diagnosis\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 748.26\n  Lines Rejected: 2\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
+        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          8d1d7c07-019c-4a5d-a423-6786db95aea9\n  Transaction ID:     6629856\n  Patient NID:        2119714265\n  Claim Type:         professional / op\n  Encounter Class:    AMB\n  Policy Number:      1054573020\n  Policy Holder:      Jal Development Co.\n  Net Amount:         SAR 374.13\n\nREJECTION DETAILS:\n  [BE-1-3] – 1 service(s) rejected:\n    • 17/02/2026 | 96092-ERR – UNKNOWN SERVICE\n\n  APPEAL JUSTIFICATION (BE-1-3):\n  CONTRACTUAL COMPLIANCE APPEAL: The service codes have been reviewed against the contractual agreement. Corrected service codes are provided per the agreed tariff schedule. We request re-adjudication under the correct code mapping.\n  Supporting Documents: Correct NPHIES service code mapping, contract reference\n\n  [CV-1-3] – 1 service(s) rejected:\n    • 17/02/2026 | B00737 – GLYCOSELATED HEMOGLOBIN (HBA IC)\n\n  APPEAL JUSTIFICATION (CV-1-3):\n  COVERAGE VERIFICATION APPEAL: We are appealing the coverage determination and requesting re-adjudication based on the attached policy benefit schedule. If the primary diagnosis is excluded, we request consideration of the secondary covered diagnosis as documented in the clinical notes.\n  Supporting Documents: Policy benefit schedule, clinical documentation for alternate diagnosis\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
       }
     ],
-    "authoredOn": "2026-04-06T08:25:01Z"
+    "authoredOn": "2026-04-06T08:38:44Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"
