@@ -1,0 +1,25 @@
+bundle_id,transaction_id,member_name,national_id,claim_type,rejection_codes,net_amount,lines_rejected,policy_number,limit_threshold,action_required
+f5cb6933-d93b-4d98-9cd9-bbfcfceaa8cb,6629428,RAJHI - REFERRAL CASES,2538864592,professional,BE-1-4,616.47,4,1050006933,500.0,Supervisor approval required before portal submission
+ce42b9df-774f-4bc3-b17b-a29bdf78108f,6629445,Arab Shadows CO.,2217205463,pharmacy,BE-1-4,1674.71,1,1060000123,500.0,Supervisor approval required before portal submission
+4d2bc937-2b5a-4ace-9167-9668cfac0ec3,6629464,Al Rajhi Co. for Cooperative Insurance,2337228015,professional,BE-1-4,1350.86,3,1050005272,500.0,Supervisor approval required before portal submission
+0f5ac536-ba9a-414b-a490-e46d5ceb2c18,6629505,شركة وثبة للاستثمار,2458510506,oral,SE-1-6,596.4,4,1050248475,500.0,Supervisor approval required before portal submission
+e3a2f296-2890-4301-863b-3ad86eda8355,6629613,United Creativity Chemical Products Factory,2539959706,professional,"BE-1-4, CV-1-3",887.18,4,1050006963,500.0,Supervisor approval required before portal submission
+3b43cc51-8c05-47f2-a5c6-9e765eeaf310,6629594,شركة مصداقية الأعمال للتجارة,4683112595,professional,"MN-1-1, BE-1-4",716.36,4,1050163730,500.0,Supervisor approval required before portal submission
+eff2178b-3caf-439b-80af-bb5488777604,6629619,United Creativity Chemical Products Factory,2572631386,pharmacy,BE-1-4,515.19,2,1050006963,500.0,Supervisor approval required before portal submission
+b76ca1b9-81e4-4701-8954-a0b943881a7e,6629688,Arab Shadows CO.,2482876261,professional,BE-1-4,1239.28,3,1060000123,500.0,Supervisor approval required before portal submission
+6e067c99-1029-4dda-8753-8020f7746c5d,6629704,Arab Shadows CO.,2292379555,pharmacy,BE-1-4,3303.53,1,1060000123,500.0,Supervisor approval required before portal submission
+7642e4f9-b6c1-4436-9747-02dae0e156d3,6629844,MASHARY AL SHETHRY COMPANY,2362651008,professional,"MN-1-1, BE-1-4",532.9,2,1060000205,500.0,Supervisor approval required before portal submission
+5bdb9161-db66-4095-b929-83f64d570ed2,6629878,Jal Development Co.,2100009907,professional,BE-1-4,1183.24,3,1054573020,500.0,Supervisor approval required before portal submission
+1ea3fcbe-63ed-4d4f-8edd-71ca8dd62921,6629953,Al Bawani Co Ltd.,2120436510,professional,"AD-1-4, BE-1-4",627.2,2,1060000032,500.0,Supervisor approval required before portal submission
+a7359801-af6e-45c8-be11-c2cec82c1c8f,6629979,Al Bawani Co Ltd.,2228511180,professional,BE-1-4,1154.99,9,1060000032,500.0,Supervisor approval required before portal submission
+1bb66871-17be-4105-b1f8-5b375b223c72,6629986,Al Bawani Co Ltd.,2064090885,professional,"AD-1-4, BE-1-4",1416.45,11,1060000032,500.0,Supervisor approval required before portal submission
+2f142963-5d44-493d-ba62-ec6647929304,6629918,Al Bawani Co Ltd.,2123910156,professional,"MN-1-1, BE-1-4, AD-1-4",716.35,3,1060000032,500.0,Supervisor approval required before portal submission
+f6c8baeb-2e0e-4ec8-8949-b5df479c9ad6,6630074,مغسلة تهاني موسى مهدي سفياني لخدمات السيارات,2134333935,professional,BE-1-4,1209.32,2,1050004202,500.0,Supervisor approval required before portal submission
+9dd94049-87d8-4bc7-b05e-2d3cabb695c5,6630039,Al Bawani Co Ltd.,2541881922,professional,"BE-1-4, CV-1-9, CV-1-3",733.04,3,1060000032,500.0,Supervisor approval required before portal submission
+6a716e93-40dd-4cfd-b71d-e28277f1af1b,6630425,SEDER GROUP FOR TRADING AND CONTRACTING COMPANY,2158888228,professional,"BE-1-3, BE-1-4",1227.43,5,1050008096,500.0,Supervisor approval required before portal submission
+8fa977df-6d7e-4991-9b3b-adfcf586a44d,6630420,SEDER GROUP FOR TRADING AND CONTRACTING COMPANY,2281756102,professional,"BE-1-4, CV-1-3",1216.83,6,1050008096,500.0,Supervisor approval required before portal submission
+463bc3d2-9bf3-4380-87a6-f859c0d75e2c,6630474,SEDER GROUP FOR TRADING AND CONTRACTING COMPANY,2566302853,professional,"MN-1-1, BE-1-4",629.0,2,1050008096,500.0,Supervisor approval required before portal submission
+4f446eec-8339-4f20-abea-537600a0a270,6630522,SEDER GROUP FOR TRADING AND CONTRACTING COMPANY,1132655927,professional,CV-1-3,561.15,1,1050008096,500.0,Supervisor approval required before portal submission
+8ec03133-93b7-4241-872a-21bdce650dfb,6630577,خالدالداقور,2022893586,professional,BE-1-4,596.4,3,1050164554,500.0,Supervisor approval required before portal submission
+ea0de768-9190-4b9c-9866-b0fc9af50975,6630598,Al Harithiya Company Limited,2444846279,professional,BE-1-4,716.35,8,1050165285,500.0,Supervisor approval required before portal submission
+39e0428f-bd1e-49a4-ade1-b75feab82f0d,6630676,Saudi Binladin Group,2193516081,professional,"BE-1-4, CV-1-3",710.73,5,1050007662,500.0,Supervisor approval required before portal submission

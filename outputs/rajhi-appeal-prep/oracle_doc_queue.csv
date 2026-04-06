@@ -1,0 +1,6 @@
+bundle_id,transaction_id,member_name,national_id,claim_type,rejection_codes,net_amount,policy_number,oracle_reason,doc_needed
+89ae81e4-71c2-4f6e-bd85-30e7704052e7,6629468,Al Rajhi Co. for Cooperative Insurance,2125631586,oral,BE-1-4,67.65,1050005272,Oral/Dental type requires X-ray from Oracle,"Dental X-ray, periodontal chart"
+0f5ac536-ba9a-414b-a490-e46d5ceb2c18,6629505,شركة وثبة للاستثمار,2458510506,oral,SE-1-6,596.4,1050248475,"Code SE-1-6 requires investigation doc, Oral/Dental type requires X-ray from Oracle","Dental X-ray, periodontal chart"
+719ff355-fd8e-43b8-9eb9-42ad95e99944,6630042,Al Bawani Co Ltd.,2541881922,pharmacy,AD-3-7,18.05,1060000032,Code AD-3-7 requires investigation doc,Lab/Radiology investigation result
+1c6b358a-8d20-4393-921c-05a3d1f8246e,6630239,شركة لدائن القصيم التجارية,2456135140,pharmacy,AD-3-7,7.03,1050005016,Code AD-3-7 requires investigation doc,Lab/Radiology investigation result
+c2ed10c7-3779-4718-85e3-a59e1e546324,6630468,SEDER GROUP FOR TRADING AND CONTRACTING COMPANY,1135623740,oral,SE-1-6,243.6,1050008096,"Code SE-1-6 requires investigation doc, Oral/Dental type requires X-ray from Oracle","Dental X-ray, periodontal chart"
