@@ -1,0 +1,73 @@
+{
+  "facility_id": 1,
+  "fhir_payload": {
+    "resourceType": "CommunicationRequest",
+    "id": "appeal-0f5ac536-ba9a-414b-a490-e46d5ceb2c18-20260406082501",
+    "status": "active",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/communication-category",
+            "code": "re-adjudication",
+            "display": "Re-Adjudication Request"
+          }
+        ]
+      }
+    ],
+    "priority": "routine",
+    "subject": {
+      "identifier": {
+        "system": "http://nphies.sa/identifier/patient",
+        "value": "2458510506"
+      },
+      "display": "MOHMMED RAOUF RAUF\nMOHAMMED ALZABI"
+    },
+    "about": [
+      {
+        "type": "Claim",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/claim",
+          "value": "0f5ac536-ba9a-414b-a490-e46d5ceb2c18"
+        }
+      }
+    ],
+    "sender": {
+      "type": "Organization",
+      "identifier": {
+        "system": "http://nphies.sa/identifier/chi-license",
+        "value": "10000000000988"
+      },
+      "display": "Al-Hayat National Hospital"
+    },
+    "recipient": [
+      {
+        "type": "Organization",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/payer",
+          "value": "7001593321"
+        },
+        "display": "Al-Rajhi Company for Cooperative Insurance"
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
+            "code": "SE-1-6"
+          }
+        ],
+        "text": "re-adjudication"
+      }
+    ],
+    "payload": [
+      {
+        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 0f5ac536-ba9a-414b-a490-e46d5ceb2c18\nTransaction ID: 6629505.0\nPatient: MOHMMED RAOUF RAUF\nMOHAMMED ALZABI (NID: 2458510506)\nPolicy: 1050248475.0\n\nREJECTION DETAILS:\n  Code SE-1-6: SE-1-6\n  Services affected: 4\n    • 18/02/2026 | 142916 – PANORAMA X-RAY (ONE FILM)\n    • 18/02/2026 | 142929 – COMPOSITE FILLING (THREE/FOUR SURFACES)/TOOTH\n    • 18/02/2026 | N00024 – DENTAL CONSULTATION BY SPECIALIST\n    • 18/02/2026 | 142918 – SIMPLE TOOTH EXTRACTION\n\nAPPEAL JUSTIFICATION (SE-1-6):\nSUPPORTING EVIDENCE APPEAL: The missing investigation results (laboratory/radiology) are attached to this communication as supporting evidence. These results confirm the medical necessity and clinical justification for the service rendered.\nSupporting Documents: X-ray images, lab reports, dental charting, clinical photos\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 2,385.60\n  Lines Rejected: 4\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
+      }
+    ],
+    "authoredOn": "2026-04-06T08:25:01Z"
+  },
+  "signature": "",
+  "resource_type": "CommunicationRequest"
+}

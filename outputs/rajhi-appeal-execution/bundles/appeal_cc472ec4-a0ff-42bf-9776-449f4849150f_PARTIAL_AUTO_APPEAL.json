@@ -1,0 +1,73 @@
+{
+  "facility_id": 1,
+  "fhir_payload": {
+    "resourceType": "CommunicationRequest",
+    "id": "appeal-cc472ec4-a0ff-42bf-9776-449f4849150f-20260406082501",
+    "status": "active",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/communication-category",
+            "code": "re-adjudication",
+            "display": "Re-Adjudication Request"
+          }
+        ]
+      }
+    ],
+    "priority": "routine",
+    "subject": {
+      "identifier": {
+        "system": "http://nphies.sa/identifier/patient",
+        "value": "2456135140"
+      },
+      "display": "HANIN ABDELNASER\nABDELKADER ABDELKADER"
+    },
+    "about": [
+      {
+        "type": "Claim",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/claim",
+          "value": "cc472ec4-a0ff-42bf-9776-449f4849150f"
+        }
+      }
+    ],
+    "sender": {
+      "type": "Organization",
+      "identifier": {
+        "system": "http://nphies.sa/identifier/chi-license",
+        "value": "10000000000988"
+      },
+      "display": "Al-Hayat National Hospital"
+    },
+    "recipient": [
+      {
+        "type": "Organization",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/payer",
+          "value": "7001593321"
+        },
+        "display": "Al-Rajhi Company for Cooperative Insurance"
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
+            "code": "MN-1-1"
+          }
+        ],
+        "text": "re-adjudication"
+      }
+    ],
+    "payload": [
+      {
+        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: cc472ec4-a0ff-42bf-9776-449f4849150f\nTransaction ID: 6630198.0\nPatient: HANIN ABDELNASER\nABDELKADER ABDELKADER (NID: 2456135140)\nPolicy: 1050005016.0\n\nREJECTION DETAILS:\n  Code CV-1-9: CV-1-9\n  Services affected: 1\n    • 12/02/2026 | N00006 – CONSULTATION FEE (SPECIALIST).\n\nAPPEAL JUSTIFICATION (CV-1-9):\nCOVERAGE APPEAL: Member eligibility and benefit coverage have been verified as confirmed by the attached eligibility documents. We request re-adjudication under the verified coverage.\nSupporting Documents: Eligibility verification, benefit schedule confirmation\n\n  Code MN-1-1: MN-1-1\n  Services affected: 1\n    • 12/02/2026 | B00473 – COMPLETE URINE ANALYSIS\n\nAPPEAL JUSTIFICATION (MN-1-1):\nCLINICAL JUSTIFICATION APPEAL: The service is clinically justified as evidenced by the attached medical records, diagnosis codes, and clinical pathway documentation. The service aligns with accepted Clinical Practice Guidelines (CPG) and was medically necessary for the patient's condition.\nSupporting Documents: Lab results, clinical notes, CPG reference, medical necessity letter\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 585.98\n  Lines Rejected: 2\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
+      }
+    ],
+    "authoredOn": "2026-04-06T08:25:01Z"
+  },
+  "signature": "",
+  "resource_type": "CommunicationRequest"
+}

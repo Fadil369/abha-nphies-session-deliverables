@@ -1,0 +1,73 @@
+{
+  "facility_id": 1,
+  "fhir_payload": {
+    "resourceType": "CommunicationRequest",
+    "id": "appeal-1ea3fcbe-63ed-4d4f-8edd-71ca8dd62921-20260406082501",
+    "status": "active",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/communication-category",
+            "code": "re-adjudication",
+            "display": "Re-Adjudication Request"
+          }
+        ]
+      }
+    ],
+    "priority": "routine",
+    "subject": {
+      "identifier": {
+        "system": "http://nphies.sa/identifier/patient",
+        "value": "2120436510"
+      },
+      "display": "MOHAMMED MAHMOUD\nABDULAZIZ HUSSAIN"
+    },
+    "about": [
+      {
+        "type": "Claim",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/claim",
+          "value": "1ea3fcbe-63ed-4d4f-8edd-71ca8dd62921"
+        }
+      }
+    ],
+    "sender": {
+      "type": "Organization",
+      "identifier": {
+        "system": "http://nphies.sa/identifier/chi-license",
+        "value": "10000000000988"
+      },
+      "display": "Al-Hayat National Hospital"
+    },
+    "recipient": [
+      {
+        "type": "Organization",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/payer",
+          "value": "7001593321"
+        },
+        "display": "Al-Rajhi Company for Cooperative Insurance"
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
+            "code": "AD-1-4"
+          }
+        ],
+        "text": "re-adjudication"
+      }
+    ],
+    "payload": [
+      {
+        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 1ea3fcbe-63ed-4d4f-8edd-71ca8dd62921\nTransaction ID: 6629953.0\nPatient: MOHAMMED MAHMOUD\nABDULAZIZ HUSSAIN (NID: 2120436510)\nPolicy: 1060000032.0\n\nREJECTION DETAILS:\n  Code AD-1-4: AD-1-4\n  Services affected: 1\n    • 19/02/2026 | D00084 – C.T-SKULL AND FACIAL BONES\n\nAPPEAL JUSTIFICATION (AD-1-4):\nDIAGNOSIS-SERVICE ALIGNMENT APPEAL: The diagnosis codes have been reviewed and corrected to accurately reflect the clinical picture. The corrected ICD-10 codes are consistent with the service provided. We request re-adjudication with the updated coding.\nSupporting Documents: Updated clinical notes with correct ICD-10 codes, treatment rationale\n\n  Code BE-1-4: BE-1-4\n  Services affected: 1\n    • 19/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT)\n\nAPPEAL JUSTIFICATION (BE-1-4):\nPREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol Section: General Requirements. All supporting clinical documentation is attached.\nSupporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 1,254.40\n  Lines Rejected: 2\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
+      }
+    ],
+    "authoredOn": "2026-04-06T08:25:01Z"
+  },
+  "signature": "",
+  "resource_type": "CommunicationRequest"
+}

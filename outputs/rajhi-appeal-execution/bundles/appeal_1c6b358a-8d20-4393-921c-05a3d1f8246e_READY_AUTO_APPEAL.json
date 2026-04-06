@@ -1,0 +1,73 @@
+{
+  "facility_id": 1,
+  "fhir_payload": {
+    "resourceType": "CommunicationRequest",
+    "id": "appeal-1c6b358a-8d20-4393-921c-05a3d1f8246e-20260406082501",
+    "status": "active",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/communication-category",
+            "code": "re-adjudication",
+            "display": "Re-Adjudication Request"
+          }
+        ]
+      }
+    ],
+    "priority": "routine",
+    "subject": {
+      "identifier": {
+        "system": "http://nphies.sa/identifier/patient",
+        "value": "2456135140"
+      },
+      "display": "HANIN ABDELNASER\nABDELKADER ABDELKADER"
+    },
+    "about": [
+      {
+        "type": "Claim",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/claim",
+          "value": "1c6b358a-8d20-4393-921c-05a3d1f8246e"
+        }
+      }
+    ],
+    "sender": {
+      "type": "Organization",
+      "identifier": {
+        "system": "http://nphies.sa/identifier/chi-license",
+        "value": "10000000000988"
+      },
+      "display": "Al-Hayat National Hospital"
+    },
+    "recipient": [
+      {
+        "type": "Organization",
+        "identifier": {
+          "system": "http://nphies.sa/identifier/payer",
+          "value": "7001593321"
+        },
+        "display": "Al-Rajhi Company for Cooperative Insurance"
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
+            "code": "AD-3-7"
+          }
+        ],
+        "text": "re-adjudication"
+      }
+    ],
+    "payload": [
+      {
+        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 1c6b358a-8d20-4393-921c-05a3d1f8246e\nTransaction ID: 6630239.0\nPatient: HANIN ABDELNASER\nABDELKADER ABDELKADER (NID: 2456135140)\nPolicy: 1050005016.0\n\nREJECTION DETAILS:\n  Code AD-3-7: AD-3-7\n  Services affected: 1\n    • 14/02/2026 | 36-186-89 – SCOPINAL TAB 10MG\n\nAPPEAL JUSTIFICATION (AD-3-7):\nADDITIONAL INFORMATION APPEAL: The additional documentation requested for adjudication is attached herewith. This includes all relevant clinical records, reports, and supporting materials required for complete adjudication.\nSupporting Documents: As specified in rejection – typically medical reports, clinical notes\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 7.03\n  Lines Rejected: 1\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
+      }
+    ],
+    "authoredOn": "2026-04-06T08:25:01Z"
+  },
+  "signature": "",
+  "resource_type": "CommunicationRequest"
+}
