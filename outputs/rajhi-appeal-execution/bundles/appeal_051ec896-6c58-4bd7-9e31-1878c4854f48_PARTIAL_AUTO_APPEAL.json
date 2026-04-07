@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-051ec896-6c58-4bd7-9e31-1878c4854f48-20260406082501",
+    "id": "appeal-051ec896-6c58-4bd7-9e31-1878c4854f48-20260406094745",
     "status": "active",
     "category": [
       {
@@ -66,7 +66,7 @@
         "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 051ec896-6c58-4bd7-9e31-1878c4854f48\nTransaction ID: 6630512.0\nPatient: RAYAN MOHAMMED OMAIR\nALSADOON (NID: 1150722062)\nPolicy: 1050008096.0\n\nREJECTION DETAILS:\n  Code Override Reason: Override Reason\n  Services affected: 1\n    • 08/02/2026 | 0706222147 – DERMA-T SOLUTION\n\nAPPEAL JUSTIFICATION (Override Reason):\nRequest re-adjudication with supporting documentation.\nSupporting Documents: Override justification, clinical notes\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 21.04\n  Lines Rejected: 1\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
       }
     ],
-    "authoredOn": "2026-04-06T08:25:01Z"
+    "authoredOn": "2026-04-06T09:47:45Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

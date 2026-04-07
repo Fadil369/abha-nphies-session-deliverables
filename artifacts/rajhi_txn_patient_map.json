@@ -1,0 +1,372 @@
+[
+  {
+    "txn_id": "6629450",
+    "patient_id": "2337228015",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629464",
+    "patient_id": "2337228015",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629454",
+    "patient_id": "1078576491",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629596",
+    "patient_id": "4683112595",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629594",
+    "patient_id": "4683112595",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629709",
+    "patient_id": "2612816138",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629839",
+    "patient_id": "2482876261",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629688",
+    "patient_id": "2482876261",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629884",
+    "patient_id": "A31787441",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629890",
+    "patient_id": "2443605627",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629993",
+    "patient_id": "2443605627",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629946",
+    "patient_id": "1218562476",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630167",
+    "patient_id": "4434848810",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630118",
+    "patient_id": "2331857637",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630119",
+    "patient_id": "2331857637",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630185",
+    "patient_id": "2006371047",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630236",
+    "patient_id": "2456135140",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630230",
+    "patient_id": "2456135140",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630198",
+    "patient_id": "2456135140",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630239",
+    "patient_id": "2456135140",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630350",
+    "patient_id": "2265582367",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630407",
+    "patient_id": "1132655927",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630522",
+    "patient_id": "1132655927",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630446",
+    "patient_id": "2122120492",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630456",
+    "patient_id": "2557695737",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630478",
+    "patient_id": "1117049815",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630493",
+    "patient_id": "2516448889",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630498",
+    "patient_id": "2598700421",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630500",
+    "patient_id": "2598700421",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630506",
+    "patient_id": "1042574093",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630567",
+    "patient_id": "2216961611",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630561",
+    "patient_id": "2387898816",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629418",
+    "patient_id": "2538864592",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629428",
+    "patient_id": "2538864592",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629441",
+    "patient_id": "2217205463",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629445",
+    "patient_id": "2217205463",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629485",
+    "patient_id": "1080602053",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629544",
+    "patient_id": "2262246297",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629557",
+    "patient_id": "2453464410",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629613",
+    "patient_id": "2539959706",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629619",
+    "patient_id": "2572631386",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629813",
+    "patient_id": "2030539841",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629700",
+    "patient_id": "2292379555",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629704",
+    "patient_id": "2292379555",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629844",
+    "patient_id": "2362651008",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629856",
+    "patient_id": "2119714265",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629878",
+    "patient_id": "2100009907",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629953",
+    "patient_id": "2120436510",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629979",
+    "patient_id": "2228511180",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6629986",
+    "patient_id": "2064090885",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629918",
+    "patient_id": "2123910156",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630074",
+    "patient_id": "2134333935",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630067",
+    "patient_id": "2134333935",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630039",
+    "patient_id": "2541881922",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630042",
+    "patient_id": "2541881922",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630043",
+    "patient_id": "2541881922",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630390",
+    "patient_id": "2566302853",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630474",
+    "patient_id": "2566302853",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630425",
+    "patient_id": "2158888228",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630435",
+    "patient_id": "2158888228",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630420",
+    "patient_id": "2281756102",
+    "status": "Partial"
+  },
+  {
+    "txn_id": "6630577",
+    "patient_id": "2022893586",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630571",
+    "patient_id": "2022893586",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630585",
+    "patient_id": "2022893586",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630598",
+    "patient_id": "2444846279",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630676",
+    "patient_id": "2193516081",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629530",
+    "patient_id": "2583501974",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629468",
+    "patient_id": "2125631586",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6629505",
+    "patient_id": "2458510506",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630468",
+    "patient_id": "1135623740",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630026",
+    "patient_id": "2541881914",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630195",
+    "patient_id": "2538571742",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630512",
+    "patient_id": "1150722062",
+    "status": "Rejected"
+  },
+  {
+    "txn_id": "6630652",
+    "patient_id": "2616191736",
+    "status": "Rejected"
+  }
+]

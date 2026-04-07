@@ -1,0 +1,343 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - generic [ref=e2]:
+        - generic [ref=e3]:
+          - generic [ref=e4]:
+            - img "logoLink" [ref=e5]
+            - generic [ref=e6]: Hayat National Hospital-ABHA
+          - link [active] [ref=e95] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e14]:
+          - img "patient image" [ref=e17]
+          - generic [ref=e18] [cursor=pointer]:
+            - button "Yezdan Alahmad " [ref=e99]:
+              - generic [ref=e20]: Yezdan Alahmad
+              - text: 
+            - text: 
+          - generic [ref=e22] [cursor=pointer]:
+            - text: 
+            - button "The New Hospital " [ref=e23]:
+              - generic [ref=e24]: The New Hospital
+              - text: 
+            - text: 
+          - generic [ref=e26] [cursor=pointer]:
+            - text: 
+            - button "messages 0 " [ref=e27]:
+              - generic [ref=e28]: messages 0
+              - text: 
+          - generic [ref=e29] [cursor=pointer]:
+            - text: 
+            - button "" [ref=e30]: 
+          - link "Logout " [ref=e31] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e32]:
+              - text: Logout
+              - generic [ref=e34]: 
+      - generic [ref=e100]:
+        - generic [ref=e102]:
+          - textbox "Menu Search" [ref=e35]:
+            - /placeholder: Search...
+          - generic: Menu Search
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - text: 
+            - generic [ref=e106]:
+              - generic [ref=e107]: 
+              - generic [ref=e108] [cursor=pointer]: Billing Module
+            - generic:
+              - generic:
+                - generic [ref=e109]:
+                  - text: 
+                  - generic [ref=e110]:
+                    - generic [ref=e111]: 
+                    - generic [ref=e112] [cursor=pointer]: Billing Setup
+                  - generic:
+                    - generic:
+                      - generic [ref=e114]:
+                        - generic [ref=e115]: 
+                        - generic "IOSPRICE" [ref=e116] [cursor=pointer]: Ios Price
+                      - generic [ref=e118]:
+                        - generic [ref=e119]: 
+                        - generic "MANAGEBILLINGRULES" [ref=e120] [cursor=pointer]: Manage Billing Rules
+                      - generic [ref=e122]:
+                        - generic [ref=e123]: 
+                        - generic "TARIFFTERMS" [ref=e124] [cursor=pointer]: Tariff Terms
+                      - generic [ref=e126]:
+                        - generic [ref=e127]: 
+                        - generic "MANAGEBILLINGGROUPSTF" [ref=e128] [cursor=pointer]: Manage Billing groups
+                      - generic [ref=e130]:
+                        - generic [ref=e131]: 
+                        - generic "PACKAGESETUPTF" [ref=e132] [cursor=pointer]: Package Setup
+                      - generic [ref=e134]:
+                        - generic [ref=e135]: 
+                        - generic "MANAGEATERMSRULES" [ref=e136] [cursor=pointer]: Manage Terms & Rules
+                      - generic [ref=e138]:
+                        - generic [ref=e139]: 
+                        - generic "MANAGETARIFF2" [ref=e140] [cursor=pointer]: Manage Tariff
+                      - generic [ref=e142]:
+                        - generic [ref=e143]: 
+                        - generic "ELECTRONICCOMPANYSETTINGS" [ref=e144] [cursor=pointer]: Electronic Company Settings
+                      - generic [ref=e146]:
+                        - generic [ref=e147]: 
+                        - generic "PURCHSERAGREEMNT" [ref=e148] [cursor=pointer]: Purchaser Agreement
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: 
+                        - generic "CLAIMTEMPLATETF" [ref=e152] [cursor=pointer]: Claim Template
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: 
+                        - generic "MANAGECODEMAPPINGTF" [ref=e156] [cursor=pointer]: Manage Code Mapping
+                      - generic [ref=e158]:
+                        - generic [ref=e159]: 
+                        - generic "STAFFAUTHONPAY" [ref=e160] [cursor=pointer]: Staff Authorization On Payers
+                - generic [ref=e161]:
+                  - text: 
+                  - generic [ref=e162]:
+                    - generic [ref=e163]: 
+                    - generic [ref=e164] [cursor=pointer]: Billing Transactions
+                  - generic:
+                    - generic:
+                      - generic [ref=e166]:
+                        - generic [ref=e167]: 
+                        - generic "CONTRACTSTF" [ref=e168] [cursor=pointer]: Contracts
+                      - generic [ref=e170]:
+                        - generic [ref=e171]: 
+                        - generic "PATIENTCHARGES" [ref=e172] [cursor=pointer]: Manage Patient Charges
+                      - generic [ref=e174]:
+                        - generic [ref=e175]: 
+                        - generic "CONTRACTEXCLUSIONS" [ref=e176] [cursor=pointer]: Contract Exclustions
+                      - generic [ref=e178]:
+                        - generic [ref=e179]: 
+                        - generic "MANAGEPAYERS" [ref=e180] [cursor=pointer]: Manage Payers
+                      - generic [ref=e182]:
+                        - generic [ref=e183]: 
+                        - generic "MANAGEAPPROVALSTF" [ref=e184] [cursor=pointer]: Manage Approvals
+                      - generic [ref=e186]:
+                        - generic [ref=e187]: 
+                        - generic "MANAGEPATIENTPKG" [ref=e188] [cursor=pointer]: Manage Patient Packages
+                      - generic [ref=e190]:
+                        - generic [ref=e191]: 
+                        - generic "DHSINTEGRATION" [ref=e192] [cursor=pointer]: DHS Integration
+                      - generic [ref=e194]:
+                        - generic [ref=e195]: 
+                        - generic "MANAGEPATIENTELIGIBILITY" [ref=e196] [cursor=pointer]: Manage Patient Eligibility
+                      - generic [ref=e198]:
+                        - generic [ref=e199]: 
+                        - generic "SERVICEBILLING" [ref=e200] [cursor=pointer]: Service Billing
+                      - generic [ref=e202]:
+                        - generic [ref=e203]: 
+                        - generic "APIMONITORTF" [ref=e204] [cursor=pointer]: Api Monitor
+                      - generic [ref=e206]:
+                        - generic [ref=e207]: 
+                        - generic "APITRANSACTIONSTF" [ref=e208] [cursor=pointer]: Api Transactions
+                      - generic [ref=e210]:
+                        - generic [ref=e211]: 
+                        - generic "CHECKELIGIBILITYTF" [ref=e212] [cursor=pointer]: Check Eligibility
+                      - generic [ref=e214]:
+                        - generic [ref=e215]: 
+                        - generic "MANAGEREQUESTPACKAGETF" [ref=e216] [cursor=pointer]: Manage Request Package
+                      - generic [ref=e218]:
+                        - generic [ref=e219]: 
+                        - generic "EPISODECODING" [ref=e220] [cursor=pointer]: Episode Coding
+                      - generic [ref=e222]:
+                        - generic [ref=e223]: 
+                        - generic "PURCHASEDAILYOUTPATIENTACTIVETYTF" [ref=e224] [cursor=pointer]: Purchase Daily Outpatient Activety Report
+                      - generic [ref=e226]:
+                        - generic [ref=e227]: 
+                        - generic "PURCHASEADMISSIONCENSUSTF" [ref=e228] [cursor=pointer]: Purchase Admission CENSUS Report
+                      - generic [ref=e230]:
+                        - generic [ref=e231]: 
+                        - generic "ADDSERTOTARINTF" [ref=e232] [cursor=pointer]: Attach Service to Tariff
+                      - generic [ref=e234]:
+                        - generic [ref=e235]: 
+                        - generic "ARWASEELCLAIM" [ref=e236] [cursor=pointer]: AR Waseel Claim
+                      - generic [ref=e238]:
+                        - generic [ref=e239]: 
+                        - generic "MANAGECLAIMS" [ref=e240] [cursor=pointer]: Manage Claims
+                      - generic [ref=e242]:
+                        - generic [ref=e243]: 
+                        - generic "CREATECAPITACLAIM" [ref=e244] [cursor=pointer]: Create Per Capita Claim
+                      - generic [ref=e246]:
+                        - generic [ref=e247]: 
+                        - generic "CLAIMSSUBMISSIONTF" [ref=e248] [cursor=pointer]: Claims Submission
+                      - generic [ref=e250]:
+                        - generic [ref=e251]: 
+                        - generic "CLAIMREJECTION" [ref=e252] [cursor=pointer]: Claim Rejection
+                      - generic [ref=e254]:
+                        - generic [ref=e255]: 
+                        - generic "CONTRACTINSTALLMENTSSERVICETF" [ref=e256] [cursor=pointer]: Contract Installment Service
+                      - generic [ref=e258]:
+                        - generic [ref=e259]: 
+                        - generic "PRESCRIPTIONAUTHORIZATION" [ref=e260] [cursor=pointer]: Prescription Authorization
+                - generic [ref=e261]:
+                  - text: 
+                  - generic [ref=e262]:
+                    - generic [ref=e263]: 
+                    - generic [ref=e264] [cursor=pointer]: Billing Query
+                  - generic:
+                    - generic:
+                      - generic [ref=e266]:
+                        - generic [ref=e267]: 
+                        - generic "MANAGECOPAYER" [ref=e268] [cursor=pointer]: Manage Copayer
+                      - generic [ref=e270]:
+                        - generic [ref=e271]: 
+                        - generic "APPROVALSSUMMARY" [ref=e272] [cursor=pointer]: Approvals Summary
+                - generic [ref=e273]:
+                  - text: 
+                  - generic [ref=e274]:
+                    - generic [ref=e275]: 
+                    - generic [ref=e276] [cursor=pointer]: Billing Reports
+                  - generic:
+                    - generic:
+                      - generic [ref=e278]:
+                        - generic [ref=e279]: 
+                        - generic "SERVICEDEPTPRICELIST" [ref=e280] [cursor=pointer]: Service Department Price List
+                      - generic [ref=e282]:
+                        - generic [ref=e283]: 
+                        - generic "SERVICESDELIVEREDREPORTTF" [ref=e284] [cursor=pointer]: Print Service Delivered Report
+                      - generic [ref=e286]:
+                        - generic [ref=e287]: 
+                        - generic "MENUREPORTTF" [ref=e288] [cursor=pointer]: Contract Reports
+                      - generic [ref=e290]:
+                        - generic [ref=e291]: 
+                        - generic "PURCHASEDAILYOUTPATIENTTF" [ref=e292] [cursor=pointer]: Purchaser Daily Outpatient Activety
+                      - generic [ref=e294]:
+                        - generic [ref=e295]: 
+                        - generic "DOCREVEN" [ref=e296] [cursor=pointer]: Decotor Revenue
+          - generic [ref=e298]:
+            - generic [ref=e299]: 
+            - generic "IOSITEMSOFSERVICES" [ref=e300] [cursor=pointer]: Item of Services
+          - generic [ref=e302]:
+            - generic [ref=e303]: 
+            - generic "PATIENTSEARCHTF" [ref=e304] [cursor=pointer]: Patient Search
+          - generic [ref=e306]:
+            - generic [ref=e307]: 
+            - generic "RESULTQUERY" [ref=e308] [cursor=pointer]: Results Query
+          - generic [ref=e310]:
+            - generic [ref=e311]: 
+            - generic "OPDREPORTS" [ref=e312] [cursor=pointer]: Outpatient Reports
+          - generic [ref=e314]:
+            - generic [ref=e315]: 
+            - generic "ADTREPORTS" [ref=e316] [cursor=pointer]: Inpatient Reports
+          - generic [ref=e318]:
+            - generic [ref=e319]: 
+            - generic "UNBICOMINVOREPO" [ref=e320] [cursor=pointer]: Unbilled Company Invoices
+          - generic [ref=e322]:
+            - generic [ref=e323]: 
+            - generic "PHDBORD" [ref=e324] [cursor=pointer]: Physician Worklist
+          - generic [ref=e326]:
+            - generic [ref=e327]: 
+            - generic "MANAGEDOCUMENTPANEL" [ref=e328] [cursor=pointer]: Documents Panel
+          - generic [ref=e330]:
+            - generic [ref=e331]: 
+            - generic "OPENSHIFT" [ref=e332] [cursor=pointer]: Open Shift
+          - generic [ref=e334]:
+            - generic [ref=e335]: 
+            - generic "ADMISSIONQUERY" [ref=e336] [cursor=pointer]: Admission Query
+          - generic [ref=e338]:
+            - generic [ref=e339]: 
+            - generic "ORDERANDDELIVERYTF" [ref=e340] [cursor=pointer]: Order and Delivery
+          - generic [ref=e341]:
+            - text: 
+            - generic [ref=e342]:
+              - generic [ref=e343]: 
+              - generic [ref=e344] [cursor=pointer]: Inpatient Management
+            - generic:
+              - generic:
+                - generic [ref=e345]:
+                  - text: 
+                  - generic [ref=e346]:
+                    - generic [ref=e347]: 
+                    - generic [ref=e348] [cursor=pointer]: Inpatient Setup
+                  - generic:
+                    - generic:
+                      - generic [ref=e350]:
+                        - generic [ref=e351]: 
+                        - generic "MANAGEROOMCLASSESTF" [ref=e352] [cursor=pointer]: Room Classes
+                      - generic [ref=e354]:
+                        - generic [ref=e355]: 
+                        - generic "ACCOMODATIONSERVICESTF" [ref=e356] [cursor=pointer]: Accommodation Services
+                      - generic [ref=e358]:
+                        - generic [ref=e359]: 
+                        - generic "ADMISSIONREASONS" [ref=e360] [cursor=pointer]: Admission Reasons
+                      - generic [ref=e362]:
+                        - generic [ref=e363]: 
+                        - generic "ADMISSIONSESSIONS" [ref=e364] [cursor=pointer]: Admission Sessions
+                      - generic [ref=e366]:
+                        - generic [ref=e367]: 
+                        - generic "ROOMSBEDS" [ref=e368] [cursor=pointer]: Rooms and Beds
+                      - generic [ref=e370]:
+                        - generic [ref=e371]: 
+                        - generic "ADTELIGSETUP" [ref=e372] [cursor=pointer]: Inpatient Eligibilities Setup
+                      - generic [ref=e374]:
+                        - generic [ref=e375]: 
+                        - generic "ACUITYLEVELSSETUP" [ref=e376] [cursor=pointer]: Acuity Levels
+                - generic [ref=e377]:
+                  - text: 
+                  - generic [ref=e378]:
+                    - generic [ref=e379]: 
+                    - generic [ref=e380] [cursor=pointer]: Inpatient Processing
+                  - generic:
+                    - generic:
+                      - generic [ref=e382]:
+                        - generic [ref=e383]: 
+                        - generic "ADMISSIONQUERY" [ref=e384] [cursor=pointer]: Admission Query
+                      - generic [ref=e386]:
+                        - generic [ref=e387]: 
+                        - generic "PATIENTADMISSIONTF" [ref=e388] [cursor=pointer]: Patient Admission
+                      - generic [ref=e390]:
+                        - generic [ref=e391]: 
+                        - generic "ADMISSIONPLANNING" [ref=e392] [cursor=pointer]: Admission Planning
+                      - generic [ref=e394]:
+                        - generic [ref=e395]: 
+                        - generic "PATIENTDISCHARGE" [ref=e396] [cursor=pointer]: Patient Discharge
+                      - generic [ref=e398]:
+                        - generic [ref=e399]: 
+                        - generic "TRANSFERPATIENT" [ref=e400] [cursor=pointer]: Patient Bed Transfer
+                      - generic [ref=e402]:
+                        - generic [ref=e403]: 
+                        - generic "APPREJBEDTRANSFER" [ref=e404] [cursor=pointer]: Bed Transfer Requests
+                      - generic [ref=e406]:
+                        - generic [ref=e407]: 
+                        - generic "ADTMOVEMENTS" [ref=e408] [cursor=pointer]: Patient Movements
+                      - generic [ref=e410]:
+                        - generic [ref=e411]: 
+                        - generic "ADTBEDSTATUS" [ref=e412] [cursor=pointer]: Manage Beds Status
+                      - generic [ref=e414]:
+                        - generic [ref=e415]: 
+                        - generic "HOMELEAVE" [ref=e416] [cursor=pointer]: Patient Home Leave
+                      - generic [ref=e418]:
+                        - generic [ref=e419]: 
+                        - generic "REVERSEPATIENTADMISSION" [ref=e420] [cursor=pointer]: Reverse Discharge
+                      - generic [ref=e422]:
+                        - generic [ref=e423]: 
+                        - generic "PATIENTSWAP" [ref=e424] [cursor=pointer]: Patient Admission Swap
+                      - generic [ref=e426]:
+                        - generic [ref=e427]: 
+                        - generic "MANAGEADMISSIONREQUESTS" [ref=e428] [cursor=pointer]: Admission Requests
+                - generic [ref=e429]:
+                  - text: 
+                  - generic [ref=e430]:
+                    - generic [ref=e431]: 
+                    - generic [ref=e432] [cursor=pointer]: Inpatient Reports Menu
+                  - generic [ref=e434]:
+                    - generic [ref=e435]: 
+                    - generic "ADTREPORTS" [ref=e436] [cursor=pointer]: Inpatient Reports
+          - generic [ref=e438]:
+            - generic [ref=e439]: 
+            - generic "SERVICEDEPARTMENTS" [ref=e440] [cursor=pointer]: Maintain Departments
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e80]:
+                - button "Default task flow" [ref=e84] [cursor=pointer]:
+                  - generic [ref=e85]: Default task flow
+                - generic [ref=e87]: "SID :"
+              - img "logo" [ref=e94]
+      - text:   
+  - generic:
+    - status: Loading Complete
+    - text: 
+    - alert
+    - text:  

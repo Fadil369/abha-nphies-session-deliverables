@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-6630500-20260406083844",
+    "id": "appeal-7f6bc67f-22a4-4e30-975c-b1c32a7d5c8a-20260406094745",
     "status": "active",
     "category": [
       {
@@ -29,13 +29,6 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "7f6bc67f-22a4-4e30-975c-b1c32a7d5c8a"
-        }
-      },
-      {
-        "type": "Claim",
-        "identifier": {
-          "system": "http://nphies.sa/identifier/transaction",
-          "value": "6630500"
         }
       }
     ],
@@ -64,15 +57,16 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "MN-1-1"
           }
-        ]
+        ],
+        "text": "re-adjudication"
       }
     ],
     "payload": [
       {
-        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          7f6bc67f-22a4-4e30-975c-b1c32a7d5c8a\n  Transaction ID:     6630500\n  Patient NID:        2598700421\n  Claim Type:         pharmacy / op\n  Encounter Class:    \n  Policy Number:      1050008096\n  Policy Holder:      SEDER GROUP FOR TRADING AND CONTRACTING COMPANY\n  Net Amount:         SAR 69.82\n\nREJECTION DETAILS:\n  [MN-1-1] – 1 service(s) rejected:\n    • 14/02/2026 | 1603221850 – RYALTRIS - 1603221850\n\n  APPEAL JUSTIFICATION (MN-1-1):\n  CLINICAL JUSTIFICATION APPEAL: The service is clinically justified as evidenced by the attached medical records, diagnosis codes, and clinical pathway documentation. The service aligns with accepted Clinical Practice Guidelines (CPG) and was medically necessary.\n  Supporting Documents: Lab results, clinical notes, CPG reference, medical necessity letter\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
+        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 7f6bc67f-22a4-4e30-975c-b1c32a7d5c8a\nTransaction ID: 6630500.0\nPatient: RANIA MOHAMED\nABDELMOETI ELSHENNAWI (NID: 2598700421)\nPolicy: 1050008096.0\n\nREJECTION DETAILS:\n  Code MN-1-1: MN-1-1\n  Services affected: 1\n    • 14/02/2026 | 1603221850 – RYALTRIS - 1603221850\n\nAPPEAL JUSTIFICATION (MN-1-1):\nCLINICAL JUSTIFICATION APPEAL: The service is clinically justified as evidenced by the attached medical records, diagnosis codes, and clinical pathway documentation. The service aligns with accepted Clinical Practice Guidelines (CPG) and was medically necessary for the patient's condition.\nSupporting Documents: Lab results, clinical notes, CPG reference, medical necessity letter\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 69.82\n  Lines Rejected: 1\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
       }
     ],
-    "authoredOn": "2026-04-06T08:38:44Z"
+    "authoredOn": "2026-04-06T09:47:45Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

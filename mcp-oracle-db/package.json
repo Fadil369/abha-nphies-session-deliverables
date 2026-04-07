@@ -1,0 +1,21 @@
+{
+  "name": "mcp-oracle-portal",
+  "version": "2.0.0",
+  "description": "MCP server for Oasis+ ABHA portal — Playwright browser automation over oracle-abha.brainsait.org",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "install-browser": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "playwright": "^1.44.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

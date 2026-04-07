@@ -1,0 +1,15 @@
+- generic [ref=e2]:
+  - table [ref=e3]:
+    - rowgroup [ref=e4]:
+      - row "Error 404--Not Found" [ref=e5]:
+        - cell "Error 404--Not Found" [ref=e6]:
+          - heading "Error 404--Not Found" [level=2] [ref=e8]
+  - table [ref=e9]:
+    - rowgroup [ref=e10]:
+      - 'row "From RFC 2068 Hypertext Transfer Protocol -- HTTP/1.1: 10.4.5 404 Not Found The server has not found anything matching the Request-URI. No indication is given of whether the condition is temporary or permanent. If the server does not wish to make this information available to the client, the status code 403 (Forbidden) can be used instead. The 410 (Gone) status code SHOULD be used if the server knows, through some internally configurable mechanism, that an old resource is permanently unavailable and has no forwarding address." [ref=e11]':
+        - 'cell "From RFC 2068 Hypertext Transfer Protocol -- HTTP/1.1: 10.4.5 404 Not Found The server has not found anything matching the Request-URI. No indication is given of whether the condition is temporary or permanent. If the server does not wish to make this information available to the client, the status code 403 (Forbidden) can be used instead. The 410 (Gone) status code SHOULD be used if the server knows, through some internally configurable mechanism, that an old resource is permanently unavailable and has no forwarding address." [ref=e12]':
+          - generic [ref=e13]:
+            - heading "From RFC 2068 Hypertext Transfer Protocol -- HTTP/1.1:" [level=3] [ref=e15]
+            - heading "10.4.5 404 Not Found" [level=4] [ref=e17]
+            - paragraph [ref=e18]: The server has not found anything matching the Request-URI. No indication is given of whether the condition is temporary or permanent.
+            - paragraph [ref=e19]: If the server does not wish to make this information available to the client, the status code 403 (Forbidden) can be used instead. The 410 (Gone) status code SHOULD be used if the server knows, through some internally configurable mechanism, that an old resource is permanently unavailable and has no forwarding address.

@@ -1,0 +1,469 @@
+SUBMISSION SEQUENCE - MN-1-1
+================================================================================
+
+SUBMISSION #1
+Transaction ID: 6629454
+Amount: SAR 68.1
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6629454
+Patient: WASMIAH AYED ALAZMI (NID: 1078576491)
+Policy: 1050005272
+Claim Type: professional
+Net Claimed: SAR 68.10
+
+Rejected Services:
+  • 16/02/2026 | N00006 – CONSULTATION FEE (SPECIALIST). [MN-1-1]
+
+Rejection Codes: MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #2
+Transaction ID: 6630185
+Amount: SAR 140.4
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630185
+Patient: EHAB RASMI TALEB
+THAWQAN (NID: 2006371047)
+Policy: 1050005091
+Claim Type: professional
+Net Claimed: SAR 140.40
+
+Rejected Services:
+  • 15/02/2026 | 2201233135 – BETASERC 24 MG TABLETS [MN-1-1]
+
+Rejection Codes: MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #3
+Transaction ID: 6630236
+Amount: SAR 363.55
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630236
+Patient: HANIN ABDELNASER
+ABDELKADER ABDELKADER (NID: 2456135140)
+Policy: 1050005016
+Claim Type: professional
+Net Claimed: SAR 363.55
+
+Rejected Services:
+  • 14/02/2026 | D01224 – ULTRASOUND-UTEREUS & OVARIES SCAN [MN-1-1]
+
+Rejection Codes: MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #4
+Transaction ID: 6630350
+Amount: SAR 208.32
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630350
+Patient: MOHAMED ABDELMONEM
+ABDELHADY IBRAHIM (NID: 2265582367)
+Policy: 1050007038
+Claim Type: professional
+Net Claimed: SAR 208.32
+
+Rejected Services:
+  • 01/02/2026 | 141925 – ECG [MN-1-1]
+
+Rejection Codes: MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #5
+Transaction ID: 6630407
+Amount: SAR 67.2
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630407
+Patient: KHALID MADHI ALSUBAIE (NID: 1132655927)
+Policy: 1050008096
+Claim Type: professional
+Net Claimed: SAR 67.20
+
+Rejected Services:
+  • 23/02/2026 | N00006 – CONSULTATION FEE (SPECIALIST). [MN-1-1]
+
+Rejection Codes: MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #6
+Transaction ID: 6630446
+Amount: SAR 67.2
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630446
+Patient: NAHHAL TARIQ - IMARAH (NID: 2122120492)
+Policy: 105008096
+Claim Type: professional
+Net Claimed: SAR 67.20
+
+Rejected Services:
+  • 22/02/2026 | N00006 – CONSULTATION FEE (SPECIALIST). [MN-1-1]
+
+Rejection Codes: MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #7
+Transaction ID: 6630500
+Amount: SAR 69.82
+Claim Type: pharmacy
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630500
+Patient: RANIA MOHAMED
+ABDELMOETI ELSHENNAWI (NID: 2598700421)
+Policy: 1050008096
+Claim Type: pharmacy
+Net Claimed: SAR 69.82
+
+Rejected Services:
+  • 14/02/2026 | 1603221850 – RYALTRIS - 1603221850 [MN-1-1]
+
+Rejection Codes: MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #8
+Transaction ID: 6630567
+Amount: SAR 278.88
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630567
+Patient: UMAR HASAN MOHAMMAD (NID: 2216961611)
+Policy: 1050008096
+Claim Type: professional
+Net Claimed: SAR 278.88
+
+Rejected Services:
+  • 05/02/2026 | 142584 – ELECTROCAUTERY/1-3 LESIONS [MN-1-1]
+
+Rejection Codes: MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #9
+Transaction ID: 6630561
+Amount: SAR 27.45
+Claim Type: pharmacy
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630561
+Patient: MAHMOUD AHMED ABOUZEID
+HEGAZI (NID: 2387898816)
+Policy: 1050008096
+Claim Type: pharmacy
+Net Claimed: SAR 27.45
+
+Rejected Services:
+  • 12/02/2026 | 0512211424 – TABOCINE 100 [MN-1-1]
+
+Rejection Codes: MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #10
+Transaction ID: 6629418
+Amount: SAR 2477.7
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6629418
+Patient: هدوس ادبع رصان دلاخ (NID: 2538864592)
+Policy: 1050006933
+Claim Type: professional
+Net Claimed: SAR 2,477.70
+
+Rejected Services:
+  • 25/02/2026 | B00113 – ALANINE AMINOTRANSFERASE (ALT/SGPT) [MN-1-1]
+  • 25/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT) [BE-1-4]
+  • 25/02/2026 | B01391 – SERUM URIC ACID [AD-1-4]
+  • 25/02/2026 | B01389 – SERUM TOTAL BILIRUBIN (T.BIL) [MN-1-1]
+  • 25/02/2026 | B01369 – SERUM ALBUMIN [MN-1-1]
+  • 25/02/2026 | B00244 – ASPARTATE AMINOTRANSFERASE (AST/SGOT) [MN-1-1]
+
+Rejection Codes: AD-1-4, BE-1-4, MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #11
+Transaction ID: 6629441
+Amount: SAR 832.96
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6629441
+Patient: WARDAH ALI TAWFIQ ALI (NID: 2217205463)
+Policy: 1060000123
+Claim Type: professional
+Net Claimed: SAR 832.96
+
+Rejected Services:
+  • 07/02/2026 | B00487 – CREATINE (SERUM) [MN-1-1]
+  • 05/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT) [BE-1-4]
+
+Rejection Codes: BE-1-4, MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #12
+Transaction ID: 6629594
+Amount: SAR 2865.44
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6629594
+Patient: MALAK SAEED NAJI MUSLEH (NID: 4683112595)
+Policy: 1050163730
+Claim Type: professional
+Net Claimed: SAR 2,865.44
+
+Rejected Services:
+  • 17/02/2026 | B01747 – VAGINAL SWAB CULTURE & SENSITIVITIY [MN-1-1]
+  • 18/02/2026 | B01740 – URINE CULTURE & SENSITIVITY [BE-1-4]
+  • 18/02/2026 | B00473 – COMPLETE URINE ANALYSIS [BE-1-4]
+  • 17/02/2026 | N00006 – CONSULTATION FEE (SPECIALIST). [BE-1-4]
+
+Rejection Codes: BE-1-4, MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #13
+Transaction ID: 6629700
+Amount: SAR 709.62
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6629700
+Patient: SARA YEHIA ALI TALEB (NID: 2292379555)
+Policy: 1060000123
+Claim Type: professional
+Net Claimed: SAR 709.62
+
+Rejected Services:
+  • 18/02/2026 | B01371 – SERUM AMYLASE [MN-1-1]
+  • 17/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT) [BE-1-4]
+  • 18/02/2026 | B01382 – SERUM LIPASE [MN-1-1]
+
+Rejection Codes: BE-1-4, MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #14
+Transaction ID: 6629844
+Amount: SAR 1065.8
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6629844
+Patient: ABOALGASIM ABDALLA
+MUBASHER MOHAMEDSALIH (NID: 2362651008)
+Policy: 1060000205
+Claim Type: professional
+Net Claimed: SAR 1,065.80
+
+Rejected Services:
+  • 11/02/2026 | B00737 – GLYCOSELATED HEMOGLOBIN (HBA IC) [MN-1-1]
+  • 11/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT) [BE-1-4]
+
+Rejection Codes: BE-1-4, MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #15
+Transaction ID: 6629918
+Amount: SAR 2149.05
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6629918
+Patient: MUNA JIHAD TALEB AGHA (NID: 2123910156)
+Policy: 1060000032
+Claim Type: professional
+Net Claimed: SAR 2,149.05
+
+Rejected Services:
+  • 20/02/2026 | B01512 – TROPONIN I ADV. [MN-1-1]
+  • 20/02/2026 | N00004 – CONSULTATION FEE (RESIDENT DR) [BE-1-4]
+  • 20/02/2026 | B00553 – D DIMERS/ FDPS [AD-1-4]
+
+Rejection Codes: AD-1-4, BE-1-4, MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #16
+Transaction ID: 6630198
+Amount: SAR 585.98
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630198
+Patient: HANIN ABDELNASER
+ABDELKADER ABDELKADER (NID: 2456135140)
+Policy: 1050005016
+Claim Type: professional
+Net Claimed: SAR 585.98
+
+Rejected Services:
+  • 12/02/2026 | B00473 – COMPLETE URINE ANALYSIS [MN-1-1]
+  • 12/02/2026 | N00006 – CONSULTATION FEE (SPECIALIST). [CV-1-9]
+
+Rejection Codes: CV-1-9, MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+
+SUBMISSION #17
+Transaction ID: 6630474
+Amount: SAR 1258.0
+Claim Type: professional
+
+APPEAL CONTENT:
+--------------------------------------------------------------------------------
+Re-Adjudication Request – Al-Rajhi Batch BAT-2026-NB-00004295-OT
+Transaction: 6630474
+Patient: LAYAN MAHMOUD MOHAMED
+ABDELLATIF (NID: 2566302853)
+Policy: 1050008096
+Claim Type: professional
+Net Claimed: SAR 1,258.00
+
+Rejected Services:
+  • 09/02/2026 | D00096 – C.T-PARA NASAL SINUSES-PNS [MN-1-1]
+  • 09/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT) [BE-1-4]
+
+Rejection Codes: BE-1-4, MN-1-1
+
+APPEAL BASIS: Retroactive preauthorization / clinical justification per ART PreAuth Protocol.
+All supporting documentation attached.
+
+Provider: Al-Hayat National Hospital | License: 10000000000988
+Payer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321
+--------------------------------------------------------------------------------
+

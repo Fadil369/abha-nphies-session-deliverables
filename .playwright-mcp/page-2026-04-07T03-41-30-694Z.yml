@@ -1,0 +1,72 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - generic [ref=e2]:
+        - generic [ref=e3]:
+          - generic [ref=e4]:
+            - img "logoLink" [ref=e5]
+            - generic [ref=e6]: Hayat National Hospital-ABHA
+          - link [ref=e8] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e14]:
+          - img "patient image" [ref=e17]
+          - generic [ref=e18] [cursor=pointer]:
+            - button "Yezdan Alahmad " [active] [ref=e51]:
+              - generic [ref=e20]: Yezdan Alahmad
+              - text: 
+            - generic [ref=e56]:
+              - img "patient image" [ref=e59]
+              - generic [ref=e61]:
+                - generic [ref=e62]:
+                  - generic [ref=e66]: Yezdan Alahmad
+                  - text: "[U36113]"
+                - generic [ref=e70]: Givc Staff
+                - generic [ref=e73]: "Last Login : 05-04-2026 19:52"
+                - link " User Profile" [ref=e77]:
+                  - /url: "#"
+                  - generic [ref=e78]:
+                    - generic [ref=e79]: 
+                    - text: User Profile
+          - generic [ref=e22] [cursor=pointer]:
+            - text: 
+            - button "The New Hospital " [ref=e23]:
+              - generic [ref=e24]: The New Hospital
+              - text: 
+            - text: 
+          - generic [ref=e26] [cursor=pointer]:
+            - text: 
+            - button "messages 0 " [ref=e27]:
+              - generic [ref=e28]: messages 0
+              - text: 
+          - generic [ref=e29] [cursor=pointer]:
+            - text: 
+            - button "" [ref=e30]: 
+          - link "Logout " [ref=e31] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e32]:
+              - text: Logout
+              - generic [ref=e34]: 
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - textbox "Menu Search" [ref=e35]:
+                    - /placeholder: Search...
+                  - generic: Menu Search
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e80]:
+                - button "Default task flow" [ref=e84] [cursor=pointer]:
+                  - generic [ref=e85]: Default task flow
+                - generic [ref=e87]: "SID :"
+              - img "logo" [ref=e94]
+      - text:   
+  - generic:
+    - status
+    - text: 
+    - alert
+    - text:  

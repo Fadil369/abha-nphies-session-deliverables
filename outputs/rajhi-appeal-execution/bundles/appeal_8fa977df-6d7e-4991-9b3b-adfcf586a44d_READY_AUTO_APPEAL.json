@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-6630420-20260406083844",
+    "id": "appeal-8fa977df-6d7e-4991-9b3b-adfcf586a44d-20260406094745",
     "status": "active",
     "category": [
       {
@@ -29,13 +29,6 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "8fa977df-6d7e-4991-9b3b-adfcf586a44d"
-        }
-      },
-      {
-        "type": "Claim",
-        "identifier": {
-          "system": "http://nphies.sa/identifier/transaction",
-          "value": "6630420"
         }
       }
     ],
@@ -64,23 +57,16 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "BE-1-4"
           }
-        ]
-      },
-      {
-        "coding": [
-          {
-            "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
-            "code": "CV-1-3"
-          }
-        ]
+        ],
+        "text": "re-adjudication"
       }
     ],
     "payload": [
       {
-        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          8fa977df-6d7e-4991-9b3b-adfcf586a44d\n  Transaction ID:     6630420\n  Patient NID:        2281756102\n  Claim Type:         professional / emr\n  Encounter Class:    EMER\n  Policy Number:      1050008096\n  Policy Holder:      SEDER GROUP FOR TRADING AND CONTRACTING COMPANY\n  Net Amount:         SAR 1,216.83\n\nREJECTION DETAILS:\n  [BE-1-4] – 3 service(s) rejected:\n    • 25/02/2026 | N00004 – CONSULTATION FEE (RESIDENT DR)\n    • 25/02/2026 | 142390 – PERIPHERAL I.V CANNULATION\n    • 25/02/2026 | 141925 – ECG\n\n  APPEAL JUSTIFICATION (BE-1-4):\n  PREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol – General Requirements. All supporting clinical documentation is attached.\n  Supporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\n  [CV-1-3] – 3 service(s) rejected:\n    • 26/02/2026 | B01375 – SERUM CREATININE\n    • 25/02/2026 | 142808 – GLUCOMETER TEST ONE TOUCH\n    • 25/02/2026 | B01512 – TROPONIN I ADV.\n\n  APPEAL JUSTIFICATION (CV-1-3):\n  COVERAGE VERIFICATION APPEAL: We are appealing the coverage determination and requesting re-adjudication based on the attached policy benefit schedule. If the primary diagnosis is excluded, we request consideration of the secondary covered diagnosis as documented in the clinical notes.\n  Supporting Documents: Policy benefit schedule, clinical documentation for alternate diagnosis\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
+        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 8fa977df-6d7e-4991-9b3b-adfcf586a44d\nTransaction ID: 6630420.0\nPatient: AMER SAYEED MOHAMMED -\nABDUL SAYEED (NID: 2281756102)\nPolicy: 1050008096.0\n\nREJECTION DETAILS:\n  Code BE-1-4: BE-1-4\n  Services affected: 3\n    • 25/02/2026 | N00004 – CONSULTATION FEE (RESIDENT DR)\n    • 25/02/2026 | 142390 – PERIPHERAL I.V CANNULATION\n    • 25/02/2026 | 141925 – ECG\n\nAPPEAL JUSTIFICATION (BE-1-4):\nPREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol Section: General Requirements. All supporting clinical documentation is attached.\nSupporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\n  Code CV-1-3: CV-1-3\n  Services affected: 3\n    • 26/02/2026 | B01375 – SERUM CREATININE\n    • 25/02/2026 | 142808 – GLUCOMETER TEST ONE TOUCH\n    • 25/02/2026 | B01512 – TROPONIN I ADV.\n\nAPPEAL JUSTIFICATION (CV-1-3):\nCOVERAGE VERIFICATION APPEAL: We are appealing the coverage determination and requesting re-adjudication based on the attached policy benefit schedule. If the primary diagnosis is excluded, we request consideration of the secondary covered diagnosis as documented in the clinical notes.\nSupporting Documents: Policy benefit schedule, clinical documentation for alternate diagnosis\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 7,300.98\n  Lines Rejected: 6\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
       }
     ],
-    "authoredOn": "2026-04-06T08:38:44Z"
+    "authoredOn": "2026-04-06T09:47:45Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

@@ -4,4 +4,5 @@ npm-debug.log*
 Thumbs.db
 
 # Optional local rerun outputs
-reruns/
+reruns/mcp-oracle-db/.env
+mcp-oracle-db/node_modules/

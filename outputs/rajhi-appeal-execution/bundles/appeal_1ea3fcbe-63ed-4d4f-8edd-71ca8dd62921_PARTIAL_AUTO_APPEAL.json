@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-6629953-20260406083844",
+    "id": "appeal-1ea3fcbe-63ed-4d4f-8edd-71ca8dd62921-20260406094745",
     "status": "active",
     "category": [
       {
@@ -29,13 +29,6 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "1ea3fcbe-63ed-4d4f-8edd-71ca8dd62921"
-        }
-      },
-      {
-        "type": "Claim",
-        "identifier": {
-          "system": "http://nphies.sa/identifier/transaction",
-          "value": "6629953"
         }
       }
     ],
@@ -64,23 +57,16 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "AD-1-4"
           }
-        ]
-      },
-      {
-        "coding": [
-          {
-            "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
-            "code": "BE-1-4"
-          }
-        ]
+        ],
+        "text": "re-adjudication"
       }
     ],
     "payload": [
       {
-        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          1ea3fcbe-63ed-4d4f-8edd-71ca8dd62921\n  Transaction ID:     6629953\n  Patient NID:        2120436510\n  Claim Type:         professional / op\n  Encounter Class:    AMB\n  Policy Number:      1060000032\n  Policy Holder:      Al Bawani Co Ltd.\n  Net Amount:         SAR 627.20\n\nREJECTION DETAILS:\n  [AD-1-4] – 1 service(s) rejected:\n    • 19/02/2026 | D00084 – C.T-SKULL AND FACIAL BONES\n\n  APPEAL JUSTIFICATION (AD-1-4):\n  DIAGNOSIS-SERVICE ALIGNMENT APPEAL: The diagnosis codes have been reviewed and corrected to accurately reflect the clinical picture. The corrected ICD-10 codes are consistent with the service provided. We request re-adjudication with the updated coding.\n  Supporting Documents: Updated clinical notes with correct ICD-10 codes, treatment rationale\n\n  [BE-1-4] – 1 service(s) rejected:\n    • 19/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT)\n\n  APPEAL JUSTIFICATION (BE-1-4):\n  PREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol – General Requirements. All supporting clinical documentation is attached.\n  Supporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
+        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 1ea3fcbe-63ed-4d4f-8edd-71ca8dd62921\nTransaction ID: 6629953.0\nPatient: MOHAMMED MAHMOUD\nABDULAZIZ HUSSAIN (NID: 2120436510)\nPolicy: 1060000032.0\n\nREJECTION DETAILS:\n  Code AD-1-4: AD-1-4\n  Services affected: 1\n    • 19/02/2026 | D00084 – C.T-SKULL AND FACIAL BONES\n\nAPPEAL JUSTIFICATION (AD-1-4):\nDIAGNOSIS-SERVICE ALIGNMENT APPEAL: The diagnosis codes have been reviewed and corrected to accurately reflect the clinical picture. The corrected ICD-10 codes are consistent with the service provided. We request re-adjudication with the updated coding.\nSupporting Documents: Updated clinical notes with correct ICD-10 codes, treatment rationale\n\n  Code BE-1-4: BE-1-4\n  Services affected: 1\n    • 19/02/2026 | N00005 – CONSULTATION FEE (CONSULTANT)\n\nAPPEAL JUSTIFICATION (BE-1-4):\nPREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol Section: General Requirements. All supporting clinical documentation is attached.\nSupporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 1,254.40\n  Lines Rejected: 2\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
       }
     ],
-    "authoredOn": "2026-04-06T08:38:44Z"
+    "authoredOn": "2026-04-06T09:47:45Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

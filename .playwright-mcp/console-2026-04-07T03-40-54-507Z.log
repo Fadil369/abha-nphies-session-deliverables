@@ -1,0 +1,23 @@
+[     137ms] NetworkError: Failed to execute 'send' on 'XMLHttpRequest': Failed to load 'http://oracle-abha.brainsait.org/Oasis/faces/Home': Synchronous XHR in page dismissal. See https://www.chromestatus.com/feature/4664843055398912 for more details.
+    at AdfXMLRequest.send (http://oracle-abha.brainsait.org/Oasis/afr/partition/webkit/n/default/opt/d/core-xty4fu.js:37:417)
+    at AdfDhtmlPage.notifyWindowUnloaded (http://oracle-abha.brainsait.org/Oasis/afr/partition/webkit/n/default/opt/d/boot-90btl4.js:611:172)
+    at AdfDhtmlPage._handleBeforeUnload (http://oracle-abha.brainsait.org/Oasis/afr/partition/webkit/n/default/opt/d/boot-90btl4.js:652:325)
+    at eval (eval at AdfObject.createCallback (http://oracle-abha.brainsait.org/Oasis/afr/partition/webkit/n/default/opt/d/boot-90btl4.js:23:320), <anonymous>:3:40)
+[     866ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: http://oracle-abha.brainsait.org/Oasis/resources/fonts/font-awesome/fonts/fa-solid-900.woff @ http://oracle-abha.brainsait.org/Oasis/faces/Home:7
+[    1032ms] [LOG] INIT STARTING @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/main.js?v=1.33:50
+[    1082ms] [LOG] paths ../security-api/static/assets/bundle.min.js?v=1.7,/hr-api/static/assets/bundle.min.js @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:596
+[    1082ms] [LOG] code ../security-api/static/assets/bundle.min.js?v=1.7 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1082ms] [LOG] code /hr-api/static/assets/bundle.min.js @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1082ms] [LOG] paths /Oasis/security-service/static/assets/bundle.min.js?v=1.2.0,/Oasis/ms-report/static/assets/bundle.min.js?v=1.0.1,/Oasis/release-notes-service/static/assets/bundle.min.js?v=0.0.25,/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:596
+[    1083ms] [LOG] code /Oasis/security-service/static/assets/bundle.min.js?v=1.2.0 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1083ms] [LOG] code /Oasis/ms-report/static/assets/bundle.min.js?v=1.0.1 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1083ms] [LOG] code /Oasis/release-notes-service/static/assets/bundle.min.js?v=0.0.25 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1083ms] [LOG] code /Oasis/security-service/static/assets/bundle.min.js?v=1.2.20 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1088ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://oracle-abha.brainsait.org/Oasis/security-api/static/assets/bundle.min.js?v=1.7:0
+[    1088ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://oracle-abha.brainsait.org/hr-api/static/assets/bundle.min.js:0
+[    1150ms] [LOG] refreshing the container panel group layout @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:1004
+[    7470ms] [LOG] Creating shaow dom @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547
+[    7470ms] [LOG] connectedCallback @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547
+[    7471ms] [LOG] closed shadow domw first @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547
+[    7471ms] [LOG] reconnect to shadown down JSHandle@node null @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547
+[    7471ms] [LOG] JSHandle@node @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547

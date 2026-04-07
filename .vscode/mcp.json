@@ -1,0 +1,137 @@
+{
+	"servers": {
+		"oracle-portal": {
+			"type": "stdio",
+			"command": "node",
+			"args": [
+				"${workspaceFolder}/mcp-oracle-db/src/index.js"
+			],
+			"env": {
+				"PORTAL_USER": "${input:portalUser}",
+				"PORTAL_PASS": "${input:portalPass}",
+				"ABHA_USER": "${input:portalUser}",
+				"ABHA_PASS": "${input:portalPass}",
+				"RIYADH_USER": "${input:portalUser}",
+				"RIYADH_PASS": "${input:portalPass}",
+				"HEADLESS": "true",
+				"TIMEOUT_MS": "30000"
+			}
+		},
+		"microsoft/playwright-mcp": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.0.1-seed"
+		},
+		"chroma-core/chroma-mcp": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"chroma-mcp@v0.2.6"
+			],
+			"env": {
+				"CHROMA_CLIENT_TYPE": "${input:chroma_client_type}",
+				"CHROMA_DOTENV_PATH": "${input:chroma_dotenv_path}",
+				"CHROMA_DATA_DIR": "${input:chroma_data_dir}",
+				"CHROMA_TENANT": "${input:chroma_tenant}",
+				"CHROMA_DATABASE": "${input:chroma_database}",
+				"CHROMA_API_KEY": "${input:chroma_api_key}",
+				"CHROMA_HOST": "${input:chroma_host}",
+				"CHROMA_PORT": "${input:chroma_port}",
+				"CHROMA_CUSTOM_AUTH_CREDENTIALS": "${input:chroma_custom_auth}",
+				"CHROMA_SSL": "${input:chroma_ssl}"
+			},
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		},
+		"io.github.microsoft/awesome-copilot": {
+			"type": "stdio",
+			"command": "docker",
+			"args": [
+				"run",
+				"-i",
+				"--rm",
+				"ghcr.io/microsoft/mcp-dotnet-samples/awesome-copilot:1.0.2026040123"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.2026040123"
+		}
+	},
+	"inputs": [
+		{
+			"id": "portalUser",
+			"type": "promptString",
+			"description": "Oasis+ portal username (shared across all branches unless overridden in .env)",
+			"default": "U36113"
+		},
+		{
+			"id": "portalPass",
+			"type": "promptString",
+			"description": "Oasis+ portal password",
+			"password": true
+		},
+		{
+			"id": "chroma_client_type",
+			"type": "promptString",
+			"description": "Client type: ephemeral (default), persistent, cloud, or http.",
+			"password": false
+		},
+		{
+			"id": "chroma_dotenv_path",
+			"type": "promptString",
+			"description": "Optional path to .env (defaults to ./.chroma_env).",
+			"password": false
+		},
+		{
+			"id": "chroma_data_dir",
+			"type": "promptString",
+			"description": "Data directory for persistent client.",
+			"password": false
+		},
+		{
+			"id": "chroma_tenant",
+			"type": "promptString",
+			"description": "Chroma Cloud tenant ID.",
+			"password": false
+		},
+		{
+			"id": "chroma_database",
+			"type": "promptString",
+			"description": "Chroma Cloud database name.",
+			"password": false
+		},
+		{
+			"id": "chroma_api_key",
+			"type": "promptString",
+			"description": "Chroma Cloud API key.",
+			"password": true
+		},
+		{
+			"id": "chroma_host",
+			"type": "promptString",
+			"description": "Self-hosted Chroma host.",
+			"password": false
+		},
+		{
+			"id": "chroma_port",
+			"type": "promptString",
+			"description": "Self-hosted Chroma port.",
+			"password": false
+		},
+		{
+			"id": "chroma_custom_auth",
+			"type": "promptString",
+			"description": "Custom auth credentials for self-hosted Chroma.",
+			"password": true
+		},
+		{
+			"id": "chroma_ssl",
+			"type": "promptString",
+			"description": "Use SSL (true/false) for self-hosted HTTP.",
+			"password": false
+		}
+	]
+}

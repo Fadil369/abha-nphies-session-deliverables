@@ -1,0 +1,17 @@
+[     953ms] [LOG] INIT STARTING @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/main.js?v=1.33:50
+[    1000ms] [LOG] paths ../security-api/static/assets/bundle.min.js?v=1.7,/hr-api/static/assets/bundle.min.js @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:596
+[    1000ms] [LOG] code ../security-api/static/assets/bundle.min.js?v=1.7 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1001ms] [LOG] code /hr-api/static/assets/bundle.min.js @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1001ms] [LOG] paths /Oasis/security-service/static/assets/bundle.min.js?v=1.2.0,/Oasis/ms-report/static/assets/bundle.min.js?v=1.0.1,/Oasis/release-notes-service/static/assets/bundle.min.js?v=0.0.25,/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:596
+[    1001ms] [LOG] code /Oasis/security-service/static/assets/bundle.min.js?v=1.2.0 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1001ms] [LOG] code /Oasis/ms-report/static/assets/bundle.min.js?v=1.0.1 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1001ms] [LOG] code /Oasis/release-notes-service/static/assets/bundle.min.js?v=0.0.25 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1001ms] [LOG] code /Oasis/security-service/static/assets/bundle.min.js?v=1.2.20 @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:604
+[    1006ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://oracle-abha.brainsait.org/Oasis/security-api/static/assets/bundle.min.js?v=1.7:0
+[    1006ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://oracle-abha.brainsait.org/hr-api/static/assets/bundle.min.js:0
+[    1056ms] [LOG] refreshing the container panel group layout @ http://oracle-abha.brainsait.org/Oasis/resources/scripts/CommonOasisJs.min.js?v=8.12:1004
+[    7465ms] [LOG] Creating shaow dom @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547
+[    7465ms] [LOG] connectedCallback @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547
+[    7466ms] [LOG] closed shadow domw first @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547
+[    7466ms] [LOG] reconnect to shadown down JSHandle@node null @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547
+[    7466ms] [LOG] JSHandle@node @ http://oracle-abha.brainsait.org/Oasis/security-service/static/assets/bundle.min.js?v=1.2.20:547

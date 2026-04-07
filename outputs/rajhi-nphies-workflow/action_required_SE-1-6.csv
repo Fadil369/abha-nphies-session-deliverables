@@ -1,0 +1,3 @@
+TransactionID,Amount,ClaimType,Member,NationalID,Policy,RejectionCode,AppealAction,DocumentsNeeded,Priority,EstRecovery
+6629505,2385.6,oral,N/A,N/A,N/A,SE-1-6,Attach X-ray/lab investigation results,X-ray images; Lab test results; Investigation report,MEDIUM,1431.36
+6630468,730.8,oral,N/A,N/A,N/A,SE-1-6,Attach X-ray/lab investigation results,X-ray images; Lab test results; Investigation report,MEDIUM,438.47999999999996

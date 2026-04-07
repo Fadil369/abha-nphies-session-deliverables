@@ -1,0 +1,11 @@
+TransactionID,Amount,ClaimType,Member,NationalID,Policy,RejectionCode,AppealAction,DocumentsNeeded,Priority,EstRecovery
+6629450,132.38,pharmacy,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,86.047
+6629596,454.21,pharmacy,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,295.2365
+6629839,469.52,pharmacy,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,305.188
+6629946,395.68,pharmacy,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,257.192
+6630167,186.2,pharmacy,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,121.03
+6630456,268.32,pharmacy,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,174.40800000000002
+6630493,242.1,pharmacy,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,157.365
+6629557,2520.0,professional,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,1638.0
+6629856,748.26,professional,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,486.369
+6630425,6137.150000000001,professional,N/A,N/A,N/A,BE-1-3,Correct compliance issues and resubmit,Corrected claim data; Policy verification; Service code mapping,MEDIUM,3989.1475000000005

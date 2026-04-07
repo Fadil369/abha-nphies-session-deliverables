@@ -1,0 +1,18 @@
+TransactionID,Amount,ClaimType,Member,NationalID,Policy,RejectionCode,AppealAction,DocumentsNeeded,Priority,EstRecovery
+6629454,68.1,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,27.24
+6630185,140.4,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,56.160000000000004
+6630236,363.55,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,145.42000000000002
+6630350,208.32,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,83.328
+6630407,67.2,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,26.880000000000003
+6630446,67.2,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,26.880000000000003
+6630500,69.82,pharmacy,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,27.927999999999997
+6630567,278.88,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,111.552
+6630561,27.45,pharmacy,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,10.98
+6629418,2477.7,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,991.0799999999999
+6629441,832.96,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,333.184
+6629594,2865.44,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,1146.1760000000002
+6629700,709.62,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,283.848
+6629844,1065.8,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,426.32
+6629918,2149.05,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,859.6200000000001
+6630198,585.98,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,234.39200000000002
+6630474,1258.0,professional,N/A,N/A,N/A,MN-1-1,Provide clinical evidence and medical records,Medical records; Diagnosis codes (ICD-10); Clinical notes; Lab/Radiology results,HIGH,503.20000000000005

@@ -1,0 +1,60 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - img "logoLink" [ref=e7]
+          - generic [ref=e8]: Hayat National Hospital-ABHA
+        - link [ref=e10] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e16]:
+        - img "patient image" [ref=e19]
+        - generic [ref=e20] [cursor=pointer]:
+          - button "Yezdan Alahmad " [ref=e21]:
+            - generic [ref=e22]: Yezdan Alahmad
+            - text: 
+          - text: 
+        - generic [ref=e24] [cursor=pointer]:
+          - text: 
+          - button "The New Hospital " [ref=e25]:
+            - generic [ref=e26]: The New Hospital
+            - text: 
+          - text: 
+        - generic [ref=e28] [cursor=pointer]:
+          - text: 
+          - button "messages 0 " [ref=e29]:
+            - generic [ref=e30]: messages 0
+            - text: 
+        - generic [ref=e31] [cursor=pointer]:
+          - text: 
+          - button "" [ref=e32]: 
+        - link "Logout " [ref=e33] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e34]:
+            - text: Logout
+            - generic [ref=e36]: 
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - textbox "Menu Search" [ref=e37]:
+                  - /placeholder: Search...
+                - generic: Menu Search
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - button "Default task flow" [ref=e46] [cursor=pointer]:
+          - generic [ref=e47]: Default task flow
+        - generic [ref=e49]: "SID :"
+      - generic [ref=e57]:
+        - heading [level=1]
+        - generic [ref=e59]:
+          - generic [ref=e62]: " OS-2647 : User is Attached to a Job Group With no Access Rights to This Form"
+          - text:  
+    - text:   
+  - generic:
+    - status
+    - text: 
+    - alert
+    - text:  

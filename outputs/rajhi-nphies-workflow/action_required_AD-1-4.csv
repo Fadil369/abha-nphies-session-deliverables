@@ -1,0 +1,6 @@
+TransactionID,Amount,ClaimType,Member,NationalID,Policy,RejectionCode,AppealAction,DocumentsNeeded,Priority,EstRecovery
+6629709,363.55,professional,N/A,N/A,N/A,AD-1-4,Correct diagnosis codes (ICD-10),Corrected ICD-10 codes; Medical records; Diagnosis verification,LOW,163.5975
+6629418,2477.7,professional,N/A,N/A,N/A,AD-1-4,Correct diagnosis codes (ICD-10),Corrected ICD-10 codes; Medical records; Diagnosis verification,LOW,1114.965
+6629953,1254.4,professional,N/A,N/A,N/A,AD-1-4,Correct diagnosis codes (ICD-10),Corrected ICD-10 codes; Medical records; Diagnosis verification,LOW,564.48
+6629986,15580.95,professional,N/A,N/A,N/A,AD-1-4,Correct diagnosis codes (ICD-10),Corrected ICD-10 codes; Medical records; Diagnosis verification,LOW,7011.427500000001
+6629918,2149.05,professional,N/A,N/A,N/A,AD-1-4,Correct diagnosis codes (ICD-10),Corrected ICD-10 codes; Medical records; Diagnosis verification,LOW,967.0725000000001

@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-6630119-20260406083844",
+    "id": "appeal-7b7752a4-a1c6-4e16-9af0-380acd3052c9-20260406094745",
     "status": "active",
     "category": [
       {
@@ -29,13 +29,6 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "7b7752a4-a1c6-4e16-9af0-380acd3052c9"
-        }
-      },
-      {
-        "type": "Claim",
-        "identifier": {
-          "system": "http://nphies.sa/identifier/transaction",
-          "value": "6630119"
         }
       }
     ],
@@ -64,15 +57,16 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "BE-1-4"
           }
-        ]
+        ],
+        "text": "re-adjudication"
       }
     ],
     "payload": [
       {
-        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          7b7752a4-a1c6-4e16-9af0-380acd3052c9\n  Transaction ID:     6630119\n  Patient NID:        2331857637\n  Claim Type:         pharmacy / op\n  Encounter Class:    \n  Policy Number:      1050006165\n  Policy Holder:      Kudu Co. For Food & Catering\n  Net Amount:         SAR 264.08\n\nREJECTION DETAILS:\n  [BE-1-4] – 5 service(s) rejected:\n    • 26/02/2026 | 2201233135 – BETASERC 24 MG TABLETS\n    • 27/02/2026 | 2902245009 – CARPAZIO 300 MG FILM COATED TABLET\n    • 26/02/2026 | 0409234102 – SEQUIT 25 MG FILM COATED TABLETS\n    • 26/02/2026 | 2307245639 – ROXONIN 60MG TABLET - 2307245639\n    • 26/02/2026 | 10-5825-23 – EFEXOR XR 150 MG CAPSULES\n\n  APPEAL JUSTIFICATION (BE-1-4):\n  PREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol – General Requirements. All supporting clinical documentation is attached.\n  Supporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
+        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: 7b7752a4-a1c6-4e16-9af0-380acd3052c9\nTransaction ID: 6630119.0\nPatient: TAHSEENBANU\nSATTARPASHA MOMIN (NID: 2331857637)\nPolicy: 1050006165.0\n\nREJECTION DETAILS:\n  Code BE-1-4: BE-1-4\n  Services affected: 5\n    • 26/02/2026 | 2201233135 – BETASERC 24 MG TABLETS\n    • 27/02/2026 | 2902245009 – CARPAZIO 300 MG FILM COATED TABLET\n    • 26/02/2026 | 0409234102 – SEQUIT 25 MG FILM COATED TABLETS\n    • 26/02/2026 | 2307245639 – ROXONIN 60MG TABLET - 2307245639\n    • 26/02/2026 | 10-5825-23 – EFEXOR XR 150 MG CAPSULES\n\nAPPEAL JUSTIFICATION (BE-1-4):\nPREAUTHORIZATION APPEAL: The service was provided without prior authorization due to clinical urgency / administrative oversight. We hereby submit a retroactive preauthorization request with full clinical justification as required under ART PreAuth Protocol Section: General Requirements. All supporting clinical documentation is attached.\nSupporting Documents: Medical report, clinical notes, diagnosis confirmation, treatment plan\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 1,320.40\n  Lines Rejected: 5\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
       }
     ],
-    "authoredOn": "2026-04-06T08:38:44Z"
+    "authoredOn": "2026-04-06T09:47:45Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

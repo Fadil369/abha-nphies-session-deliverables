@@ -2,7 +2,7 @@
   "facility_id": 1,
   "fhir_payload": {
     "resourceType": "CommunicationRequest",
-    "id": "appeal-6629709-20260406083844",
+    "id": "appeal-f34a324c-0ea5-4659-9c6c-ee6f56d5090f-20260406094745",
     "status": "active",
     "category": [
       {
@@ -29,13 +29,6 @@
         "identifier": {
           "system": "http://nphies.sa/identifier/claim",
           "value": "f34a324c-0ea5-4659-9c6c-ee6f56d5090f"
-        }
-      },
-      {
-        "type": "Claim",
-        "identifier": {
-          "system": "http://nphies.sa/identifier/transaction",
-          "value": "6629709"
         }
       }
     ],
@@ -64,15 +57,16 @@
             "system": "http://nphies.sa/terminology/CodeSystem/rejection-reason",
             "code": "AD-1-4"
           }
-        ]
+        ],
+        "text": "re-adjudication"
       }
     ],
     "payload": [
       {
-        "contentString": "RE-ADJUDICATION REQUEST\nBatch: BAT-2026-NB-00004295-OT  |  Period: 01-02-2026 - 28-02-2026\n\nCLAIM DETAILS:\n  Bundle ID:          f34a324c-0ea5-4659-9c6c-ee6f56d5090f\n  Transaction ID:     6629709\n  Patient NID:        2612816138\n  Claim Type:         professional / op\n  Encounter Class:    AMB\n  Policy Number:      1060000123\n  Policy Holder:      Arab Shadows CO.\n  Net Amount:         SAR 363.55\n\nREJECTION DETAILS:\n  [AD-1-4] – 1 service(s) rejected:\n    • 16/02/2026 | D00361 – ULTRASOUND-NECK\n\n  APPEAL JUSTIFICATION (AD-1-4):\n  DIAGNOSIS-SERVICE ALIGNMENT APPEAL: The diagnosis codes have been reviewed and corrected to accurately reflect the clinical picture. The corrected ICD-10 codes are consistent with the service provided. We request re-adjudication with the updated coding.\n  Supporting Documents: Updated clinical notes with correct ICD-10 codes, treatment rationale\n\n---\nProvider: Al-Hayat National Hospital\nProvider License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance\nPayer License: 7001593321"
+        "contentString": "APPEAL REQUEST – Al-Rajhi Riyadh Batch BAT-2026-NB-00004295-OT\nBundle ID: f34a324c-0ea5-4659-9c6c-ee6f56d5090f\nTransaction ID: 6629709.0\nPatient: ةوطخ وبأ رمع دومحم هنيدر (NID: 2612816138)\nPolicy: 1060000123.0\n\nREJECTION DETAILS:\n  Code AD-1-4: AD-1-4\n  Services affected: 1\n    • 16/02/2026 | D00361 – ULTRASOUND-NECK\n\nAPPEAL JUSTIFICATION (AD-1-4):\nDIAGNOSIS-SERVICE ALIGNMENT APPEAL: The diagnosis codes have been reviewed and corrected to accurately reflect the clinical picture. The corrected ICD-10 codes are consistent with the service provided. We request re-adjudication with the updated coding.\nSupporting Documents: Updated clinical notes with correct ICD-10 codes, treatment rationale\n\nFINANCIAL SUMMARY:\n  Total Claimed: SAR 363.55\n  Lines Rejected: 1\n\n---\nProvider: Al-Hayat National Hospital | License: 10000000000988\nPayer: Al-Rajhi Company for Cooperative Insurance | License: 7001593321\nBatch: BAT-2026-NB-00004295-OT | Period: 01-02-2026 - 28-02-2026"
       }
     ],
-    "authoredOn": "2026-04-06T08:38:44Z"
+    "authoredOn": "2026-04-06T09:47:45Z"
   },
   "signature": "",
   "resource_type": "CommunicationRequest"

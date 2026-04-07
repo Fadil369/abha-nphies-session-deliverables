@@ -22,6 +22,7 @@ BASE    = "/Users/fadil369/abha-nphies-session-deliverables-1"
 PREP_DIR = f"{BASE}/outputs/rajhi-appeal-prep"
 BUNDLE_DIR = f"{BASE}/outputs/rajhi-appeal-execution/bundles"
 EXEC_CSV   = f"{BASE}/outputs/rajhi-appeal-execution/execution_results.csv"
+CLAIM_SUMMARY_CSV = f"{PREP_DIR}/claim_appeal_summary.csv"
 VAL_JSON   = f"{PREP_DIR}/validation_report.json"
 ORACLE_CSV = f"{PREP_DIR}/oracle_doc_queue.csv"
 LIMIT_CSV  = f"{PREP_DIR}/approval_limit_queue.csv"
@@ -52,6 +53,14 @@ claim_by_bundle = defaultdict(list)
 for c in prep['claims']:
     claim_by_bundle[c['bundle_id']].append(c)
 
+# claim_appeal_summary contains transactional fields not present in execution_results.csv
+summary_by_bundle = {}
+with open(CLAIM_SUMMARY_CSV, newline='', encoding='utf-8') as f:
+    for row in csvmod.DictReader(f):
+        bundle_id = row.get('BundleID')
+        if bundle_id and bundle_id not in summary_by_bundle:
+            summary_by_bundle[bundle_id] = row
+
 # ─── Classify each bundle ─────────────────────────────────────────────────────
 results      = []
 oracle_queue = []
@@ -60,15 +69,19 @@ portal_ready = []
 
 for b in bundles:
     bundle_id     = b['bundle_id']
-    txn_id        = b['transaction_id']
+    meta          = summary_by_bundle.get(bundle_id, {})
+    first_claim   = (claim_by_bundle.get(bundle_id) or [{}])[0]
+
+    # execution_results.csv produced by build-rajhi-appeals.py does not include transaction fields
+    txn_id        = str(meta.get('TransactionID') or first_claim.get('transaction_id') or '').replace('.0', '')
     codes         = [c.strip() for c in b['rejection_codes'].split(',')]
-    claim_type    = b['claim_type']
+    claim_type    = (meta.get('ClaimType') or first_claim.get('claim_type') or 'Unknown').lower()
     readiness     = b['readiness']
     net           = float(b['net_amount'] or 0)
     lines         = int(b['lines_rejected'] or 0)
-    member        = b['policy_holder']  # holder name from Claims Excel
-    national_id   = b['patient_id']
-    policy_no     = b['policy_number']
+    member        = meta.get('MemberName') or b.get('member_name') or first_claim.get('member_name', '')
+    national_id   = str(meta.get('NationalID') or b.get('national_id') or first_claim.get('national_id', ''))
+    policy_no     = str(meta.get('PolicyNo') or first_claim.get('policy_number') or '').replace('.0', '')
     claim_lines   = claim_by_bundle.get(bundle_id, [])
 
     flags = []
