@@ -1,0 +1,11 @@
+claimId,patientId,amount,serviceType,submissionDate,requiredDocs,status
+ABH-001-2026,PAT-20001,25000,pharmaceutical,2026-04-08,insurance_card;prescription;id_copy;hydration_data,pending
+ABH-002-2026,PAT-20002,18500,professional,2026-04-08,insurance_card;doctor_report;id_copy;hydration_data,pending
+ABH-003-2026,PAT-20003,35000,institutional,2026-04-08,insurance_card;hospital_report;discharge_summary;id_copy;hydration_data,pending
+ABH-004-2026,PAT-20004,12000,pharmaceutical,2026-04-08,insurance_card;prescription;id_copy;hydration_data,pending
+ABH-005-2026,PAT-20005,22300,professional,2026-04-08,insurance_card;doctor_report;id_copy;hydration_data,pending
+ABH-006-2026,PAT-20006,28500,institutional,2026-04-08,insurance_card;hospital_report;discharge_summary;id_copy;hydration_data,pending
+ABH-007-2026,PAT-20007,15600,pharmaceutical,2026-04-08,insurance_card;prescription;id_copy;hydration_data,pending
+ABH-008-2026,PAT-20008,19200,professional,2026-04-08,insurance_card;doctor_report;id_copy;hydration_data,pending
+ABH-009-2026,PAT-20009,31400,institutional,2026-04-08,insurance_card;hospital_report;discharge_summary;id_copy;hydration_data,pending
+ABH-010-2026,PAT-20010,17800,pharmaceutical,2026-04-08,insurance_card;prescription;id_copy;hydration_data,pending

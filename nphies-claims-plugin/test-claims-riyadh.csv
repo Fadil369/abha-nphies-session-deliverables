@@ -1,0 +1,6 @@
+claimId,patientId,amount,serviceType,submissionDate,requiredDocs,status
+RIY-001-2026,PAT-10001,15000,pharmaceutical,2026-04-08,insurance_card;prescription;id_copy,pending
+RIY-002-2026,PAT-10002,8500,professional,2026-04-08,insurance_card;doctor_report;id_copy,pending
+RIY-003-2026,PAT-10003,22000,institutional,2026-04-08,insurance_card;hospital_report;discharge_summary;id_copy,pending
+RIY-004-2026,PAT-10004,5600,pharmaceutical,2026-04-08,insurance_card;prescription;id_copy,pending
+RIY-005-2026,PAT-10005,12300,professional,2026-04-08,insurance_card;doctor_report;id_copy,pending
