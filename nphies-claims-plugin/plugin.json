@@ -1,0 +1,161 @@
+{
+  "name": "nphies-claims",
+  "displayName": "NPHIES Claims Plugin",
+  "version": "1.0.0",
+  "publisher": "fadil369",
+  "license": "MIT",
+  "description": "Automate MOH-ABHA and Al Rajhi (Riyadh) claims submission management for NPHIES with agents, skills, hooks, and MCP server integration.",
+  "author": {
+    "name": "NPHIES Automation Team"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fadil369/nphies-claims-plugin"
+  },
+  "homepage": "https://github.com/fadil369/nphies-claims-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/fadil369/nphies-claims-plugin/issues"
+  },
+  "keywords": [
+    "nphies",
+    "claims",
+    "health-insurance",
+    "automation",
+    "riyadh",
+    "abha",
+    "moh",
+    "al-rajhi",
+    "submission",
+    "appeals"
+  ],
+  "categories": [
+    "AI",
+    "Automation",
+    "Business",
+    "Integration"
+  ],
+  "galleryBanner": {
+    "color": "#1e5a96",
+    "theme": "dark"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.90.0",
+    "copilot": "^1.0.0"
+  },
+  "contributes": {
+    "skills": [
+      {
+        "id": "claim-triage",
+        "title": "Claim Triage",
+        "description": "Analyze rejection codes and categorize claims by priority and corrective action",
+        "path": "./skills/claim-triage/SKILL.md"
+      },
+      {
+        "id": "doc-validation",
+        "title": "Document Validation",
+        "description": "Verify supporting documents for completeness and format compliance",
+        "path": "./skills/doc-validation/SKILL.md"
+      },
+      {
+        "id": "approval-limits",
+        "title": "Approval Limits Check",
+        "description": "Check and validate patient/provider approval limits from Oasis",
+        "path": "./skills/approval-limits/SKILL.md"
+      },
+      {
+        "id": "batch-processor",
+        "title": "Batch Processor",
+        "description": "Execute controlled batch submissions with progress tracking and validation",
+        "path": "./skills/batch-processor/SKILL.md"
+      }
+    ],
+    "agents": [
+      {
+        "id": "submissions-manager",
+        "title": "Submissions Manager",
+        "description": "Orchestrate claims submission workflow with safety guardrails",
+        "path": "./agents/submissions-manager.agent.md"
+      },
+      {
+        "id": "appeals-processor",
+        "title": "Appeals Processor",
+        "description": "Process rejection appeals and prepare corrective documentation",
+        "path": "./agents/appeals-processor.agent.md"
+      }
+    ],
+    "commands": [
+      {
+        "id": "nphies.validate",
+        "title": "NPHIES: Validate Claim",
+        "description": "Quick claim format check"
+      },
+      {
+        "id": "nphies.submit",
+        "title": "NPHIES: Submit Batch",
+        "description": "Submit batch (default: dry-run, limit=5)"
+      },
+      {
+        "id": "nphies.appeal",
+        "title": "NPHIES: Process Appeal",
+        "description": "Analyze rejection and prepare appeal"
+      },
+      {
+        "id": "nphies.batch",
+        "title": "NPHIES: Batch from CSV",
+        "description": "Run batch from CSV file (default: dry-run)"
+      },
+      {
+        "id": "nphies.status",
+        "title": "NPHIES: Show Status",
+        "description": "Show submission progress and audit trail"
+      },
+      {
+        "id": "nphies.hydrate",
+        "title": "NPHIES: Hydrate Limits",
+        "description": "Refresh approval limits from Oasis portal"
+      }
+    ],
+    "mcpServers": [
+      {
+        "id": "oracle-portal",
+        "name": "Oracle Portal MCP",
+        "description": "NPHIES portal automation and claim management tools"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "scripts": {
+    "test": "node ./scripts/test-plugin.js",
+    "validate": "node ./scripts/validate-structure.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "csv-parse": "^5.4.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "changelog": {
+    "1.0.0": {
+      "date": "2026-04-07",
+      "features": [
+        "Initial release with 4 skills for claim workflows",
+        "2 specialized agents (submissions, appeals)",
+        "3 lifecycle hooks (PreToolUse, PostToolUse, Batch Monitoring)",
+        "6 new MCP tools for portal operations",
+        "6 slash commands for quick operator access",
+        "Complete audit logging and compliance support",
+        "Safety guardrails (dry-run, approval limits, validation)"
+      ]
+    }
+  },
+  "extensionDependencies": [],
+  "sponsor": {
+    "url": "https://github.com/fadil369"
+  }
+}

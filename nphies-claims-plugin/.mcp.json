@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "oracle-portal": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/../mcp-oracle-db/src/index.js"],
+      "env": {
+        "PORTAL_USER": "${PORTAL_USER}",
+        "PORTAL_PASS": "${PORTAL_PASS}",
+        "ORACLE_PROFILE_DIR": "${ORACLE_PROFILE_DIR}",
+        "NODE_ENV": "production"
+      },
+      "cwd": "${CLAUDE_PLUGIN_ROOT}/..",
+      "autoStart": true,
+      "alwaysAllow": true
+    }
+  }
+}
