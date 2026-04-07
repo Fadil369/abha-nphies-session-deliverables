@@ -1,0 +1,42 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "description": "Validate before submission - check limits, credentials, dry-run gates",
+        "type": "command",
+        "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/pre-submit-validation.sh",
+        "timeout": 30,
+        "environment": {
+          "PLUGIN_ROOT": "${CLAUDE_PLUGIN_ROOT}",
+          "LOG_LEVEL": "info"
+        }
+      }
+    ],
+    
+    "PostToolUse": [
+      {
+        "description": "Track submission results and audit logging",
+        "type": "command",
+        "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/post-submit-tracking.sh",
+        "timeout": 30,
+        "environment": {
+          "PLUGIN_ROOT": "${CLAUDE_PLUGIN_ROOT}",
+          "LOG_LEVEL": "info"
+        }
+      }
+    ],
+    
+    "SessionStart": [
+      {
+        "description": "Monitor batch health on session start",
+        "type": "command",
+        "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/batch-monitoring.sh",
+        "timeout": 30,
+        "environment": {
+          "PLUGIN_ROOT": "${CLAUDE_PLUGIN_ROOT}",
+          "LOG_LEVEL": "info"
+        }
+      }
+    ]
+  }
+}
