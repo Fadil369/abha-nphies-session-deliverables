@@ -1,15 +1,25 @@
 /**
- * mcp-oracle-portal  v3.0
- * Multi-branch MCP Server for Oasis+ portal network — brainsait.org
+ * mcp-oracle-portal  v3.2
+ * Multi-branch MCP Server for Oasis+ portal network — BrainSAIT
  *
- * Each branch (hospital) has its own Cloudflare tunnel URL and portal base path.
- * The server maintains one authenticated Playwright browser session per branch.
+ * All 6 hospitals are accessed via Cloudflare Tunnel subdomains
+ * (oracle-<branch>.brainsait.org).  Direct internal IPs are stored as
+ * `directIp` and used as automatic fallback when the CF tunnel is
+ * unreachable (e.g. running from inside the hospital LAN).
  *
- * Built-in branches (extend via BRANCHES_JSON env var):
- *   • abha    — oracle-abha.brainsait.org    /Oasis
- *   • riyadh  — oracle-riyadh.brainsait.org  /prod
+ * Control-Tower dashboard: https://portals.brainsait.org/control-tower
+ *
+ * Branch → CF Tunnel URL → internal IP
+ * ──────────────────────────────────────────────────────────────────────
+ * abha    → oracle-abha.brainsait.org/Oasis    → 172.19.1.1
+ * riyadh  → oracle-riyadh.brainsait.org/prod   → 128.1.1.185  (HTTPS)
+ * madinah → oracle-madinah.brainsait.org/Oasis → 172.25.11.26
+ * unaizah → oracle-unaizah.brainsait.org/prod  → 10.0.100.105
+ * khamis  → oracle-khamis.brainsait.org/prod   → 172.30.0.77
+ * jizan   → oracle-jizan.brainsait.org/prod    → 172.17.4.84
  *
  * All tools accept an optional `branch` parameter (default: "abha").
+ * Credentials: each branch env var (e.g. ABHA_USER) overrides PORTAL_USER.
  *
  * Tools:
  *   • portal_list_branches      — List all configured branches and their status
@@ -29,36 +39,99 @@ import { z } from "zod";
 
 // ─── Branch registry ────────────────────────────────────────────────────────────
 /**
- * Built-in branch definitions.
- * Each branch may override user/pass independently; falls back to shared env vars.
+ * Built-in branch definitions for all BrainSAIT Oasis+ hospital portals.
  *
- * basePath: the path prefix after the hostname (e.g. /Oasis or /prod)
- * homeUrl:  full URL for the Home page after login
- * loginUrl: full URL for the Login page (GET redirects here when unauthenticated)
+ * PRIMARY access:  Cloudflare Tunnel  →  oracle-<branch>.brainsait.org
+ * FALLBACK access: Direct internal IP (used automatically when CF tunnel unreachable)
+ *
+ * Credential resolution order (highest → lowest priority):
+ *   1. <BRANCH>_USER / <BRANCH>_PASS  (e.g. ABHA_USER, RIYADH_PASS)
+ *   2. PORTAL_USER / PORTAL_PASS      (shared fallback)
+ *   3. "U36113"                        (default — password same as username)
+ *
+ * Set USE_DIRECT_IP=true to force direct-IP mode for all branches (LAN-only).
+ * Set <BRANCH>_DIRECT=true  to force a single branch to use its direct IP.
  */
+const USE_DIRECT_IP = process.env.USE_DIRECT_IP === "true";
+
 const DEFAULT_BRANCHES = {
   abha: {
     label:    "Hayat National Hospital – ABHA",
-    host:     "oracle-abha.brainsait.org",
+    cfHost:   "oracle-abha.brainsait.org",
+    directIp: "172.19.1.1",
     basePath: "/Oasis",
-    homeUrl:  "http://oracle-abha.brainsait.org/Oasis/faces/Home",
-    loginUrl: "http://oracle-abha.brainsait.org/Oasis/faces/Login.jsf",
+    protocol: "http",
+    get host()     { return (USE_DIRECT_IP || process.env.ABHA_DIRECT    === "true") ? this.directIp : this.cfHost; },
+    get homeUrl()  { return `${this.protocol}://${this.host}${this.basePath}/faces/Home`; },
+    get loginUrl() { return `${this.protocol}://${this.host}${this.basePath}/faces/Login.jsf`; },
     user:     process.env.ABHA_USER    ?? process.env.PORTAL_USER ?? "U36113",
     pass:     process.env.ABHA_PASS    ?? process.env.PORTAL_PASS ?? "U36113",
   },
   riyadh: {
     label:    "Al-Hayat National Hospital – Riyadh",
-    host:     "oracle-riyadh.brainsait.org",
+    cfHost:   "oracle-riyadh.brainsait.org",
+    directIp: "128.1.1.185",
     basePath: "/prod",
-    homeUrl:  "http://oracle-riyadh.brainsait.org/prod/faces/Home",
-    loginUrl: "http://oracle-riyadh.brainsait.org/prod/faces/Login.jsf",
+    protocol: "https",
+    get host()     { return (USE_DIRECT_IP || process.env.RIYADH_DIRECT  === "true") ? this.directIp : this.cfHost; },
+    get homeUrl()  { return `${this.protocol}://${this.host}${this.basePath}/faces/Home`; },
+    get loginUrl() { return `${this.protocol}://${this.host}${this.basePath}/faces/Login.jsf`; },
     user:     process.env.RIYADH_USER  ?? process.env.PORTAL_USER ?? "U36113",
     pass:     process.env.RIYADH_PASS  ?? process.env.PORTAL_PASS ?? "U36113",
+  },
+  madinah: {
+    label:    "Hospital – Madinah",
+    cfHost:   "oracle-madinah.brainsait.org",
+    directIp: "172.25.11.26",
+    basePath: "/Oasis",
+    protocol: "http",
+    get host()     { return (USE_DIRECT_IP || process.env.MADINAH_DIRECT === "true") ? this.directIp : this.cfHost; },
+    get homeUrl()  { return `${this.protocol}://${this.host}${this.basePath}/faces/Home`; },
+    get loginUrl() { return `${this.protocol}://${this.host}${this.basePath}/faces/Login.jsf`; },
+    user:     process.env.MADINAH_USER ?? process.env.PORTAL_USER ?? "U36113",
+    pass:     process.env.MADINAH_PASS ?? process.env.PORTAL_PASS ?? "U36113",
+  },
+  unaizah: {
+    label:    "Hospital – Unaizah",
+    cfHost:   "oracle-unaizah.brainsait.org",
+    directIp: "10.0.100.105",
+    basePath: "/prod",
+    protocol: "http",
+    get host()     { return (USE_DIRECT_IP || process.env.UNAIZAH_DIRECT === "true") ? this.directIp : this.cfHost; },
+    get homeUrl()  { return `${this.protocol}://${this.host}${this.basePath}/faces/Home`; },
+    get loginUrl() { return `${this.protocol}://${this.host}${this.basePath}/faces/Login.jsf`; },
+    user:     process.env.UNAIZAH_USER ?? process.env.PORTAL_USER ?? "U36113",
+    pass:     process.env.UNAIZAH_PASS ?? process.env.PORTAL_PASS ?? "U36113",
+  },
+  khamis: {
+    label:    "Hospital – Khamis",
+    cfHost:   "oracle-khamis.brainsait.org",
+    directIp: "172.30.0.77",
+    basePath: "/prod",
+    protocol: "http",
+    get host()     { return (USE_DIRECT_IP || process.env.KHAMIS_DIRECT  === "true") ? this.directIp : this.cfHost; },
+    get homeUrl()  { return `${this.protocol}://${this.host}${this.basePath}/faces/Home`; },
+    get loginUrl() { return `${this.protocol}://${this.host}${this.basePath}/faces/Login.jsf`; },
+    user:     process.env.KHAMIS_USER  ?? process.env.PORTAL_USER ?? "U36113",
+    pass:     process.env.KHAMIS_PASS  ?? process.env.PORTAL_PASS ?? "U36113",
+  },
+  jizan: {
+    label:    "Hospital – Jizan",
+    cfHost:   "oracle-jizan.brainsait.org",
+    directIp: "172.17.4.84",
+    basePath: "/prod",
+    protocol: "http",
+    get host()     { return (USE_DIRECT_IP || process.env.JIZAN_DIRECT   === "true") ? this.directIp : this.cfHost; },
+    get homeUrl()  { return `${this.protocol}://${this.host}${this.basePath}/faces/Home`; },
+    get loginUrl() { return `${this.protocol}://${this.host}${this.basePath}/faces/Login.jsf`; },
+    user:     process.env.JIZAN_USER   ?? process.env.PORTAL_USER ?? "U36113",
+    pass:     process.env.JIZAN_PASS   ?? process.env.PORTAL_PASS ?? "U36113",
   },
 };
 
 // Allow additional branches to be injected at runtime via BRANCHES_JSON env var.
-// Format: { "jeddah": { "host": "oracle-jeddah.brainsait.org", "basePath": "/prod", ... } }
+// Format: { "jeddah": { "cfHost": "oracle-jeddah.brainsait.org", "directIp": "172.x.x.x", "basePath": "/prod", ... } }
+// All 6 built-in branches (abha, riyadh, madinah, unaizah, khamis, jizan) are pre-configured.
 let BRANCHES = { ...DEFAULT_BRANCHES };
 if (process.env.BRANCHES_JSON) {
   try {
@@ -96,37 +169,67 @@ async function getPage(branch = "abha") {
   const existing = _sessions.get(branch);
   if (existing?.page && !existing.page.isClosed()) return existing.page;
 
-  const browser = await chromium.launch({ 
-    headless: HEADLESS, 
-    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' 
+  const browser = await chromium.launch({
+    headless: HEADLESS,
+    // Required for self-signed certs on direct-IP HTTPS (e.g. Riyadh when not via CF tunnel)
+    args: ["--ignore-certificate-errors"],
+    executablePath: process.env.CHROME_PATH ?? undefined,
   });
-  const ctx  = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const ctx = await browser.newContext({
+    viewport: { width: 1280, height: 900 },
+    ignoreHTTPSErrors: true,   // covers self-signed IP certs & CF tunnel cert edge cases
+  });
   const page = await ctx.newPage();
 
-  await page.goto(cfg.loginUrl, { waitUntil: "networkidle", timeout: 60000 }).catch(()=>{});
+  // ── CF-tunnel → direct-IP fallback ────────────────────────────────────────
+  // Try the primary loginUrl (CF tunnel). If it fails to load (tunnel down, DNS
+  // not yet propagated, LAN-only environment) automatically retry with the
+  // direct internal IP URL instead.
+  let loginTarget = cfg.loginUrl;
+  const cfReachable = await page
+    .goto(cfg.loginUrl, { waitUntil: "domcontentloaded", timeout: 15000 })
+    .then(() => true)
+    .catch(() => false);
+
+  if (!cfReachable && cfg.directIp && cfg.directIp !== cfg.host) {
+    const directLoginUrl = `${cfg.protocol}://${cfg.directIp}${cfg.basePath}/faces/Login.jsf`;
+    console.error(
+      `[${branch}] CF tunnel unreachable (${cfg.loginUrl}) — falling back to direct IP: ${directLoginUrl}`
+    );
+    loginTarget = directLoginUrl;
+    await page.goto(directLoginUrl, { waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
+  } else if (cfReachable) {
+    // Wait for full network idle after domcontentloaded succeeded
+    await page.waitForLoadState("networkidle", { timeout: 30000 }).catch(() => {});
+  }
+
+  // ── Login if not already on Home ──────────────────────────────────────────
   if (!page.url().includes("Home")) {
-      await page.fill('[placeholder*="user" i]', cfg.user).catch(()=>{});
-      await page.fill('[placeholder*="pass" i]', cfg.pass).catch(()=>{});
-      await page.locator('a:has-text("Login"), button:has-text("Login"), button:has-text("Sign in")').first().click().catch(()=>{});
-      await page.waitForURL(/Home/, { timeout: 60000 }).catch(()=>{});
+    await page.fill('[placeholder*="user" i]', cfg.user).catch(() => {});
+    await page.fill('[placeholder*="pass" i]', cfg.pass).catch(() => {});
+    await page
+      .locator('a:has-text("Login"), button:has-text("Login"), button:has-text("Sign in")')
+      .first()
+      .click()
+      .catch(() => {});
+    await page.waitForURL(/Home/, { timeout: 60000 }).catch(() => {});
   }
 
   // ── Handle OS-572: "Previous session(s) already found" ────────────────────
-  // Oracle shows this confirmation dialog immediately after login (or page load).
-  // We must click "Yes" to cancel the lingering session and proceed.
+  // Oracle ADF shows this confirmation dialog immediately after login.
+  // Click "Yes" to dismiss the lingering-session warning and proceed.
   const sessionDlg = page.locator('text=Previous session').first();
   if (await sessionDlg.isVisible({ timeout: 5000 }).catch(() => false)) {
     console.error(`[${branch}] OS-572 detected — dismissing previous session dialog`);
-    // Try Yes / OK buttons inside the dialog
-    const yesBtn = page.locator(
-      'button:has-text("Yes"), a:has-text("Yes"), button:has-text("OK"), a:has-text("OK")'
-    ).first();
+    const yesBtn = page
+      .locator('button:has-text("Yes"), a:has-text("Yes"), button:has-text("OK"), a:has-text("OK")')
+      .first();
     await yesBtn.click().catch(() => {});
-    await page.waitForLoadState('networkidle', { timeout: 30000 }).catch(() => {});
+    await page.waitForLoadState("networkidle", { timeout: 30000 }).catch(() => {});
   }
 
   _sessions.set(branch, { browser, page });
-  console.error(`✓ [${branch}] Logged in as ${cfg.user} — ${cfg.homeUrl}`);
+  console.error(`✓ [${branch}] Logged in as ${cfg.user} — ${page.url()}`);
   return page;
 }
 
@@ -135,6 +238,7 @@ async function navigate(branch, taskFlowId) {
   const cfg  = getBranchConfig(branch);
   const page = await getPage(branch);
 
+  // cfg.homeUrl is a getter — always resolves to the currently active URL
   if (!page.url().includes("Home")) {
     await page.goto(cfg.homeUrl, { waitUntil: "networkidle", timeout: TIMEOUT });
   }
@@ -182,7 +286,7 @@ const branchParam = z.string().default("abha")
   .describe(`Branch key (default "abha"). Use portal_list_branches for all options.`);
 
 // ─── MCP Server ────────────────────────────────────────────────────────────────
-const server = new McpServer({ name: "mcp-oracle-portal", version: "3.0.0" });
+const server = new McpServer({ name: "mcp-oracle-portal", version: "3.2.0" });
 
 // ── portal_list_branches ───────────────────────────────────────────────────────
 server.tool(
@@ -190,16 +294,28 @@ server.tool(
   {},
   async () => {
     const info = Object.entries(BRANCHES).map(([key, cfg]) => {
-      const session = _sessions.get(key);
+      const session  = _sessions.get(key);
+      const usesDirect = USE_DIRECT_IP || process.env[`${key.toUpperCase()}_DIRECT`] === "true";
       return {
         key,
         label:         cfg.label ?? key,
-        host:          cfg.host,
-        homeUrl:       cfg.homeUrl,
+        cfTunnelUrl:   `${cfg.protocol}://${cfg.cfHost}${cfg.basePath}/faces/Home`,
+        directIpUrl:   `${cfg.protocol}://${cfg.directIp}${cfg.basePath}/faces/Home`,
+        activeUrl:     cfg.homeUrl,
+        mode:          usesDirect ? "direct-ip" : "cf-tunnel",
         sessionActive: !!(session?.page && !session.page.isClosed()),
       };
     });
-    return { content: [{ type: "text", text: JSON.stringify(info, null, 2) }] };
+    return {
+      content: [{
+        type: "text",
+        text: JSON.stringify({
+          controlTower: "https://portals.brainsait.org/control-tower",
+          totalBranches: info.length,
+          branches: info,
+        }, null, 2),
+      }],
+    };
   }
 );
 
@@ -491,4 +607,9 @@ process.on("SIGTERM", shutdown);
 // ─── Start ─────────────────────────────────────────────────────────────────────
 const transport = new StdioServerTransport();
 await server.connect(transport);
-console.error(`mcp-oracle-portal v3 started — ${Object.keys(BRANCHES).join(", ")} branches configured`);
+console.error(`mcp-oracle-portal v3.2 started — control-tower: https://portals.brainsait.org/control-tower`);
+console.error(`Branches (${Object.keys(BRANCHES).length}): ${Object.keys(BRANCHES).join(", ")}`);
+console.error(`Mode: ${USE_DIRECT_IP ? "direct-ip (USE_DIRECT_IP=true)" : "cf-tunnel (oracle-<branch>.brainsait.org)"}`);
+Object.entries(BRANCHES).forEach(([k, b]) => {
+  console.error(`  • ${k.padEnd(8)} ${b.loginUrl}`);
+});
