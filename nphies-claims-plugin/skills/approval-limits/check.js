@@ -77,8 +77,8 @@ function checkApprovalLimits(patientId, providerId, serviceType = 'professional'
     requiresApproval = true;
   }
 
-  // Check for escalation
-  if (claimAmount > perVisitLimit * 0.8) {
+  // Check for escalation (only when claim exceeds a limit, not just approaches it)
+  if (!fitsYearly || !fitsMonthly || !fitsPerVisit) {
     requiresEscalation = true;
   }
 
