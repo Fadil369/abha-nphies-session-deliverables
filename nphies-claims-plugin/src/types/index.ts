@@ -52,7 +52,27 @@ export class HealthcareAPIError extends Error {
 
 // ─── Branch & Portal Types ─────────────────────────────────────────────────────
 
-export type Branch = 'riyadh' | 'abha';
+export type Branch = 'riyadh' | 'abha' | 'madinah' | 'unaizah' | 'khamis' | 'jizan';
+
+export const ALL_BRANCHES: Branch[] = ['abha', 'riyadh', 'madinah', 'unaizah', 'khamis', 'jizan'];
+
+export const BRANCH_LABELS: Record<Branch, string> = {
+  abha:    'Hayat National Hospital – ABHA',
+  riyadh:  'Al-Hayat National Hospital – Riyadh',
+  madinah: 'Hospital – Madinah',
+  unaizah: 'Hospital – Unaizah',
+  khamis:  'Hospital – Khamis',
+  jizan:   'Hospital – Jizan',
+};
+
+export const BRANCH_HOSTS: Record<Branch, string> = {
+  abha:    '172.19.1.1',
+  riyadh:  '128.1.1.185',
+  madinah: '172.25.11.26',
+  unaizah: '10.0.100.105',
+  khamis:  '172.30.0.77',
+  jizan:   '172.17.4.84',
+};
 
 export interface BranchConfig {
   key: Branch;

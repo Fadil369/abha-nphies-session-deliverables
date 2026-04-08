@@ -247,16 +247,19 @@ export async function nphiesHydrate(
   input: HydrateCommandInput,
   operator = 'system'
 ): Promise<CommandResponse> {
-  if (input.branch !== 'abha') {
+  // Hydration applies to branches using the /Oasis base path
+  const oasisBranches: Branch[] = ['abha', 'madinah'];
+  if (!oasisBranches.includes(input.branch)) {
     const audit = createAuditEntry('hydrate', operator, input.branch, 'warning',
-      'Hydration is an ABHA-specific operation');
+      `Hydration skipped — ${input.branch} uses static /prod limits`);
     return {
       success: false,
       command: '/nphies-hydrate',
       timestamp: new Date().toISOString(),
       error: {
         code: 'HYDRATE_BRANCH_MISMATCH',
-        message: 'Hydration is only supported for the ABHA branch. Riyadh limits are static.',
+        message: `Hydration is only supported for Oasis-based branches (abha, madinah). ` +
+                 `Branch "${input.branch}" uses static /prod limits — no hydration needed.`,
         recoverable: false,
       },
       audit,
@@ -271,14 +274,14 @@ export async function nphiesHydrate(
     hydratedAt: new Date().toISOString(),
   }));
 
-  const audit = createAuditEntry('hydrate', operator, 'abha', 'success',
-    `Hydrated ${hydratedPatients.length} patient limits from Oasis`);
+  const audit = createAuditEntry('hydrate', operator, input.branch, 'success',
+    `Hydrated ${hydratedPatients.length} patient limits from Oasis (${input.branch})`);
 
   return {
     success: true,
     command: '/nphies-hydrate',
     timestamp: new Date().toISOString(),
-    data: { hydratedPatients, branch: 'abha' },
+    data: { hydratedPatients, branch: input.branch },
     audit,
   };
 }

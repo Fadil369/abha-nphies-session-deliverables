@@ -186,9 +186,13 @@ const REJECTION_DB: Readonly<Record<string, RejectionCodeSpec>> = {
   },
 };
 
-const BRANCH_ADJUSTMENTS: Record<Branch, { name: string; recoveryMultiplier: number; timeToResolve: string }> = {
-  riyadh: { name: 'Al Rajhi (Riyadh)', recoveryMultiplier: 1.0,  timeToResolve: '3-5 business days' },
-  abha:   { name: 'MOH-ABHA',          recoveryMultiplier: 0.95, timeToResolve: '5-7 business days' },
+const BRANCH_ADJUSTMENTS: Record<string, { name: string; recoveryMultiplier: number; timeToResolve: string }> = {
+  riyadh:  { name: 'Al-Hayat National Hospital – Riyadh', recoveryMultiplier: 1.0,  timeToResolve: '3-5 business days' },
+  abha:    { name: 'Hayat National Hospital – ABHA',      recoveryMultiplier: 0.95, timeToResolve: '5-7 business days' },
+  madinah: { name: 'Hospital – Madinah',                  recoveryMultiplier: 0.97, timeToResolve: '4-6 business days' },
+  unaizah: { name: 'Hospital – Unaizah',                  recoveryMultiplier: 0.95, timeToResolve: '5-7 business days' },
+  khamis:  { name: 'Hospital – Khamis',                   recoveryMultiplier: 0.93, timeToResolve: '5-7 business days' },
+  jizan:   { name: 'Hospital – Jizan',                    recoveryMultiplier: 0.92, timeToResolve: '6-8 business days' },
 };
 
 export function triageClaim(
@@ -353,7 +357,7 @@ export function validateDocuments(
 
 // ─── Skill 3: Approval Limits ──────────────────────────────────────────────────
 
-const DEFAULT_LIMITS: Record<Branch, Record<string, { limit: number; warnAt: number }>> = {
+const DEFAULT_LIMITS: Record<string, Record<string, { limit: number; warnAt: number }>> = {
   riyadh: {
     yearly:   { limit: 50000, warnAt: 0.8 },
     monthly:  { limit: 10000, warnAt: 0.8 },
@@ -363,6 +367,26 @@ const DEFAULT_LIMITS: Record<Branch, Record<string, { limit: number; warnAt: num
     yearly:   { limit: 75000, warnAt: 0.8 },
     monthly:  { limit: 15000, warnAt: 0.8 },
     perVisit: { limit: 7500,  warnAt: 0.9 },
+  },
+  madinah: {
+    yearly:   { limit: 60000, warnAt: 0.8 },
+    monthly:  { limit: 12000, warnAt: 0.8 },
+    perVisit: { limit: 6000,  warnAt: 0.9 },
+  },
+  unaizah: {
+    yearly:   { limit: 50000, warnAt: 0.8 },
+    monthly:  { limit: 10000, warnAt: 0.8 },
+    perVisit: { limit: 5000,  warnAt: 0.9 },
+  },
+  khamis: {
+    yearly:   { limit: 50000, warnAt: 0.8 },
+    monthly:  { limit: 10000, warnAt: 0.8 },
+    perVisit: { limit: 5000,  warnAt: 0.9 },
+  },
+  jizan: {
+    yearly:   { limit: 45000, warnAt: 0.8 },
+    monthly:  { limit: 9000,  warnAt: 0.8 },
+    perVisit: { limit: 4500,  warnAt: 0.9 },
   },
 };
 
@@ -424,7 +448,7 @@ export function checkApprovalLimits(
     claimAmount,
     withinLimits,
     warnings,
-    hydrationRequired: branch === 'abha',
+    hydrationRequired: branch === 'abha' || branch === 'madinah',
   };
 }
 

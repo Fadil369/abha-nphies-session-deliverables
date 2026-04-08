@@ -1,15 +1,20 @@
 /**
- * mcp-oracle-portal  v3.0
- * Multi-branch MCP Server for Oasis+ portal network — brainsait.org
+ * mcp-oracle-portal  v3.1
+ * Multi-branch MCP Server for Oasis+ portal network — BrainSAIT
  *
- * Each branch (hospital) has its own Cloudflare tunnel URL and portal base path.
+ * Each branch (hospital) has its own Oasis+ URL and portal base path.
  * The server maintains one authenticated Playwright browser session per branch.
  *
- * Built-in branches (extend via BRANCHES_JSON env var):
- *   • abha    — oracle-abha.brainsait.org    /Oasis
- *   • riyadh  — oracle-riyadh.brainsait.org  /prod
+ * Built-in branches:
+ *   • abha    — 172.19.1.1          /Oasis   (Hayat National Hospital – ABHA)
+ *   • riyadh  — 128.1.1.185         /prod    (Al-Hayat National Hospital – Riyadh)
+ *   • madinah — 172.25.11.26        /Oasis   (Hospital – Madinah)
+ *   • unaizah — 10.0.100.105        /prod    (Hospital – Unaizah)
+ *   • khamis  — 172.30.0.77         /prod    (Hospital – Khamis)
+ *   • jizan   — 172.17.4.84         /prod    (Hospital – Jizan)
  *
  * All tools accept an optional `branch` parameter (default: "abha").
+ * Credentials: each branch env var (e.g. ABHA_USER) overrides PORTAL_USER.
  *
  * Tools:
  *   • portal_list_branches      — List all configured branches and their status
@@ -29,36 +34,78 @@ import { z } from "zod";
 
 // ─── Branch registry ────────────────────────────────────────────────────────────
 /**
- * Built-in branch definitions.
+ * Built-in branch definitions for all BrainSAIT Oasis+ hospital portals.
  * Each branch may override user/pass independently; falls back to shared env vars.
  *
- * basePath: the path prefix after the hostname (e.g. /Oasis or /prod)
+ * Credential resolution order (highest → lowest priority):
+ *   1. <BRANCH>_USER / <BRANCH>_PASS  (e.g. ABHA_USER, RIYADH_PASS)
+ *   2. PORTAL_USER / PORTAL_PASS      (shared fallback)
+ *   3. "U36113"                        (default — password same as username)
+ *
+ * basePath: the path prefix after the host  (e.g. /Oasis or /prod)
  * homeUrl:  full URL for the Home page after login
  * loginUrl: full URL for the Login page (GET redirects here when unauthenticated)
  */
 const DEFAULT_BRANCHES = {
   abha: {
     label:    "Hayat National Hospital – ABHA",
-    host:     "oracle-abha.brainsait.org",
+    host:     "172.19.1.1",
     basePath: "/Oasis",
-    homeUrl:  "http://oracle-abha.brainsait.org/Oasis/faces/Home",
-    loginUrl: "http://oracle-abha.brainsait.org/Oasis/faces/Login.jsf",
+    homeUrl:  "http://172.19.1.1/Oasis/faces/Home",
+    loginUrl: "http://172.19.1.1/Oasis/faces/Login.jsf",
     user:     process.env.ABHA_USER    ?? process.env.PORTAL_USER ?? "U36113",
     pass:     process.env.ABHA_PASS    ?? process.env.PORTAL_PASS ?? "U36113",
   },
   riyadh: {
     label:    "Al-Hayat National Hospital – Riyadh",
-    host:     "oracle-riyadh.brainsait.org",
+    host:     "128.1.1.185",
     basePath: "/prod",
-    homeUrl:  "http://oracle-riyadh.brainsait.org/prod/faces/Home",
-    loginUrl: "http://oracle-riyadh.brainsait.org/prod/faces/Login.jsf",
+    homeUrl:  "https://128.1.1.185/prod/faces/Home",
+    loginUrl: "https://128.1.1.185/prod/faces/Login.jsf",
     user:     process.env.RIYADH_USER  ?? process.env.PORTAL_USER ?? "U36113",
     pass:     process.env.RIYADH_PASS  ?? process.env.PORTAL_PASS ?? "U36113",
+  },
+  madinah: {
+    label:    "Hospital – Madinah",
+    host:     "172.25.11.26",
+    basePath: "/Oasis",
+    homeUrl:  "http://172.25.11.26/Oasis/faces/Home",
+    loginUrl: "http://172.25.11.26/Oasis/faces/Login.jsf",
+    user:     process.env.MADINAH_USER ?? process.env.PORTAL_USER ?? "U36113",
+    pass:     process.env.MADINAH_PASS ?? process.env.PORTAL_PASS ?? "U36113",
+  },
+  unaizah: {
+    label:    "Hospital – Unaizah",
+    host:     "10.0.100.105",
+    basePath: "/prod",
+    homeUrl:  "http://10.0.100.105/prod/faces/Home",
+    loginUrl: "http://10.0.100.105/prod/faces/Login.jsf",
+    user:     process.env.UNAIZAH_USER ?? process.env.PORTAL_USER ?? "U36113",
+    pass:     process.env.UNAIZAH_PASS ?? process.env.PORTAL_PASS ?? "U36113",
+  },
+  khamis: {
+    label:    "Hospital – Khamis",
+    host:     "172.30.0.77",
+    basePath: "/prod",
+    homeUrl:  "http://172.30.0.77/prod/faces/Home",
+    loginUrl: "http://172.30.0.77/prod/faces/Login.jsf",
+    user:     process.env.KHAMIS_USER  ?? process.env.PORTAL_USER ?? "U36113",
+    pass:     process.env.KHAMIS_PASS  ?? process.env.PORTAL_PASS ?? "U36113",
+  },
+  jizan: {
+    label:    "Hospital – Jizan",
+    host:     "172.17.4.84",
+    basePath: "/prod",
+    homeUrl:  "http://172.17.4.84/prod/faces/Home",
+    loginUrl: "http://172.17.4.84/prod/faces/Login.jsf",
+    user:     process.env.JIZAN_USER   ?? process.env.PORTAL_USER ?? "U36113",
+    pass:     process.env.JIZAN_PASS   ?? process.env.PORTAL_PASS ?? "U36113",
   },
 };
 
 // Allow additional branches to be injected at runtime via BRANCHES_JSON env var.
-// Format: { "jeddah": { "host": "oracle-jeddah.brainsait.org", "basePath": "/prod", ... } }
+// Format: { "jeddah": { "host": "172.x.x.x", "basePath": "/prod", ... } }
+// All 6 built-in branches (abha, riyadh, madinah, unaizah, khamis, jizan) are pre-configured.
 let BRANCHES = { ...DEFAULT_BRANCHES };
 if (process.env.BRANCHES_JSON) {
   try {
@@ -97,10 +144,16 @@ async function getPage(branch = "abha") {
   if (existing?.page && !existing.page.isClosed()) return existing.page;
 
   const browser = await chromium.launch({ 
-    headless: HEADLESS, 
-    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' 
+    headless: HEADLESS,
+    // Allow self-signed certificates on internal IP-based portals (e.g. Riyadh HTTPS)
+    args: ["--ignore-certificate-errors"],
+    executablePath: process.env.CHROME_PATH ?? undefined,
   });
-  const ctx  = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  // Ignore HTTPS cert errors at context level too (covers self-signed IP certs)
+  const ctx  = await browser.newContext({
+    viewport: { width: 1280, height: 900 },
+    ignoreHTTPSErrors: true,
+  });
   const page = await ctx.newPage();
 
   await page.goto(cfg.loginUrl, { waitUntil: "networkidle", timeout: 60000 }).catch(()=>{});

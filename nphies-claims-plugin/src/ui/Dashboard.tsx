@@ -253,6 +253,16 @@ const CommandButton: React.FC<CommandButtonProps> = ({
   );
 };
 
+// ─── Branch Portal Registry ────────────────────────────────────────────────────
+const BRANCH_REGISTRY = [
+  { key: 'abha',    label: 'Hayat – ABHA',    host: '172.19.1.1',    basePath: '/Oasis', protocol: 'http'  },
+  { key: 'riyadh',  label: 'Al-Hayat – Riyadh', host: '128.1.1.185', basePath: '/prod',  protocol: 'https' },
+  { key: 'madinah', label: 'Madinah',          host: '172.25.11.26',  basePath: '/Oasis', protocol: 'http'  },
+  { key: 'unaizah', label: 'Unaizah',          host: '10.0.100.105',  basePath: '/prod',  protocol: 'http'  },
+  { key: 'khamis',  label: 'Khamis',           host: '172.30.0.77',   basePath: '/prod',  protocol: 'http'  },
+  { key: 'jizan',   label: 'Jizan',            host: '172.17.4.84',   basePath: '/prod',  protocol: 'http'  },
+] as const;
+
 // ─── Mock Data ─────────────────────────────────────────────────────────────────
 const mockClaims: ClaimRowProps[] = [
   { claimId: 'CLM-001', invoiceNo: 'INV73228', amount: '5,200', status: 'validated', rejectionCode: 'BE-1-4', branch: 'riyadh', priority: 'HIGH' },
