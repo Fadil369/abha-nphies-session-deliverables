@@ -255,13 +255,15 @@ const CommandButton: React.FC<CommandButtonProps> = ({
 
 // ─── Branch Portal Registry ────────────────────────────────────────────────────
 const BRANCH_REGISTRY = [
-  { key: 'abha',    label: 'Hayat – ABHA',    host: '172.19.1.1',    basePath: '/Oasis', protocol: 'http'  },
-  { key: 'riyadh',  label: 'Al-Hayat – Riyadh', host: '128.1.1.185', basePath: '/prod',  protocol: 'https' },
-  { key: 'madinah', label: 'Madinah',          host: '172.25.11.26',  basePath: '/Oasis', protocol: 'http'  },
-  { key: 'unaizah', label: 'Unaizah',          host: '10.0.100.105',  basePath: '/prod',  protocol: 'http'  },
-  { key: 'khamis',  label: 'Khamis',           host: '172.30.0.77',   basePath: '/prod',  protocol: 'http'  },
-  { key: 'jizan',   label: 'Jizan',            host: '172.17.4.84',   basePath: '/prod',  protocol: 'http'  },
+  { key: 'abha',    label: 'Hayat – ABHA',      cfHost: 'oracle-abha.brainsait.org',    directIp: '172.19.1.1',    basePath: '/Oasis', protocol: 'http'  },
+  { key: 'riyadh',  label: 'Al-Hayat – Riyadh',  cfHost: 'oracle-riyadh.brainsait.org',  directIp: '128.1.1.185',   basePath: '/prod',  protocol: 'https' },
+  { key: 'madinah', label: 'Madinah',             cfHost: 'oracle-madinah.brainsait.org', directIp: '172.25.11.26',  basePath: '/Oasis', protocol: 'http'  },
+  { key: 'unaizah', label: 'Unaizah',             cfHost: 'oracle-unaizah.brainsait.org', directIp: '10.0.100.105',  basePath: '/prod',  protocol: 'http'  },
+  { key: 'khamis',  label: 'Khamis',              cfHost: 'oracle-khamis.brainsait.org',  directIp: '172.30.0.77',   basePath: '/prod',  protocol: 'http'  },
+  { key: 'jizan',   label: 'Jizan',               cfHost: 'oracle-jizan.brainsait.org',   directIp: '172.17.4.84',   basePath: '/prod',  protocol: 'http'  },
 ] as const;
+
+const CONTROL_TOWER_URL = 'https://portals.brainsait.org/control-tower';
 
 // ─── Mock Data ─────────────────────────────────────────────────────────────────
 const mockClaims: ClaimRowProps[] = [
@@ -706,6 +708,81 @@ const NphiesDashboard: React.FC = () => {
                   <Zap size={12} color={colors.signalTeal} style={{ marginLeft: 'auto', flexShrink: 0 }} />
                 </div>
               ))}
+            </div>
+
+            {/* Branch Portals — CF Tunnel Links */}
+            <div
+              style={{
+                background: `linear-gradient(135deg, rgba(30,41,59,0.7) 0%, rgba(15,23,42,0.9) 100%)`,
+                backdropFilter: 'blur(12px)',
+                border: `1px solid rgba(255,255,255,0.08)`,
+                borderRadius: '16px',
+                padding: '20px',
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                <h3 style={{ fontSize: '13px', fontWeight: 700, color: colors.textSecondary, letterSpacing: '1px', textTransform: 'uppercase', margin: 0 }}>
+                  Portal Access | الوصول للبوابات
+                </h3>
+                <a
+                  href={CONTROL_TOWER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    fontSize: '10px',
+                    color: colors.signalTeal,
+                    textDecoration: 'none',
+                    background: `${colors.signalTeal}18`,
+                    border: `1px solid ${colors.signalTeal}44`,
+                    borderRadius: '8px',
+                    padding: '3px 8px',
+                  }}
+                >
+                  Control Tower ↗
+                </a>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                {BRANCH_REGISTRY.map(({ key, label, cfHost, directIp, basePath, protocol }) => {
+                  const cfUrl = `${protocol}://${cfHost}${basePath}/faces/Home`;
+                  return (
+                    <div
+                      key={key}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        padding: '8px 10px',
+                        borderRadius: '8px',
+                        background: 'rgba(255,255,255,0.02)',
+                        border: `1px solid rgba(255,255,255,0.04)`,
+                      }}
+                    >
+                      {/* Online indicator */}
+                      <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: colors.successGreen, flexShrink: 0 }} />
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <p style={{ fontSize: '11px', color: colors.textPrimary, fontWeight: 600, margin: 0 }}>{label}</p>
+                        <a
+                          href={cfUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            fontSize: '10px',
+                            color: colors.signalTeal,
+                            textDecoration: 'none',
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                            display: 'block',
+                          }}
+                          title={`Direct IP fallback: ${protocol}://${directIp}${basePath}/faces/Home`}
+                        >
+                          {cfHost}
+                        </a>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

@@ -27,9 +27,23 @@
 
 2. **Create .env file** in your workspace:
    ```bash
-   PORTAL_USER=your_username
-   PORTAL_PASS=your_password
-   ORACLE_PROFILE_DIR=/path/to/oracle/profiles
+   # Shared credentials (all branches use these unless overridden)
+   PORTAL_USER=U36113
+   PORTAL_PASS=U36113
+
+   # Optional per-branch overrides
+   # ABHA_USER=U36113
+   # RIYADH_USER=U36113
+   # MADINAH_USER=U36113
+   # UNAIZAH_USER=U36113
+   # KHAMIS_USER=U36113
+   # JIZAN_USER=U36113
+
+   # Set to true to skip CF tunnels and use direct IPs (LAN-only environments)
+   # USE_DIRECT_IP=false
+
+   # Optional: override Chrome binary path for Playwright
+   # CHROME_PATH=/usr/bin/google-chrome
    ```
 
 3. **Verify installation**
@@ -117,7 +131,38 @@ cp outputs/submission_audit.csv outputs/audit_backup_$(date +%Y%m%d).csv
 
 ## 3. DAILY PROCESSES BY BRANCH
 
-### RIYADH BRANCH (Al Rajhi)
+> **Control Tower:** View all branch portal statuses at https://portals.brainsait.org/control-tower
+
+### Portal Access — Cloudflare Tunnel URLs (Primary)
+
+All 6 hospital portals are accessed via Cloudflare Tunnel subdomains. The MCP server
+automatically falls back to the direct internal IP if the CF tunnel is unreachable (LAN mode).
+
+| Branch  | CF Tunnel URL (Primary)                              | Direct IP (LAN Fallback) | Base Path |
+|---------|------------------------------------------------------|--------------------------|-----------|
+| abha    | http://oracle-abha.brainsait.org/Oasis/faces/Login.jsf    | 172.19.1.1   | /Oasis |
+| riyadh  | https://oracle-riyadh.brainsait.org/prod/faces/Login.jsf  | 128.1.1.185  | /prod  |
+| madinah | http://oracle-madinah.brainsait.org/Oasis/faces/Login.jsf | 172.25.11.26 | /Oasis |
+| unaizah | http://oracle-unaizah.brainsait.org/prod/faces/Login.jsf  | 10.0.100.105 | /prod  |
+| khamis  | http://oracle-khamis.brainsait.org/prod/faces/Login.jsf   | 172.30.0.77  | /prod  |
+| jizan   | http://oracle-jizan.brainsait.org/prod/faces/Login.jsf    | 172.17.4.84  | /prod  |
+
+**Login credentials:** Username `U36113`, password same as username.  
+Override per-branch with `<BRANCH>_USER` / `<BRANCH>_PASS` env vars, or set `PORTAL_USER` / `PORTAL_PASS` as shared fallback.
+
+**Force LAN/direct-IP mode** (when CF tunnel is down or you're on the internal network):
+```bash
+USE_DIRECT_IP=true node mcp-oracle-db/src/index.js
+# or per-branch:
+ABHA_DIRECT=true node mcp-oracle-db/src/index.js
+```
+
+---
+
+### RIYADH BRANCH (Al-Hayat – Riyadh)
+
+**Portal:** https://oracle-riyadh.brainsait.org/prod/faces/Home  
+**Direct IP:** https://128.1.1.185/prod/faces/Home
 
 **Morning Routine (Skip hydration):**
 ```
@@ -135,7 +180,10 @@ cp outputs/submission_audit.csv outputs/audit_backup_$(date +%Y%m%d).csv
 - 80-90% approval rate
 - 2-3 day resolution
 
-### ABHA BRANCH (MOH)
+### ABHA BRANCH (Hayat – ABHA)
+
+**Portal:** http://oracle-abha.brainsait.org/Oasis/faces/Home  
+**Direct IP:** http://172.19.1.1/Oasis/faces/Home
 
 **Morning Routine (Mandatory hydration first):**
 ```
@@ -156,6 +204,27 @@ Then:
 - 1-2 large batches of 10+ claims
 - 75-85% approval rate
 - 3-5 day resolution
+
+### MADINAH BRANCH
+
+**Portal:** http://oracle-madinah.brainsait.org/Oasis/faces/Home  
+**Direct IP:** http://172.25.11.26/Oasis/faces/Home  
+**Hydration required:** Yes (`/nphies-hydrate --branch madinah`)
+
+### UNAIZAH BRANCH
+
+**Portal:** http://oracle-unaizah.brainsait.org/prod/faces/Home  
+**Direct IP:** http://10.0.100.105/prod/faces/Home
+
+### KHAMIS BRANCH
+
+**Portal:** http://oracle-khamis.brainsait.org/prod/faces/Home  
+**Direct IP:** http://172.30.0.77/prod/faces/Home
+
+### JIZAN BRANCH
+
+**Portal:** http://oracle-jizan.brainsait.org/prod/faces/Home  
+**Direct IP:** http://172.17.4.84/prod/faces/Home
 
 ---
 

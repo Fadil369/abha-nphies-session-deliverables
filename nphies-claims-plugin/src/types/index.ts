@@ -65,7 +65,33 @@ export const BRANCH_LABELS: Record<Branch, string> = {
   jizan:   'Hospital – Jizan',
 };
 
-export const BRANCH_HOSTS: Record<Branch, string> = {
+/** BrainSAIT Control-Tower dashboard — source of truth for all portal URLs */
+export const CONTROL_TOWER_URL = 'https://portals.brainsait.org/control-tower';
+
+/**
+ * Cloudflare Tunnel login URLs — primary access method for all branches.
+ * Direct IPs are LAN-only fallbacks (stored in BRANCH_DIRECT_IPS).
+ */
+export const BRANCH_CF_LOGIN_URLS: Record<Branch, string> = {
+  abha:    'http://oracle-abha.brainsait.org/Oasis/faces/Login.jsf',
+  riyadh:  'https://oracle-riyadh.brainsait.org/prod/faces/Login.jsf',
+  madinah: 'http://oracle-madinah.brainsait.org/Oasis/faces/Login.jsf',
+  unaizah: 'http://oracle-unaizah.brainsait.org/prod/faces/Login.jsf',
+  khamis:  'http://oracle-khamis.brainsait.org/prod/faces/Login.jsf',
+  jizan:   'http://oracle-jizan.brainsait.org/prod/faces/Login.jsf',
+};
+
+export const BRANCH_CF_HOME_URLS: Record<Branch, string> = {
+  abha:    'http://oracle-abha.brainsait.org/Oasis/faces/Home',
+  riyadh:  'https://oracle-riyadh.brainsait.org/prod/faces/Home',
+  madinah: 'http://oracle-madinah.brainsait.org/Oasis/faces/Home',
+  unaizah: 'http://oracle-unaizah.brainsait.org/prod/faces/Home',
+  khamis:  'http://oracle-khamis.brainsait.org/prod/faces/Home',
+  jizan:   'http://oracle-jizan.brainsait.org/prod/faces/Home',
+};
+
+/** Direct internal IP addresses — LAN-only fallback when CF tunnel is unreachable */
+export const BRANCH_DIRECT_IPS: Record<Branch, string> = {
   abha:    '172.19.1.1',
   riyadh:  '128.1.1.185',
   madinah: '172.25.11.26',
@@ -77,8 +103,12 @@ export const BRANCH_HOSTS: Record<Branch, string> = {
 export interface BranchConfig {
   key: Branch;
   label: string;
-  host: string;
+  cfHost: string;
+  directIp: string;
   basePath: string;
+  protocol: 'http' | 'https';
+  /** Resolved host — cfHost unless USE_DIRECT_IP or <BRANCH>_DIRECT env var is set */
+  host: string;
   homeUrl: string;
   loginUrl: string;
 }

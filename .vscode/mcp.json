@@ -7,14 +7,23 @@
 				"${workspaceFolder}/mcp-oracle-db/src/index.js"
 			],
 			"env": {
-				"PORTAL_USER": "${input:portalUser}",
-				"PORTAL_PASS": "${input:portalPass}",
-				"ABHA_USER": "${input:portalUser}",
-				"ABHA_PASS": "${input:portalPass}",
-				"RIYADH_USER": "${input:portalUser}",
-				"RIYADH_PASS": "${input:portalPass}",
-				"HEADLESS": "true",
-				"TIMEOUT_MS": "30000"
+				"PORTAL_USER":   "${input:portalUser}",
+				"PORTAL_PASS":   "${input:portalPass}",
+				"ABHA_USER":     "${input:portalUser}",
+				"ABHA_PASS":     "${input:portalPass}",
+				"RIYADH_USER":   "${input:portalUser}",
+				"RIYADH_PASS":   "${input:portalPass}",
+				"MADINAH_USER":  "${input:portalUser}",
+				"MADINAH_PASS":  "${input:portalPass}",
+				"UNAIZAH_USER":  "${input:portalUser}",
+				"UNAIZAH_PASS":  "${input:portalPass}",
+				"KHAMIS_USER":   "${input:portalUser}",
+				"KHAMIS_PASS":   "${input:portalPass}",
+				"JIZAN_USER":    "${input:portalUser}",
+				"JIZAN_PASS":    "${input:portalPass}",
+				"HEADLESS":      "true",
+				"TIMEOUT_MS":    "30000",
+				"USE_DIRECT_IP": "${input:useDirectIp}"
 			}
 		},
 		"microsoft/playwright-mcp": {
@@ -64,14 +73,20 @@
 		{
 			"id": "portalUser",
 			"type": "promptString",
-			"description": "Oasis+ portal username (shared across all branches unless overridden in .env)",
+			"description": "Oasis+ portal username (shared across all 6 branches — abha, riyadh, madinah, unaizah, khamis, jizan)",
 			"default": "U36113"
 		},
 		{
 			"id": "portalPass",
 			"type": "promptString",
-			"description": "Oasis+ portal password",
+			"description": "Oasis+ portal password (same as username by default)",
 			"password": true
+		},
+		{
+			"id": "useDirectIp",
+			"type": "promptString",
+			"description": "Set to 'true' to bypass CF tunnels and connect via internal IPs (LAN only). Default 'false' uses oracle-<branch>.brainsait.org CF tunnel URLs.",
+			"default": "false"
 		},
 		{
 			"id": "chroma_client_type",
