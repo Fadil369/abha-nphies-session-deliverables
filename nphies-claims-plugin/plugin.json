@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "publisher": "fadil369",
   "license": "MIT",
-  "description": "Automate MOH-ABHA and Al Rajhi (Riyadh) claims submission management for NPHIES with agents, skills, hooks, and MCP server integration.",
+  "description": "Automate MOH-ABHA and Al Rajhi (Riyadh) claims submission management for NPHIES with agents, skills, hooks, and multi-branch Oracle portal MCP integration.",
   "author": {
     "name": "NPHIES Automation Team"
   },
@@ -26,7 +26,9 @@
     "moh",
     "al-rajhi",
     "submission",
-    "appeals"
+    "appeals",
+    "multi-branch",
+    "oracle-adf"
   ],
   "categories": [
     "AI",
@@ -120,7 +122,7 @@
       {
         "id": "oracle-portal",
         "name": "Oracle Portal MCP",
-        "description": "NPHIES portal automation and claim management tools"
+        "description": "Multi-branch NPHIES portal automation and claim management tools (abha, riyadh, extensible)"
       }
     ]
   },
@@ -147,7 +149,7 @@
   },
   "changelog": {
     "1.1.0": {
-      "date": "2026-04-08",
+      "date": "2026-04-16",
       "features": [
         "TypeScript strict-mode source files with full type coverage",
         "React UI dashboard with BrainSAIT Glass Morphism & MeshGradient design",
@@ -158,7 +160,12 @@
         "Operator command implementations: /nphies-validate, /nphies-submit, /nphies-appeal, /nphies-batch, /nphies-status, /nphies-hydrate",
         "HIPAA-compliant audit logging on every command execution",
         "Dry-run enforcement (3 successful dry-runs required before live submission)",
-        "SAR 102,601+ recovery-focused approval limit guard"
+        "SAR 102,601+ recovery-focused approval limit guard",
+        "Multi-branch Oracle portal MCP integration for ABHA and Riyadh",
+        "Branch-aware tool execution with isolated sessions",
+        "Branch discovery support via portal_list_branches",
+        "Runtime extension for additional branches using BRANCHES_JSON",
+        "Updated plugin metadata for new integration method"
       ]
     },
     "1.0.0": {

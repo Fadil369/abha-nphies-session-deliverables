@@ -67,6 +67,20 @@
 			],
 			"gallery": "https://api.mcp.github.com",
 			"version": "1.0.2026040123"
+		},
+		"io.github.github/github-mcp-server": {
+			"type": "stdio",
+			"command": "docker",
+			"args": [
+				"run",
+				"-i",
+				"--rm",
+				"-e",
+				"GITHUB_PERSONAL_ACCESS_TOKEN=${input:token}",
+				"ghcr.io/github/github-mcp-server:0.33.0"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.33.0"
 		}
 	},
 	"inputs": [
@@ -147,6 +161,12 @@
 			"type": "promptString",
 			"description": "Use SSL (true/false) for self-hosted HTTP.",
 			"password": false
+		},
+		{
+			"id": "token",
+			"type": "promptString",
+			"description": "",
+			"password": true
 		}
 	]
 }

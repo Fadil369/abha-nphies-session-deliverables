@@ -58,6 +58,13 @@ Set environment variables for portal access:
 ```bash
 export PORTAL_USER="your-nphies-username"
 export PORTAL_PASS="your-nphies-password"
+export ABHA_USER="your-abha-username"
+export ABHA_PASS="your-abha-password"
+export RIYADH_USER="your-riyadh-username"
+export RIYADH_PASS="your-riyadh-password"
+export BRANCHES_JSON='{"jeddah":{"host":"oracle-jeddah.brainsait.org","basePath":"/prod","label":"Jeddah Branch"}}'
+export HEADLESS="true"
+export TIMEOUT_MS="30000"
 export ORACLE_PROFILE_DIR="/path/to/playwright/profile"
 ```
 
@@ -66,6 +73,13 @@ Or create a `.env` file in the plugin root:
 ```env
 PORTAL_USER=your-username
 PORTAL_PASS=your-password
+ABHA_USER=your-abha-username
+ABHA_PASS=your-abha-password
+RIYADH_USER=your-riyadh-username
+RIYADH_PASS=your-riyadh-password
+BRANCHES_JSON={"jeddah":{"host":"oracle-jeddah.brainsait.org","basePath":"/prod","label":"Jeddah Branch"}}
+HEADLESS=true
+TIMEOUT_MS=30000
 ORACLE_PROFILE_DIR=/path/to/profile
 ```
 
@@ -95,6 +109,7 @@ ORACLE_PROFILE_DIR=/path/to/profile
 
 - **riyadh**: Al Rajhi branch with direct portal submission
 - **abha**: MOH-ABHA branch with approval limit hydration
+- **custom**: Any additional branch provided through `BRANCHES_JSON`
 
 ## Components
 
@@ -211,7 +226,8 @@ npm test
 - Check VS Code console for errors
 
 ### MCP server connection failed
-- Verify environment variables (PORTAL_USER, PORTAL_PASS)
+- Verify environment variables (PORTAL_USER, PORTAL_PASS, ABHA_*, RIYADH_*)
+- Validate `BRANCHES_JSON` if custom branches are configured
 - Check mcp-oracle-db setup
 - Restart VS Code
 
