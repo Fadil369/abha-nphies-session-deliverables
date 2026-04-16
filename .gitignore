@@ -6,3 +6,5 @@ Thumbs.db
 # Optional local rerun outputs
 reruns/mcp-oracle-db/.env
 mcp-oracle-db/node_modules/
+mcp-oracle-db/.portal-traces/
+mcp-oracle-db/.playwright-profile/

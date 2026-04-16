@@ -23,7 +23,8 @@
 				"JIZAN_PASS":    "${input:portalPass}",
 				"HEADLESS":      "true",
 				"TIMEOUT_MS":    "30000",
-				"USE_DIRECT_IP": "${input:useDirectIp}"
+				"USE_DIRECT_IP": "${input:useDirectIp}",
+				"CHROME_PATH":   "${input:chromePath}"
 			}
 		},
 		"microsoft/playwright-mcp": {
@@ -101,6 +102,12 @@
 			"type": "promptString",
 			"description": "Set to 'true' to bypass CF tunnels and connect via internal IPs (LAN only). Default 'false' uses oracle-<branch>.brainsait.org CF tunnel URLs.",
 			"default": "false"
+		},
+		{
+			"id": "chromePath",
+			"type": "promptString",
+			"description": "Local Chrome/Chromium executable path for Playwright. Use this when browsers are already installed outside the Playwright cache.",
+			"default": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 		},
 		{
 			"id": "chroma_client_type",
